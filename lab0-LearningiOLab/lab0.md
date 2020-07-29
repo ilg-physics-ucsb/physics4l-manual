@@ -1,4 +1,4 @@
-# Lab 0: Learning to use iOLab
+# Lab 1: Learning to use iOLab
 ---
 ### All Materials Needed:
 -  iOLab
@@ -91,7 +91,6 @@ Here we will check that the axes have been correctly identified, by rotating the
 
 :::Figure:Figure
   ![](imgs/xverfiyplot.png)
-	
 	Does this calibration satisfy the verification requirements?
 :::
 #### 
@@ -201,6 +200,7 @@ As your final exercise in getting familiar with the iOLab, you will attempt to v
 6. Double the distance to 2 cm, 4 cm and 8 cm, and record 1 second of data each.
 7. For each measurement made above, highlight the 1-second interval over which you took data, and record the average and the distance of the measurement in a table.
 
+AVOCADO: gifs demonstrating these steps
 
 :::Question 
 For each doubling, calculate the ratio of the magnetic force $F(2r)/F(r)$.  For example, calculate $F(2\:cm)/F(1\:cm)$
