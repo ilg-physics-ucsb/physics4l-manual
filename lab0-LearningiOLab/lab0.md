@@ -209,7 +209,7 @@ As your final exercise in getting familiar with the iOLab, you will attempt to v
 
 
 :::Question 
-For each doubling, calculate the ratio of the magnetic field $B(2r)/BF(r)$.  For example, calculate $B(2\:cm)/
+For each doubling, calculate the ratio of the magnetic field $B(2r)/B(r)$.  For example, calculate $B(2\:cm)/
 B(1\:cm)$
 
 (a) Do the ratios match your expectations from Question 6c? 
