@@ -29,10 +29,7 @@ $$
 \vec F = q (\vec v \times \vec B)
 $$
 
-:::Figure:Figure
-![](imgs/crossproduct.png)
- AVOCADO: Right hand rule/cross product simulation?
-:::
+
 
 This equation gives us two separate and important pieces of information, namely the *direction* and *magnitude* of the resulting force. The direction can be determined by using the so called &ldquo;right-hand rule:&rdquo; if you extend your index and middle finger in the directions of these vectors, in order, your thumb will point in the resultant direction.
 
@@ -46,7 +43,9 @@ Vector equations, if they are new to you, take some getting used to. In plain En
 
 
 :::Figure:Figure
- AVOCADO: Free electron in magnetic field simulation
+
+<iframe src="https://kapawlak.github.io/PhDemoJS/Apps/LorentzForce/LorentzForce.html" width= "100%" height="650" style="border:none;">
+  
 :::
 
 # Part II: Experiments
@@ -101,7 +100,7 @@ In this experiment, we will tape a strip of aluminum foil, which behaves as a &l
 7. Note the orientation of the magnet and the direction of current and record these and the direction of motion of the foil. (See the next step.)
 8. Repeat this experiment for all four combinations of magnet orientation and battery orientation. Make a table similar to the following to record your results for each magnet and battery orientation, the prediction for the force direction given by the right hand rule and the observed direction of foil movement:
 :::Figure:Table
-| Magnet Orienation | Battery Oreintation | RHR |Foil Direction |
+| Magnet Orientation | Battery Orientation | RHR |Foil Direction |
 | --------  | --------      | --------     |--------     |
 | (N/S) toward foil  |    (+/-) up   |  (up/down)    |           (up/down)    |               
 |$\:$         |               |              |          |
@@ -135,7 +134,9 @@ In this setup, we will be creating a simple homopolar motor. Homopolar motors, f
 
 
 
+
 In this exercise we will construct this direct current (DC) motor using a battery as our voltage source and our neodymium magnet as the conductor and perpendicular field source. The magnet will be connected with the battery by means of a screw, whose sharp point has minimal friction and allows for free rotation. When wire leads are used to close the circuit, the current running from the magnet’s outer surface to the screw at its center, in conjunction with the magnetic field, will result in a force on the moving *electrons* inside the magnet, causing it to rotate rapidly!
+
 
 :::Question
 ![](imgs/Currentdisk.png)
@@ -158,12 +159,14 @@ With the knowledge of the magnet&rsquo;s orientation from the previous lab, we w
 5. Once everything is connected, gently touch the other end of the wire lead to the side of the magnet (ie, perpendicular to the magnet’s surface)
 6. If you do this correctly, the screw should rotate.
 
+
 ::: Figure:Figure
 ![motor](imgs/1.png)
 :::
 ######
 
 You have now completed the motor setup for one of four possible orientations of the magnet and battery. Make a table like the one below and record your results for all four possible combinations of your battery and magnet orientations, prediction based on the right hand rule, and the observed direction of rotation:
+
 
 :::Figure:Table
 | Magnet Orienation | Battery Oreintation | RHR|Rotation Direction |
