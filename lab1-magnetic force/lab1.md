@@ -24,15 +24,12 @@ $$
 which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presences of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering & various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For aspiring the theorist, this force law should be intrinsically interesting: it's the origin of some [deep, unsolved, mysteries of quantum electrodynamics](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future). For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
 
 
-For the purpose of this labratory experiment, we are concerned with the force in the absence of an external electric field, $\vec E = 0$, so our equation will read:
+For the purpose of this laboratory experiment, we are concerned with the force in the absence of an external electric field, $\vec E = 0$, so our equation will read:
 $$
 \vec F = q (\vec v \times \vec B)
 $$
 
-:::Figure:Figure
-![](imgs/crossproduct.png)
- AVOCADO: Right hand rule/cross product simulation?
-:::
+
 
 This equation gives us two separate and important pieces of information, namely the *direction* and *magnitude* of the resulting force. The direction can be determined by using the so called "right hand rule": if you extend your index and middle finger in the directions of these vectors, in order, your thumb will point in the resultant direction.
 
@@ -46,7 +43,9 @@ Vector equations, if they are new to you, take some getting used to. In plain en
 
 
 :::Figure:Figure
- AVOCADO: Free electron in magnetic field simulation
+::: iframe
+https://kapawlak.github.io/PhDemoJS/Apps/LorentzForce/LorentzForce.html
+:::
 :::
 
 # Part II: Experiments
@@ -101,7 +100,7 @@ In this experiment, we will tape a strip of aluminum foil, which behaves as a "w
 7. Note the orientations of the magnet and direction of current and record the direction of motion of the foil
 8. Repeat this experiment for all four combinations of magnet orientation and battery orientation. Make a table simlar to the following to record your results for each magnet and battery orientation, the prediction for the force direction given by the right hand rule and the observed direction of foil movement:
 :::Figure:Table
-| Magnet Orienation | Battery Oreintation | RHR |Foil Direction |
+| Magnet Orientation | Battery Orientation | RHR |Foil Direction |
 | --------  | --------      | --------     |--------     |
 | (N/S) toward foil  |    (+/-) up   |  (up/down)    |           (up/down)    |               
 | "         |               |              |          |
@@ -135,7 +134,7 @@ In this set-up, we will be creating a simple homopolar motor. Homopolar motors, 
 
 
 
-In this exercise we will construct this direct current (DC) motor using a battery as our voltage source and our neodynium magnet as the conductor and perpendicular field source. The magnet will be interfaced with the battery using a screw, whose sharp point has minimal friction and allows for free rotation. When wire leads are used to close the circuit, the current running from the magnet's outer surface to the screw at its center, in conjunction with the magnetic field, will result on a force on the moving *electrons* inside the magnet, causing it to rotate rapidly!
+In this exercise we will construct this direct current (DC) motor using a battery as our voltage source and our neodymium magnet as the conductor and perpendicular field source. The magnet will be interfaced with the battery using a screw, whose sharp point has minimal friction and allows for free rotation. When wire leads are used to close the circuit, the current running from the magnet's outer surface to the screw at its center, in conjunction with the magnetic field, will result on a force on the moving *electrons* inside the magnet, causing it to rotate rapidly!
 
 :::Question
 ![](imgs/Currentdisk.png)
@@ -152,7 +151,7 @@ With the knowledge of the magnet's orientation from the previous lab, we will no
 
 ***Homopolar Motor Construction:***
 1. Strip the plastic from both ends of the wire, exposing the copper strands, allowing the wire to conduct. 
-2. Place the flat head of your screw on top of the neodynium magnet, with the north (⨀) pole facing upward. The screw should now also be magnetized so that picking it up also picks up the magnet beneath it.
+2. Place the flat head of your screw on top of the neodymium magnet, with the north (⨀) pole facing upward. The screw should now also be magnetized so that picking it up also picks up the magnet beneath it.
 3. Holding the battery in the air with the positive terminal facing up, touch the negative terminal to the pointed end of the screw. The magnetization should allow you to pick up the screw+ magnet using the battery.
 4. Hold one end of your expose wire against the battery's positive terminal.
 5. Once everything is connected, gently touch the other end of the wire lead to the side of the magnet (ie, perpendicular to the magnets’ surface)
@@ -163,7 +162,7 @@ With the knowledge of the magnet's orientation from the previous lab, we will no
 :::
 ######
 
-You have now completed the motor set up for one of four possible orientations of the magnet and battery. Make a table like the one below and record your results for all four possible combinations of your battery and magnet orientations, prediction based on the right hand rule, and the observered direction:
+You have now completed the motor set up for one of four possible orientations of the magnet and battery. Make a table like the one below and record your results for all four possible combinations of your battery and magnet orientations, prediction based on the right hand rule, and the observed direction:
 
 :::Figure:Table
 | Magnet Orienation | Battery Oreintation | RHR|Rotation Direction |
