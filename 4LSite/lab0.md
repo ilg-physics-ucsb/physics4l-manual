@@ -1,4 +1,4 @@
-# Lab 0: Learning to use iOLab
+# Lab 0: Learning to use Phyphox
 
 
 :::Materials 
