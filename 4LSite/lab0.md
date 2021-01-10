@@ -117,11 +117,14 @@ In [Ex](#Ex-strengthanddirection), the magnet will provide an external magnetic 
 
 :::::: Exercise strengthanddirection
 First, lets identify the axes and directions of you magnetometer:
+####
+
 **Axis Determination Steps**
 1. Open Phyphox and go to the "magnetometer" module.  You can see there are three plots, representing $B_x$,  $B_y$ and $B_z$.
 2. Identify which direction is magnetic north in your room.
 3. Rotate your phone so each of the three primary axes (short, medium, long) of your phone is aligned with magnetic north. 
 4. Take note of which axis has the highest absolute reading -- this specifies the axis of the magnetometer aligned with north.
+####
 
 **Direction Determination Steps**
 1. The $z$ direction of your magnetometer likely runs out of the face of your phone, so we will first test the sign of this axis.
