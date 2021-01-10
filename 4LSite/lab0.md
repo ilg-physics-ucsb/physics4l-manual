@@ -90,11 +90,11 @@ Since the magnetometer is very sensitive, any kind of unwanted magnetization wil
 If your phone is exposed to a strong magnetic field, part of your device's integrated circuit might become magnetized, leaving your compass pointing in the wrong direction. Nearly every phone has some strategy to calibrate the magnetometer under these circumstances. You might trigger this when measuring the strength of a magnetic field. For your phone to make sure the compass is working, it will automatically subtract the component from the external field to get calibrated data. This could be a problem if you try to measure a higher magnetic field on purpose.
 
 :::::: Exercise 
-Now make a magnetometer measurement by putting the magnet around your phone. Make sure the absolute field strength is 100µT or more. Then you can rotate the phone about every axis while measuring, and at some point the readings will suddenly drop to around 50µT. 
+Now make a magnetometer measurement by putting the magnet around your phone. Make sure the absolute field strength is 100µT or more. Then you can rotate the phone about every axis while measuring, and if your phone applies a calibration to the reading, at some point the readings will suddenly drop (usually to around 50µT, sometimes less). 
 
 During calibration, the magnetometer will use the Earth's magnetic field in conjunction with its gyroscope to determine the relative orientation of its sensors. Since the $x, y$ and $z$ directions are mutually orthogonal, it will analyze how rotation along each of these axes affects the sensor measurement to determine how these axes are aligned relative to the device. 
 ::: Question
-Why do you expect to see the change in readings?
+For a phone that applies active calibration, why do you expect to see the change in readings?
 :::
 Therefore, for the purpose of measuring the *raw* strength of a magnetic field, you should switch to the *uncalibrated* magnetometer. 
 ::::::
@@ -116,19 +116,35 @@ Therefore, for the purpose of measuring the *raw* strength of a magnetic field, 
 In [Ex](#Ex-strengthanddirection), the magnet will provide an external magnetic field. Our first task is to characterize the magnet by measuring the *direction* of this field. Later, we will take care of the backgroud noise to measure the *magnitude*.
 
 :::::: Exercise strengthanddirection
-First, let's measure the direction of magnetic field from the  magnet.
+First, lets identify the axes and directions of you magnetometer:
+**Axis Determination Steps**
+1. Open Phyphox and go to the "magnetometer" module.  You can see there are three plots, representing $B_x$,  $B_y$ and $B_z$.
+2. Identify which direction is magnetic north in your room.
+3. Rotate your phone so each of the three primary axes (short, medium, long) of your phone is aligned with magnetic north. 
+4. Take note of which axis has the highest absolute reading -- this specifies the axis of the magnetometer aligned with north.
+
+**Direction Determination Steps**
+1. The $z$ direction of your magnetometer likely runs out of the face of your phone, so we will first test the sign of this axis.
+2. Rotate your phone so that the back of it is facing mangetic north.
+3. If the reading is negative, the axis is defined so that the positive direction points *out of your phone*. You can understand this by imagining an arrow pointing from magnetic south to magnetic north.
+4. Repeat for the remaining axes.
+
+
+
+Now let's measure the direction of magnetic field from the  magnet.
 
 **Measurement steps:**
-1. Put your phone on the table, open the Phyphox app and go to “magnetometer”. You can see there are three plots, representing $B_x$,  $B_y$ and $B_z$.
+1. Put your phone on the table, open the Phyphox app and go to “magnetometer”.
 2. Start recording. You should see some random fluctuations on the plot. 
 3. Hold the magnet above the magnetomer, with one flat side facing up. Move it up and down above the magnetometer.
 4.  Now flip the magnet over, and repeat the motion.
 5.  Stop recording to view the collected data. 
 
 ::: Question
-1. Why does $B_z$ change when you move the magnet vertically?
-
-2. After flipping the magnet, describe the change observed in the plot, and give a possible explanation.
+1. Draw a diagram of your phone showing the axes and the directions they point 
+(upload this to your google doc).
+2. Why does $B_z$ change when you move the magnet vertically?
+3. After flipping the magnet, describe the change observed in the plot, and give a possible explanation.
 
 :::
 
@@ -188,9 +204,9 @@ It should be emphasized that since we are using the uncalibrated magnetometer, y
 ####
 
 **Magnetic Force and Distance steps:**
-1. Mark 0.5 cm, 1 cm, 2cm, and 4 cm on a piece of paper. Align the magnetometer with the 0 cm mark
+1. Mark 0.0 cm, 0.5 cm, 1.0 cm, 2.0 cm, and 4.0 cm on a piece of paper. Align the edge of your phone nearest to the magnetometer with the 0 cm mark
 2. Start a measurement without the magnet (place the magnet far from your work area) and record the values. 
-3. Attach your magnet to the flat end of a steel screw to make handling easier. Align the magnet with the 0.5 cm mark.
+3. Magnetize a steel screw and align it with the 0.5 cm mark.
 4. Record about 1 second of data and stop.
 5. Double the distance to 1 cm, 2 cm, 4 cm, and record 1 second of data each.
 6. Export the data. For each measurement made above, calculate the average of the 1-second interval, and record the average field strength and the distance of the measurement in a table.
