@@ -121,15 +121,21 @@ First, lets identify the axes and directions of you magnetometer:
 
 **Axis Determination Steps**
 1. Open Phyphox and go to the "magnetometer" module.  You can see there are three plots, representing $B_x$,  $B_y$ and $B_z$.
-2. Identify which direction is magnetic north in your room.
+2. Identify which direction is geographic north in your room.
 3. Rotate your phone so each of the three primary axes (short, medium, long) of your phone is aligned with magnetic north. 
 4. Take note of which axis has the highest absolute reading -- this specifies the axis of the magnetometer aligned with north.
 ####
 
+:::Figure magnor s
+![Hyperphysics: The magnetic north pole is the geographic south pole!](../imgs/magneticnorth.png)
+####
+Hyperphysics: The magnetic north pole is the geographic south pole!
+:::
+
 **Direction Determination Steps**
 1. The $z$ direction of your magnetometer likely runs out of the face of your phone, so we will first test the sign of this axis.
 2. Rotate your phone so that the back of it is facing mangetic north.
-3. If the reading is negative, the axis is defined so that the positive direction points *out of your phone*. You can understand this by imagining an arrow pointing from magnetic south to magnetic north.
+3. If the reading is negative, the axis is defined so that the positive direction points *out of your phone screen*. You can understand this by imagining an arrow pointing from magnetic south to magnetic north.
 4. Repeat for the remaining axes.
 
 
@@ -144,13 +150,15 @@ Now let's measure the direction of magnetic field from the  magnet.
 5.  Stop recording to view the collected data. 
 
 ::: Question
-1. Draw a diagram of your phone showing the axes and the directions they point 
-(upload this to your google doc).
+1. Identify the axis name and sign in [Fi][#Fi-phonaxes] for your phone.
 2. Why does $B_z$ change when you move the magnet vertically?
 3. After flipping the magnet, describe the change observed in the plot, and give a possible explanation.
 
 :::
 
+::: Figure phonaxes m
+![Label your axes, including sign](../imgs/phoneaxes.png)
+:::
 
 
 By observing how $B_z$ changes with the vertical motion of the magnet, you should be able to identify the direction of the magnetic field. Mark one side with “⨂” to indicate that the magnetic field is going into that side, and the other side with “⨀” to indicate that the field is coming out of this side. You will use these magnets for other labs this quarter.
