@@ -122,7 +122,7 @@ First, lets identify the axes and directions of you magnetometer:
 **Axis Determination Steps**
 1. Open Phyphox and go to the "magnetometer" module.  You can see there are three plots, representing $B_x$,  $B_y$ and $B_z$.
 2. Identify which direction is geographic north in your room.
-3. Rotate your phone so each of the three primary axes (short, medium, long) of your phone is aligned with magnetic north. 
+3. Rotate your phone so each of the three primary axes (short, medium, long) of your phone is aligned with geographic north [fn] Don't be alarmed if there are other nonzero components when your phone is facing geographic north! The magnetic field at a particular location actually fluctuates in inclination and direction a little. If you want to know where the magnetic field points precisely, you can look it up at on [NOAA](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml)[/fn]. 
 4. Take note of which axis has the highest absolute reading -- this specifies the axis of the magnetometer aligned with north.
 ####
 
@@ -134,8 +134,8 @@ Hyperphysics: The magnetic north pole is the geographic south pole!
 
 **Direction Determination Steps**
 1. The $z$ direction of your magnetometer likely runs out of the face of your phone, so we will first test the sign of this axis.
-2. Rotate your phone so that the back of it is facing mangetic north.
-3. If the reading is negative, the axis is defined so that the positive direction points *out of your phone screen*. You can understand this by imagining an arrow pointing from magnetic south to magnetic north.
+2. Rotate your phone so that the back of it is facing geographic north.
+3. If the reading is negative, the axis is defined so that the positive direction points *out of your phone screen*. You can understand this by imagining an arrow pointing from geographic south to geographic north.
 4. Repeat for the remaining axes.
 
 

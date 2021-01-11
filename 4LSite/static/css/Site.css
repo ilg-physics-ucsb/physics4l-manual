@@ -466,11 +466,13 @@ text-align: center;
   position: static;
   display: inline;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  z-index:3;
 }
 
 .tooltip sup::before{
   counter-increment: foot;
   content: '[' counter(foot) ;
+  z-index:3;
 }
 
 /* Tooltip text */
@@ -488,6 +490,7 @@ text-align: center;
   transition: opacity 5s ease;
   border: black 8px solid;
   text-indent: 0;
+  z-index:3;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -495,10 +498,11 @@ text-align: center;
   opacity: 1;
   display: block;
   transition: opacity 1s ease;
-  z-index:2;
+  z-index:3;
 }
 
 
 .tooltiptext p{
  background-color: black;
+ z-index:3;
 }
