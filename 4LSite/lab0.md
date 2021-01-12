@@ -150,7 +150,7 @@ Now let's measure the direction of magnetic field from the  magnet.
 5.  Stop recording to view the collected data. 
 
 ::: Question
-1. Identify the axis name and sign in [Fi][#Fi-phonaxes] for your phone.
+1. Identify the axis name and sign in [Fi](#Fi-phonaxes) for your phone.
 2. Why does $B_z$ change when you move the magnet vertically?
 3. After flipping the magnet, describe the change observed in the plot, and give a possible explanation.
 
