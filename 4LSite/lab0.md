@@ -251,3 +251,16 @@ For each doubling, calculate the ratio of the magnetic field $B(2r)/BF(r).$ You 
 <iframe id="contentframe" height="300px" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=5682337&triggerview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com; autoplay https://coursekit.google.com" allowfullscreen="1" style="height: 300px;"></iframe>
 :::
 
+
+
+# Feedback
+
+Any feedback you choose to give will be used to improve labs this quarter!
+::: Hider Open Feedback Form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAhZHIlwtGnfv3XMpzTs043ZUjluKyanJWl-hFrU9KCgvswQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+:::
+
+<br>
+<br>
+<br>
+<br>
