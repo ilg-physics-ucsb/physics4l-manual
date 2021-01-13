@@ -309,7 +309,18 @@ tbody > tr:nth-child(odd){background-color:var(--l3-bg)!important}
     color: var(--primary-font);
     font-size: 100%!important;
   }
+.Hider li, .Hider ol{
+    text-align: left;
+}
 
+.Hider ul > li > ul > li::before{
+    content: '\f054   ';
+    font-family: FontAwesome!important;
+    font-size: 80%!important;
+  }
+.Hider  ul > li{
+    list-style-type: none;
+  }
 /*********************************************************************************/
 /* Animation -- set iteration to 0 to disable */
 
