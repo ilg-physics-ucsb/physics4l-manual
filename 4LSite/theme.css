@@ -320,6 +320,13 @@ tbody > tr:nth-child(odd){background-color:var(--l3-bg)!important}
   }
 .Hider  ul > li{
     list-style-type: none;
+    font-size: 100%!important;
+  }
+
+.Hider  ul > li > ul{
+    list-style-type: none;
+    font-size: 80%!important;
+    line-height: 2;
   }
 /*********************************************************************************/
 /* Animation -- set iteration to 0 to disable */

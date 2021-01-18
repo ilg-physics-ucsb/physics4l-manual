@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presences of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some [deep, unsolved, mysteries of quantum electrodynamics](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future). For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
+which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presences of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some deep, unsolved, mysteries of quantum electrodynamics [fn] The Lorentz Force, when analyzed on a point charge, results in a strange paradox that predicts "signals from the future" causing sponaneous acceleration of particles. Despite being an equation from Classical Electrodynamics, the problem persists into Quantum Electrodynamics without a well-accepted solution. Suprisingly, the current perspective assumes that Electroweak unification is neccesary to resolve the paradox, see [wikipedia](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future) for more information[/fn]. For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
 
 
 For the purpose of this laboratory experiment, we are concerned with the force in the absence of an external electric field, $\vec E = 0$, so our equation will read:
@@ -36,7 +36,7 @@ $$
 
 This equation gives us two independent and important pieces of information, namely the *direction* and *magnitude* of the resulting force. 
 
-:::LFigure rhr xs
+:::LFigure rhr s
 ![](../imgs/crossproduct.png)
 ::: 
 The direction can be determined by using the so called "right-hand rule", shown in [Fi](#Fi-rhr). The right-hand-rule is a mnemonic device for quickly working out the direction of a cross-product: If you extend your index and middle finger in the directions of your first and second vectors in the product, respectively, your thumb will point in the resultant direction.
@@ -54,7 +54,7 @@ When they are completely perpendicular, the result is simply $F(\pi/2) = q |v||B
 
 
 :::Simulation LF
-<embed src="https://kapawlak.github.io/PhDemoJS/Apps/LorentzForce/LorentzForce.html" width='100%' height='800px'>
+<embed src="https://kapawlak.github.io/PhDemoJS/Apps/LorentzForce/LorentzForce.html" width='100%' height='820px'>
 :::
 
 Vector equations, if they are new to you, take some getting used to. In plain English, the Lorentz force  law tells us the following: A charged particle moving with a velocity $\vec v$ perpendicular to a magnetic field $\vec B$ will experience a force in a direction that is perpendicular to both of these vectors, and has a magnitude proportional to their product. So you can get a feeling for how this works, [Si](#Si-LF) shows the motion of a charged particle in the $xy-$plane when  subjected to a magnetic field along the $z-$axis
@@ -196,7 +196,7 @@ The Lorentz force acts on the electrons in the foil. Try to explain why the *ent
 - Power Block
 - One steel screw
 - Cardboard (optional)
-- Alternate setup: One long wire and a AA or AAA battery
+- Alternate setup: One long wire, screw, and a AA or AAA battery
 :::
 
 In this setup, we will be creating a simple homopolar motor. Homopolar motors, first constructed by Michael Faraday in 1821, prior to the discovery of electromagnetism, operate based on the Lorenz force: A conductor with a current flowing through it, when placed in a magnetic field that is perpendicular to the current, feels a force in the direction perpendicular to both the magnetic field and the current. This force provides a torque around the axis of rotation.
@@ -208,7 +208,7 @@ In this exercise we will construct this direct current (DC) motor using a batter
 :::Question
 ![](../imgs/Currentdisk.png)
 
-The above image shows a disk with a conductive surface (inside is non-conducting) connected to a circuit with current $I$. Sketch the path that electrons might take, including the path on or inside the disk, with arrows indicating the direction of the velocity. (You can copy this image into your Google doc)
+The above image shows a disk with a conductive surface (inside is an insulator) connected to a circuit with current $I$. Sketch the path that electrons might take, including the path on or inside the disk, with arrows indicating the direction of the velocity. (You can copy this image into your Google doc)
 :::
 
 By noting the direction in which the current is flowing, as well as the direction of the field of the magnets (found in Lab 0 and verified in the previous exercise), we can apply the right-hand rule to determine the direction of the magnetic force, and verify that our results are consistent with the observed direction of rotation.
@@ -248,7 +248,7 @@ You have now completed the motor setup for one of four possible orientations of 
 
 Make a table like the one below and record your results for all four possible combinations of your battery and magnet orientations, prediction based on the right hand rule (RHR), and the observed direction of rotation:
 
-:::Figure:Table
+:::Table
 | Magnet Orientation | Battery Orientation | RHR|Rotation Direction |
 | --------  | --------      | --------     |--------     |
 | (N/S) up  |    (+/-) up   | (CW/CCW)  | (CW/CCW)    |                    
@@ -258,13 +258,37 @@ Make a table like the one below and record your results for all four possible co
 |@fa-pencil@         |               |              | |
 :::
 
-**(! IF YOU HAVE NOT RECEIVED YOUR IOLAB YET AND DON'T KNOW THE ORIENTATION OF YOUR MAGNET FROM LAB 0, PLEASE LABEL THE MAGNET SIDES 'A' AND 'B' AND VERIFY AFTER YOUR DEVICE HAS ARRIVED !)**
 
 
 ::: Question
-Sketch schematic diagrams showing each of the 4 possibilities. Include arrows to show the direction of the magnetic force from the right-hand rule, and labels to indicate the direction of current flow. 
+Along with your table, sketch schematic diagrams showing each of the 4 possibilities. Include arrows to show the direction of the magnetic field, labels to indicate the volatage applied & direction of current flow, and the resultant force due to the right hand rule. You can draw this free-hand and attach the photos, or use a computer program to edit the image below.
+![](../imgs/example_diagram.png)
 :::
 ::::::
+::::::Hider Alternate set-up with battery
+1. Place the flat head of your screw on top of the neodymium magnet, with the north (⨀) pole facing upward. The screw should now also be magnetized so that picking it up also picks up the magnet beneath it.
+2. Holding the battery in the air with the positive terminal facing up, touch the negative terminal to the pointed end of the screw. The magnetization should allow you to pick up the screw + magnet by lifting the battery.
+3. Hold one end of your exposed wire against the battery’s positive terminal.
+4. Once everything is connected, gently touch the other end of the wire lead to the side of the magnet (ie, perpendicular to the magnet’s surface)
+5. If you do this correctly, the screw should rotate.
+
+::: Figure
+![motor](../imgs/batteryversion.png)
+:::
+::::::
+
+:::Hider Mini FAQ for Exercise 2
+- **Q:** My observations don't match the RHR!
+  - Did you record the current direction correctly? 
+  - Is your power block installed upside down so that the +/- terminals are connected to the wrong power rails?
+  - Did you misidentify the polarity of your magnets? 
+  ####
+
+- **Q:** My magnet/screw doesn't rotate!
+  - The most common cause of this is friction. I have found that balancing the screw on the side of the wire end, rather than directly on the tip as in [Fi](#Fi-magnetized) reduces friction. Also try to touch the side of the magnet with the wire as lightly as possible to reduce friction.
+  - Make sure you are using the 5V power terminals for the largest effect!
+  - Adding more magnets to your stack will increase the strength of the interaction
+:::
 
 # Write-up
 
@@ -277,6 +301,21 @@ Sketch schematic diagrams showing each of the 4 possibilities. Include arrows to
  #### **3. Additional Information:**
  - You should attach images of your plots,  data, and setup -- doing so may allow you to regain partial or full credit even if your experiment fails.
  
- :::Summary
+ ::::::Summary
+ :::Hider Lab Submission
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6002332" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
  :::
+ ::::::
 
+
+# Feedback
+
+Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you'd like to just leave some comments, scroll to the bottom of the form.
+::: Hider Open Feedback Form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6emUXMkONPOrSeLX6Ud_CFF7H1B9NGXmdxhlqx8JCijFXUA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+:::
+
+<br>
+<br>
+<br>
+<br>
