@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presences of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some deep, unsolved, mysteries of quantum electrodynamics [fn] The Lorentz Force, when analyzed on a point charge, results in a strange paradox that predicts "signals from the future" causing sponaneous acceleration of particles. Despite being an equation from Classical Electrodynamics, the problem persists into Quantum Electrodynamics without a well-accepted solution. Suprisingly, the current perspective assumes that Electroweak unification is neccesary to resolve the paradox, see [wikipedia](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future) for more information[/fn]. For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
+which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presences of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some deep, unsolved, mysteries of quantum electrodynamics [fn] The Lorentz Force, when analyzed on a point charge, results in a strange paradox that predicts "signals from the future" causing spontaneous acceleration of particles. Despite being an equation from Classical Electrodynamics, the problem persists into Quantum Electrodynamics without a well-accepted solution. Surprisingly, the current perspective assumes that Electroweak unification is necessary to resolve the paradox, see [wikipedia](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future) for more information[/fn]. For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
 
 
 For the purpose of this laboratory experiment, we are concerned with the force in the absence of an external electric field, $\vec E = 0$, so our equation will read:
@@ -157,6 +157,11 @@ In this experiment, we will fix a strip of aluminum foil, which behaves as a "wi
 |$\:$         |               |              |           |
 |$\:$         |               |              |           |
 :::
+
+::: Question
+Along with your table, include an image of each trial. Include arrows to show the direction of the magnetic field, labels to indicate the voltage applied & direction of current flow, and the resultant force due to the right hand rule.
+:::
+
 ######
 
 
@@ -249,7 +254,7 @@ You have now completed the motor setup for one of four possible orientations of 
 Make a table like the one below and record your results for all four possible combinations of your battery and magnet orientations, prediction based on the right hand rule (RHR), and the observed direction of rotation:
 
 :::Table
-| Magnet Orientation | Battery Orientation | RHR|Rotation Direction |
+| Magnet Orientation | Current Direction | RHR|Rotation Direction |
 | --------  | --------      | --------     |--------     |
 | (N/S) up  |    (+/-) up   | (CW/CCW)  | (CW/CCW)    |                    
 |@fa-pencil@          |               |              |  |
@@ -261,9 +266,9 @@ Make a table like the one below and record your results for all four possible co
 
 
 ::: Question
-Along with your table, sketch schematic diagrams showing each of the 4 possibilities. Include arrows to show the direction of the magnetic field, labels to indicate the volatage applied & direction of current flow, and the resultant force due to the right hand rule. You can draw this free-hand and attach the photos, or use a computer program to edit the image below.
-![](../imgs/example_diagram.png)
+Along with your table, include an image of each trial. Include arrows to show the direction of the magnetic field, labels to indicate the voltage applied & direction of current flow, and the resultant force due to the right hand rule.
 :::
+
 ::::::
 ::::::Hider Alternate set-up with battery
 1. Place the flat head of your screw on top of the neodymium magnet, with the north (⨀) pole facing upward. The screw should now also be magnetized so that picking it up also picks up the magnet beneath it.
