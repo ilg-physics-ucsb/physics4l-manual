@@ -260,4 +260,5 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
 # To do:
  - Add phone setup images
  -verify powerblock is safe to use
+ - Editing here
 
