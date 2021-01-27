@@ -2,8 +2,8 @@
 
 ::: Materials
 - Your Phone with Phyphox
-- A long wire (~0.8-1 m)
-- Electronics kit 3.3V power block
+- Long insulated wire (~0.8-1 m)
+- Circuit Power Block and Breadboard (kit)
 - Some vertical support (e.g. a book)
 - Paper and ruler
 :::
@@ -69,7 +69,7 @@ $$
 :::
 
 
-# Experiment
+# Experiments
 
 
 ## 1. Prelab setup
