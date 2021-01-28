@@ -4,7 +4,6 @@
 - Your Phone with Phyphox
 - Long insulated wire (~0.8-1 m)
 - Circuit Power Block and Breadboard (kit)
-- Some vertical support (e.g. a book)
 - Paper and ruler
 :::
 
@@ -109,31 +108,40 @@ The following exericise will walk you though a quantitative experiment that char
 ::::::::: Exercise
 In this geometry, the wire is sitting flat on the desk, parallel to the side of your phone with the magnetometer. 
 ::: Question
-Assuming your phone has a small thickness, i.e., the height of the magnetometer is ignorable, what B component(s) do you expect to observe from the current carrying wire in this configuration?
+Assuming your phone has a small thickness, i.e., the height of the magnetometer is negligible, what B component(s) do you expect to observe from the current carrying wire in this configuration?
 :::
 
-::: Figure:Figure
-![geometry#1-1](../imgs/setup1.png)
+::: Figure lined m
+![Be sure your phone's magnetometer is aligned ot the mark](../imgs/Lab2/lined.jpg)
 :::
 
 1. On a piece of paper, draw 10 locations spaced 1 cm apart. These will be the locations you will measure the $B$ field strength. Note that it is easier to align the phone and correct your distances for the magnetometer offset after collecting data -- the correction will be the same for each distance measurement.  Once everything is set up correctly, as shown, you may begin taking data. 
+ :::RFigure data s
+![Use the pick data took to grab the values of the peaks](../imgs/Lab2/selectdata.png)
+ :::
 3. Align the side of the phone with the magnetometer to a given measurement line.  
 4. Open phyphox - magnetometer.
 5. Begin recording and you should see three straight lines for three components.
-6. Briefly touch the wires to the battery terminals for no more than 1 second. This prevents overheating and battery drain. 
-7. Stop recording.
-8. You should see a narrow dip on at least one of the plots.
+6. Press the button to power your circuit for about 1 second and press it again. You should see a narrow dip on at least one of the plots.
+7. Quickly move your phone, aligning the magnetometer to the next line.
+8. Repeat 6 & 7 for all lines.
 ::: Question
 Do the dip(s) match your prediction from question 1? Comment if the assumption can be made or not.
 :::
 
 
-9. Repeat steps 5-8 for the remaining 9 measurement lines.
+9. Your final plot should look similar to [Fi](#Fi-data).
+
+
 ######
 
 :::Note
-   **Note:**  If you are doing the experiment on a desk with a steel frame or there are metals nearby, the baseline $B$ field will shift as the phone is moved over different regions of the desk (why?).  If you are unable to find an alternate location to perform the experiment, it is possible to correct for the error by measuring the $B$ field components both before and during each current pulse, and then finding the difference. This difference will be the field due to just the current. 
+   **Note:**  If you are doing the experiment on a desk with a steel frame or there are metals nearby, the baseline $B$ field will shift as the phone is moved over different regions of the desk, like the example shown in [Fi](#Fi-data).  If you are unable to find an alternate location to perform the experiment, it is possible to correct for the error by measuring the $B$ field components both before and during each current pulse, and then finding the difference. This difference will be the field due to just the current. 
  :::
+
+
+
+ 10. Using the "Pick Data" option on Phyphox, get the value of each of the 10 peaks and also the background field if neccesary.
 
 
 ::::::Question
@@ -166,16 +174,25 @@ Review your data and make a table like the one below with appropriate units.
 
 3. Determine the current $I$ from this slope. Report it in the correct units and to a reasonable number of significant figures.
 
-4. From Ohm&rsquo;s law and the voltage of your battery, estimate the resistance of your setup. 
+4. Using your multimeter, actually measure and record the current of your circuit. How do your calculated an measured values compare?
 
-5. Does it seem reasonable? Why or why not?
+5. Discuss your results from Part (d). You should comment on features such as the linearity or non-linearity of your graph, if some of your measurements (e.g. those close to or farther from the source) seem to fit better, and possible physical reasons for your observations.
 :::
 
 
 ::: Question
 1. Assuming that you performed the experiment correctly, what do you think is your largest source of *uncertainty*? 
 
-2. Estimate how much might it affect your results.
+2. Estimate the size of this uncertainty, *i.e.* if you think your distances had the highest undertainty value, estimate how much, on average, your distance was off by.
+
+:::
+
+::: Question
+**Imagine:** In testing this experiment, I (the instructor) was very lazy. Instead of taking 10 measurements, I only took two: at 1.0cm I found a B of $ 19.4 \mu$T and at 5.0 cm I found $4.0 \mu$T.
+
+1. What current would I calculate with these measurements?
+2. Assume now that I was not very precise with my alignment, so that my *actual* distance could vary from my recorded distance by $\pm 0.5 cm$. Calculate the *largest* and *smallest* current that results from my measurements that is consistent with these uncertainties.
+3. Is this interval of possible currents *large*? Explain why or why not. 
 :::
 
 
@@ -186,20 +203,19 @@ Review your data and make a table like the one below with appropriate units.
 - Your Phone with Phyphox
 - A long wire (~0.8-1 m)
 - Power Block
-- Some vertical support (e.g., a book)
 :::
 
 :::::: Exercise
 We will now measure the magnetic field induced by a loop of current.
-::: Figure:Figure
-![geometry#2](../imgs/setup2.png)
+::: Figure looped m
+![Be sure that the phone's magnetometer is aligned to the center](../imgs/Lab2/looped.jpg)
 :::
 
 1. Tape your long wire to a table so that it forms a closed loop. Try to make the loop as circular as possible. Record the radius of the loop.
 2. Align your phone such that the magnetometer is centered within the loop.
 3. Open phyphox - magnetometer.
 4. Start recording.
-5. Briefly touch the wires to the battery terminals for no more than 1 second. This prevents overheating and battery drain.  You should see two step pulses with different magnitudes. Then use equation 2 to calculate the current from the measured B field.
+5. Turn the circuit on by pressing the button for no more than 1 second. This prevents overheating and battery drain.  
 7. Stop recording.
 8. Change the $z$-coordinate of your magnetometer by placing a book or similar object beneath it.
 9. Record the height of this object and repeat steps 4-7.
@@ -256,8 +272,4 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
  
 
 
-
-# To do:
- - Add phone setup images
- -verify powerblock is safe to use
 
