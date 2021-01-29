@@ -9,7 +9,7 @@
 
 # The Biot-Savart Law
 
-In the previous lab, we looked at how moving electric charges feel force in the presence of external electric and magnetic fields. Continuing with the theme of electrodynamics, we will look at the fields and forces *caused* by moving charges *themselves*.
+In the previous lab, we looked at how moving electric charges feel force in the presence of external magnetic fields. Continuing with the theme of electrodynamics, we will look at the fields and forces *caused* by moving charges *themselves*.
 
 As you may know, moving charges not only have electric fields, $\vec E$,  associated with them, but also produce magnetic fields, $\vec B$, in directions tangent to their velocity. The characterization of such $\vec B$ fields for a single moving charged particle is actually trickier than you would expect -- the motion of the point-like charged particle and constant generation of a magnetic field at every point in time requires relativity to describe correctly -- and will be dealt with in a more advanced course.
 
@@ -39,7 +39,7 @@ In this lab, we will explore the Biot-Savart law by indirectly determining *the 
 ![](../imgs/RHR.png)
 :::
 
-For a long straight wire carrying a current, the magnetic field wraps around the line of current according to the right-hand rule, as shown in [Fi](#Fi-RHR). The stength of the measured field will depend on the *current* passing through the wire and the *distance* from the wire you take a measurement. A qualitative, interactive example of this is given in [Si](#Si-long-straight).
+For a long straight wire carrying a current, the magnetic field wraps around the line of current according to the right-hand rule, as shown in [Fi](#Fi-RHR). The strength of the measured field will depend on the *current* passing through the wire and the *distance* from the wire you take a measurement. A qualitative, interactive example of this is given in [Si](#Si-long-straight).
 
 To get a quantitative picture, we must apply some calculus. Analyzing the integral of the [Eq](#Eq-biot_law) for a straight line geometry,  it can be shown that the strength of the magnetic field at a distance $R$ from the wire is given by:
 
@@ -57,9 +57,9 @@ where the magnetic permeability of free space is $\mu_0 = 4\pi\times 10^{-7}$ T&
 
 :::
 
-For a  loop of current, the magnetic field looks very similar to that of a dipolar magnet. When the loop is large, the mangnetic field in the center of the loop looks approximately like a straight line piercing the loop, with a direction determined by the right hand rule. This is demonstrated above in [Si](#Si-loop). 
+For a  loop of current, the magnetic field looks very similar to that of magnetic dipole. When the loop is large, the magnetic field in the center of the loop looks approximately like a straight line piercing the loop, with a direction determined by the right hand rule. This is demonstrated above in [Si](#Si-loop). 
 
-Again solving the integral in [Eq](#Eq-biot_law), but now for a loop geometry, the strength of this field depends on the radius of the loop and the height, given by the relation:
+Again solving the integral in [Eq](#Eq-biot_law), but now for a loop geometry. The strength of this field along the axis depends on the radius, $R$, of the loop of wire and the distance from the center, $z$, given by the relation:
 
 ::: Equation biot_loop
 $$
@@ -103,7 +103,7 @@ As in Lab 0, we must subtract the background filed to ensure the accuracy of the
 
 <br>
 
-The following exericise will walk you though a quantitative experiment that characterizes the magnetic field of a straight wire. Be sure to collect all the needed materials before starting this lab.
+The following exercise will walk you though a quantitative experiment that characterizes the magnetic field of a straight wire. Be sure to collect all the needed materials before starting this lab.
 
 ::::::::: Exercise
 In this geometry, the wire is sitting flat on the desk, parallel to the side of your phone with the magnetometer. 
@@ -120,7 +120,7 @@ Assuming your phone has a small thickness, i.e., the height of the magnetometer 
 ![Use the pick data took to grab the values of the peaks](../imgs/Lab2/selectdata.png)
  :::
 3. Align the side of the phone with the magnetometer to a given measurement line.  
-4. Open phyphox - magnetometer.
+4. Open Phyphox - magnetometer.
 5. Begin recording and you should see three straight lines for three components.
 6. Press the button to power your circuit for about 1 second and press it again. You should see a narrow dip on at least one of the plots.
 7. Quickly move your phone, aligning the magnetometer to the next line.
@@ -141,7 +141,7 @@ Do the dip(s) match your prediction from question 1? Comment if the assumption c
 
 
 
- 10. Using the "Pick Data" option on Phyphox, get the value of each of the 10 peaks and also the background field if neccesary.
+ 10. Using the "Pick Data" option on Phyphox, get the value of each of the 10 peaks and also the background field if necessary.
 
 
 ::::::Question
@@ -183,7 +183,7 @@ Review your data and make a table like the one below with appropriate units.
 ::: Question
 1. Assuming that you performed the experiment correctly, what do you think is your largest source of *uncertainty*? 
 
-2. Estimate the size of this uncertainty, *i.e.* if you think your distances had the highest undertainty value, estimate how much, on average, your distance was off by.
+2. Estimate the size of this uncertainty, *i.e.* if you think your distances had the highest uncertainty value, estimate how much, on average, your distance was off by.
 
 :::
 
@@ -213,7 +213,7 @@ We will now measure the magnetic field induced by a loop of current.
 
 1. Tape your long wire to a table so that it forms a closed loop. Try to make the loop as circular as possible. Record the radius of the loop.
 2. Align your phone such that the magnetometer is centered within the loop.
-3. Open phyphox - magnetometer.
+3. Open Phyphox - magnetometer.
 4. Start recording.
 5. Turn the circuit on by pressing the button for no more than 1 second. This prevents overheating and battery drain.  
 7. Stop recording.
