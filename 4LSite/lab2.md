@@ -15,7 +15,7 @@ As you may know, moving charges not only have electric fields, $\vec E$,  associ
 
 It turns out, however, that a *line* of moving charges, such as a current-carrying wire, is much simpler to work with: the resulting magnetic field has a static and well-defined description in terms of the Biot-Savart Law:
 
-:::Figure:Equation biot_law
+:::Equation biot_law
 
 $$
 \vec B = -\frac{\mu_0 I}{4\pi} \int_C    \frac{\vec r \times d\vec\ell }{|\vec r|^3}
@@ -108,7 +108,9 @@ The following exercise will walk you though a quantitative experiment that chara
 ::::::::: Exercise
 In this geometry, the wire is sitting flat on the desk, parallel to the side of your phone with the magnetometer. 
 ::: Question
-Assuming your phone has a small thickness, i.e., the height of the magnetometer is negligible, what B component(s) do you expect to observe from the current carrying wire in this configuration?
+1. Assuming your phone has a small thickness, i.e., the height of the magnetometer is negligible, what B component(s) do you expect to observe from the current carrying wire in this configuration?
+
+2. If your phone is very thick and the height of the magnetometer cannot be ignored, what B components do you expect to observe from the current carrying wire?
 :::
 
 ::: Figure lined m
@@ -147,13 +149,13 @@ Do the dip(s) match your prediction from question 1? Comment if the assumption c
 ::::::Question
 Review your data and make a table like the one below with appropriate units.
 
-**Note**: whether you have $B_y$ component or not depends on your observations in question 1 & 2. If you do observe $B_y$, don't forget to consider the height of the magnetometer in your calculation of $R$!
+**Note**: whether you have $B_y$ component or not depends on your observations in question 1 & 2. If you do observe $B_y|B_x$, don't forget to consider the height of the magnetometer in your calculation of $R$!
 
 ::::::
-:::Figure:Table
+:::Table
 
 
-|Offset  $y$  | $R$ |$1/R$  | Measured $B_y$ *  |Measured $B_z$  | Field strength $B$ |
+|Offset  $y$  | $R$ |$1/R$  | Measured $(B_y|B_x)$ *  |Measured $B_z$  | Field strength $B$ |
 |------|------|------|------|------|------|
 |@fa-pencil@    |      |      |      |      |      |     
 |@fa-pencil@   |      |      |      |      |      |   
@@ -174,7 +176,7 @@ Review your data and make a table like the one below with appropriate units.
 
 3. Determine the current $I$ from this slope. Report it in the correct units and to a reasonable number of significant figures.
 
-4. Using your multimeter, actually measure and record the current of your circuit. How do your calculated an measured values compare?
+4. Using your multimeter, actually measure and record the current of your circuit. How do your calculated and measured values compare?
 
 5. Discuss your results from Part (d). You should comment on features such as the linearity or non-linearity of your graph, if some of your measurements (e.g. those close to or farther from the source) seem to fit better, and possible physical reasons for your observations.
 :::
@@ -188,7 +190,7 @@ Review your data and make a table like the one below with appropriate units.
 :::
 
 ::: Question
-**Imagine:** In testing this experiment, I (the instructor) was very lazy. Instead of taking 10 measurements, I only took two: at 1.0cm I found a B of $ 19.4 \mu$T and at 5.0 cm I found $4.0 \mu$T.
+**Imagine:** In testing this experiment, I (the instructor) was very lazy. Instead of taking ten measurements, I only took two: at 1.0cm I found a B of $ 19.4 \mu$T and at 5.0 cm I found $4.0 \mu$T.
 
 1. What current would I calculate with these measurements?
 2. Assume now that I was not very precise with my alignment, so that my *actual* distance could vary from my recorded distance by $\pm 0.5 cm$. Calculate the *largest* and *smallest* current that results from my measurements that is consistent with these uncertainties.
@@ -231,8 +233,6 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
 | ------| ------| ------ |------| 
 |@fa-pencil@       |        |         |        |
 |@fa-pencil@     |        |         |        |
-|@fa-pencil@       |        |         |        |
-|@fa-pencil@      |        |         |        |
 
 :::
 
@@ -241,7 +241,7 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
 ::: Question
 1. Calculate the current for both heights using the formula for the magnetic field due to a loop of wire. Hint: don't forget to account for the external field from nearby sources.
 
-2. Do they agree? If yes, explain why you think this. If no, try to identify the cause of the *discrepancy*. 
+2. Do these values of current agree? If yes, explain why you think this. If no, try to identify the cause of the *discrepancy*. 
 
 :::
 
