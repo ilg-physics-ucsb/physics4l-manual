@@ -5,6 +5,7 @@
 - Long insulated wire (~0.8-1 m)
 - Circuit Power Block and Breadboard (kit)
 - Paper and ruler
+- Optional: Button component from RexQualis kit
 :::
 
 # The Biot-Savart Law
@@ -105,7 +106,7 @@ As in Lab 0, we must subtract the background filed to ensure the accuracy of the
 
 The following exercise will walk you though a quantitative experiment that characterizes the magnetic field of a straight wire. Be sure to collect all the needed materials before starting this lab.
 
-::::::::: Exercise
+:::::::::::: Exercise
 In this geometry, the wire is sitting flat on the desk, parallel to the side of your phone with the magnetometer. 
 ::: Question
 1. Assuming your phone has a small thickness, i.e., the height of the magnetometer is negligible, what B component(s) do you expect to observe from the current carrying wire in this configuration?
@@ -113,18 +114,40 @@ In this geometry, the wire is sitting flat on the desk, parallel to the side of 
 2. If your phone is very thick and the height of the magnetometer cannot be ignored, what B components do you expect to observe from the current carrying wire?
 :::
 
-::: Figure lined m
-![Be sure your phone's magnetometer is aligned ot the mark](../imgs/Lab2/lined.jpg)
+:::::: Figure lined l
+:::col l6
+![Be sure your phone's magnetometer is aligned to the mark](../imgs/Lab2/lined.jpg)
 :::
+:::col l6
+![Optional Button Set-up](../imgs/Lab2/button.jpg)
+
+Recommended Button Set-up
+:::
+::::::
 
 1. On a piece of paper, draw 10 locations spaced 1 cm apart. These will be the locations you will measure the $B$ field strength. Note that it is easier to align the phone and correct your distances for the magnetometer offset after collecting data -- the correction will be the same for each distance measurement.  Once everything is set up correctly, as shown, you may begin taking data. 
- :::RFigure data s
-![Use the pick data took to grab the values of the peaks](../imgs/Lab2/selectdata.png)
- :::
-3. Align the side of the phone with the magnetometer to a given measurement line.  
+:::::::::RFigure data m
+::::::row
+:::col l6
+![Use the pick data took to grab the values of the peaks](../imgs/Lab2/datareg.png)
+:::
+:::col l6
+![Use the pick data took to grab the values of the peaks](../imgs/Lab2/dataabs.jpg)
+:::
+::::::
+
+:::::::::
+2. Tape a wire, with the enamel scraped from the ends along the first line you drew. Plug your wire into your breadboard's 5V power line, optionally using the button component as in [Fi](#Fi-lined). Be sure your power block is plugged into a suitable power source, such as a phone charger.
+3. Align the side of the phone with the magnetometer to the next line.  
 4. Open Phyphox - magnetometer.
 5. Begin recording and you should see three straight lines for three components.
-6. Press the button to power your circuit for about 1 second and press it again. You should see a narrow dip on at least one of the plots.
+6. If using a button, briefly press the button to power your circuit. You should see a narrow dip (or spike -- depending on current direction) on at least one of the plots. If not using the button, please power your block on and off using the press-switch as quickly as possible.
+
+:::Warning
+If the circuit is left powered on you can potentially heat your wire. If you put a resistor in this circuit you can **burn yourself** if it heats up. Work as quickly as possible, limiting the time that the circuit is powered on.
+
+The power block has an internal switch to shut off the power if it is shorted, which is why your light turns off.
+:::
 7. Quickly move your phone, aligning the magnetometer to the next line.
 8. Repeat 6 & 7 for all lines.
 ::: Question
@@ -132,42 +155,55 @@ Do the dip(s) match your prediction from question 1? Comment if the assumption c
 :::
 
 
-9. Your final plot should look similar to [Fi](#Fi-data).
+9. Your final absolute plot should look similar to [Fi](#Fi-data).
 
 
 ######
 
 :::Note
-   **Note:**  If you are doing the experiment on a desk with a steel frame or there are metals nearby, the baseline $B$ field will shift as the phone is moved over different regions of the desk, like the example shown in [Fi](#Fi-data).  If you are unable to find an alternate location to perform the experiment, it is possible to correct for the error by measuring the $B$ field components both before and during each current pulse, and then finding the difference. This difference will be the field due to just the current. 
+   **Note:**  If you are doing the experiment on a desk with a steel frame, there are metals nearby, the baseline $B$ field will shift as the phone is moved over different regions of the desk.  If you are unable to find an alternate location to perform the experiment, it is possible to correct for the error by measuring the $B$ field components both before and during each current pulse, and then finding the difference. This difference will be the field due to just the current. 
  :::
 
 
 
- 10. Using the "Pick Data" option on Phyphox, get the value of each of the 10 peaks and also the background field if necessary.
+ 10. Using the "Pick Data" option on Phyphox, get the value of each of the 10 peaks and also the background field if necessary. Since your phone is also measuring Earth's field, remember that all measurements will be *relative* to the value of the field in your current location, so you will want to subtract this from your results! 
 
 
 ::::::Question
-Review your data and make a table like the one below with appropriate units.
-
-**Note**: whether you have $B_y$ component or not depends on your observations in question 1 & 2. If you do observe $B_y|B_x$, don't forget to consider the height of the magnetometer in your calculation of $R$!
-
+Review your data and make a table like the one below with appropriate units. Also record the value of the background field, e.g. your magnetometer measurement with the circuit off.
 ::::::
 :::Table
 
 
-|Offset  $y$  | $R$ |$1/R$  | Measured $(B_y|B_x)$ *  |Measured $B_z$  | Field strength $B$ |
-|------|------|------|------|------|------|
-|@fa-pencil@    |      |      |      |      |      |     
-|@fa-pencil@   |      |      |      |      |      |   
-|@fa-pencil@    |      |      |      |      |      |   
-|@fa-pencil@   |      |      |      |      |      |        
+|Offset  $y$  | $R$ |$1/R$ | Field strength $B$ |
+|------|------|------|------|
+|@fa-pencil@    |      |      |      
+|@fa-pencil@   |      |      |     
+|@fa-pencil@    |      |      |      
+|@fa-pencil@   |      |      |             
 
 :::
 
 
 
 
-:::::::::
+
+::::::::::::
+
+::::::Hider Mini FAQ for Exercise 1
+- **Q:** My plot doesn't have well-defined peaks
+  - This happens when your power source is weak or if you do not use the button component. Please use the value of the largest spike. Click below for example:
+  :::Figure weak m
+  ![Value from initial spike](../imgs/Lab2/selectdata.png)
+  ::: 
+  ####
+
+- **Q:** My  z-axis plot has peaks but my absolute value plot looks like noise
+  - The cause of this is that the background magnetic field in your area is somewhat stronger than the field generated by your magnet.
+  - Make sure you are using the 5V power terminals for the largest effect
+  - Make sure you have cleared all metal objects and magnets from the area
+  - If your absolute fields are still not showing correctly, please use your z-axis measurements and make a note of this in your report.
+::::::
 
 ::: Question
 1. Plot B vs. 1/R. 
@@ -176,7 +212,7 @@ Review your data and make a table like the one below with appropriate units.
 
 3. Determine the current $I$ from this slope. Report it in the correct units and to a reasonable number of significant figures.
 
-4. Using your multimeter, actually measure and record the current of your circuit. How do your calculated and measured values compare?
+4. Using your multimeter, measure the resistance of  your wire and the output voltage of your power block. Calculate the current that should run through your circuit. How does this value compare to the value obtained from the slope?
 
 5. Discuss your results from Part (d). You should comment on features such as the linearity or non-linearity of your graph, if some of your measurements (e.g. those close to or farther from the source) seem to fit better, and possible physical reasons for your observations.
 :::
@@ -266,10 +302,17 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
  #### **3. Additional Information:**
  - You should attach images of your plots,  data, and setup -- doing so may allow you to regain partial or full credit even if your experiment fails.
 
- :::  Summary
-
+ ::::::  Summary
+  :::Hider Lab Submission
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6055857" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
  :::
+ ::::::
  
 
+# Feedback
 
+Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you'd like to just leave some comments, scroll to the bottom of the form.
+::: Hider Open Feedback Form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe66sLH5pGRh_w_GI6uR7HPT01PPyNt_oZ5Zs6NJjDyPyO2ug/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+:::
 

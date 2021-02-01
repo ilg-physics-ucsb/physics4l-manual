@@ -268,12 +268,7 @@ Make a table like the one below and record your results for all four possible co
 
 
 ::: Question
-<<<<<<< HEAD
 Along with your table, include an image of each trial. Include arrows to show the direction of the magnetic field, labels to indicate the voltage applied & direction of current flow, and the resultant force due to the right hand rule.
-=======
-Along with your table, sketch schematic diagrams showing each of the 4 possibilities. Include arrows to show the direction of the magnetic field, labels to indicate the voltage applied & direction of current flow, and the resultant force due to the right hand rule. You can draw this free-hand and attach the photos, or use a computer program to edit the image below.
-![](../imgs/example_diagram.png)
->>>>>>> 1ed9a132ffc8a763530255204a6517c2881c5280
 :::
 
 ::::::
