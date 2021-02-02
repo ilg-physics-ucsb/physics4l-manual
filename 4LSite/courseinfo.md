@@ -36,7 +36,7 @@ available on Amazon for approximately $15.
 
 
 
-We reccomend purchasing this kit in particular, to ensure you have all the 
+We recommend purchasing this kit in particular, to ensure you have all the 
 components needed for the course. 
 </p>
 
@@ -75,7 +75,7 @@ AstroAI AM33D
 <h3> Stong Magnets</h3>
 <p> You will need some strong magnets, such as these 
 <a href='https://www.amazon.com/dp/B08GS9SLRD/?coliid=IR3D3WNVOB4WZ&colid=130URV13JNMZS&psc=1&ref_=lv_ov_lig_dp_it'>
-neodynium magnets
+neodymium magnets
 </a>. Note that you can usually find these for $2-$3 at any hardware store.
 </p>
 
