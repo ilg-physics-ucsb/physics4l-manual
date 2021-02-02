@@ -175,12 +175,12 @@ Review your data and make a table like the one below with appropriate units. Als
 :::Table
 
 
-|Offset  $y$  | $R$ |$1/R$ | Field strength $B$ |
-|------|------|------|------|
-|@fa-pencil@    |      |      |      
-|@fa-pencil@   |      |      |     
-|@fa-pencil@    |      |      |      
-|@fa-pencil@   |      |      |             
+| $R$ |$1/R$ | Field strength $B$ |
+|------|------|------|
+|@fa-pencil@    |      |
+|@fa-pencil@   |      |   
+|@fa-pencil@    |      |     
+|@fa-pencil@   |      |              
 
 :::
 
