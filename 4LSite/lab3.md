@@ -399,7 +399,7 @@ After recording these values, we will now measure the time constant for the *cha
 9. Fully discharge your capacitor by momentarily connecting a wire across it.
 10. Reset your timer.
 11. Turn on the powerblock on and start your timer.
-12. Record the time it takes to charge to 67% of the maximum value recorded previously. 
+12. Record the time it takes to charge to 63% of the maximum value recorded previously. 
 
 
 
