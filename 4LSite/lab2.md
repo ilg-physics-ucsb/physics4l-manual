@@ -49,7 +49,7 @@ $$
 B = \frac{\mu_0 I}{2 \pi R} 
 $$
 :::
-where the magnetic permeability of free space is $\mu_0 = 4\pi\times 10^{-7}$ T&middot;kg/A
+where the magnetic permeability of free space is $\mu_0 = 4\pi\times 10^{-7}$ T&middot;m/A
 
 ## Loop of Wire
 ::: Simulation loop
