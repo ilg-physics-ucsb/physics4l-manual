@@ -288,9 +288,9 @@ The capacitors, which are black cylindrical elements with wires coming from the 
 - @fa-chevron-right@ 10/100 μF Electrolytic Capacitors
 - @fa-chevron-right@ 22 pF/ 100 nF Ceramic Capacitors
 
-Electrolytic capacitors are very different from their ceramic counterparts[fn]For detailed information please see [wikipedia](https://en.wikipedia.org/wiki/Electrolytic_capacitor)[/fn]. Rather than holding charge on sepearted surfaces, they store charges in electrolytes, similar to a battery. Because of this, electrolytic capacitors are **polarized**, meaning they have designated positive and negaive leads, each connecting to a different kind of electrolyte. When using electrolytic capacitors **please make use that you repect the orientation** by checking for the + and - symbols on the shell.
+Electrolytic capacitors are very different from their ceramic counterparts[fn]For detailed information please see [wikipedia](https://en.wikipedia.org/wiki/Electrolytic_capacitor)[/fn]. Rather than holding charge on separated surfaces, they store charges in electrolytes, similar to a battery. Because of this, electrolytic capacitors are **polarized**, meaning they have designated positive and negative leads, each connecting to a different kind of electrolyte. When using electrolytic capacitors **please make use that you respect the orientation** by checking for the + and - symbols on the shell.
 
-The capcitors suppled by the RexQualis kit are manufactured by Hyncdz. You may assume these capacitors have a 20% tolerance. If you are using a capacitor from a different manufacturer, especially if it is a different kind of capacitor, please look up the data sheet for the component.
+The capacitors suppled by the RexQualis kit are manufactured by Hyncdz. You may assume these capacitors have a 20% tolerance. If you are using a capacitor from a different manufacturer, especially if it is a different kind of capacitor, please look up the data sheet for the component.
 ::::::
 
 ::::::Question
