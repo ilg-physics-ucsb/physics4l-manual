@@ -133,7 +133,7 @@ Setup:
 **Construction of the Transmitter Coil:**
 
 :::RFigure tcoil m
-![Example of a transmitter coil with the final loop tucked to keep it tidy](../imgs/Lab4/tcoil.jpg)
+![Example of a transmitter coil with the final loop tucked to keep it tidy](../imgs/Lab4/Tcoil.jpg)
 :::
 
 1. Leaving a 5-10 cm of tail, wrap the coil 15 times around something round.
