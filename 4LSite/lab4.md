@@ -98,7 +98,7 @@ Setup:
 2. Coil the wire around something round, creating 10-15 loops. 
 3. To keep the coil in place, you can wrap the final loop of wire around itself.  
 4. Insert the wire ends into the breadboard and connect the multimeter.
-5. Move the north pole of the magnet toward the coil very quickly.
+5. Move the south pole of the magnet toward the coil very quickly.
 6. Note the sign of the voltage. 
 
 
