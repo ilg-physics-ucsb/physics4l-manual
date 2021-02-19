@@ -42,7 +42,7 @@ where $V_R$ is the voltage across the resistor in Volts (V), $R$ is the resistan
 ## Capacitors
 
 ::: RFigure platecap m
-![Skematic of a simple parallel plate capacitor](../imgs/1.png)
+![Skematic of a simple parallel plate capacitor](../imgs/Lab3/1.png)
 :::
 
 A capacitor is a device that stores energy by separating opposite charges across a very thin layer of insulating material, causing a large potential difference between the charged areas. You have likely learned about parallel plate capacitors, like that in [Fi](#Fi-platecap). While this is a very simplistic model of how most capacitors work, the basic functionality is the same: by connecting a capacitor to a battery source, a capacitor collects opposite charges and stores the energy as an electrostatic field in the region between them.
@@ -95,10 +95,10 @@ In a circuit with a highly conductive wire these processes will happen very quic
 
 
 ::: Figure rc
-![capacitor charge/discharge plot](../imgs/2.png)
+![capacitor charge/discharge plot](../imgs/Lab3/2.png)
 :::
 
-Consider the circuit given in [Fi](#Fi-rc). Before the switch is closed, both the capacitor and resistor initially have 0V across them. The instant the switch is closed, we know that the resistor will have a voltage of $V_0$, so using Ohm's law, the current will be $I = V_0/R$. The capacitor, on the other hand, is only begining to charge according to $\frac{dV}{dt} = \frac{I(t)}{C}$. 
+Consider the circuit given in [Fi](#Fi-rc). Before the circuit is powered on, both the capacitor and resistor initially have 0V across them. The instant the the circuit is powered on, we know that the resistor will have a voltage of $V_0$, so using Ohm's law, the current will be $I = V_0/R$. The capacitor, on the other hand, is only begining to charge according to $\frac{dV}{dt} = \frac{I(t)}{C}$. 
 
 As charge flows through our resistor, the potential difference moves to the capacitive element. Since the total potential difference of the circuit measured across the battery is $V_0$, we know that:
 
@@ -268,7 +268,7 @@ There are two ways you can use the colors to assign values -- either by using th
 
 :::Figure
 
-![](../imgs/resistor-color-chart.png)
+![](../imgs/Lab3/resistor-color-chart.png)
 
 :::
 
@@ -288,7 +288,13 @@ The capacitors, which are black cylindrical elements with wires coming from the 
 - @fa-chevron-right@ 10/100 μF Electrolytic Capacitors
 - @fa-chevron-right@ 22 pF/ 100 nF Ceramic Capacitors
 
-Electrolytic capacitors are very different from their ceramic counterparts[fn]For detailed information please see [wikipedia](https://en.wikipedia.org/wiki/Electrolytic_capacitor)[/fn]. Rather than holding charge on separated surfaces, they store charges in electrolytes, similar to a battery. Because of this, electrolytic capacitors are **polarized**, meaning they have designated positive and negative leads, each connecting to a different kind of electrolyte. When using electrolytic capacitors **please make use that you respect the orientation** by checking for the + and - symbols on the shell.
+Electrolytic capacitors are very different from their ceramic counterparts[fn]For detailed information please see [wikipedia](https://en.wikipedia.org/wiki/Electrolytic_capacitor)[/fn]. Rather than holding charge on separated surfaces, they store charges in electrolytes, similar to a battery. Because of this, electrolytic capacitors are **polarized**, meaning they have designated positive and negative leads, each connecting to a different kind of electrolyte.
+:::Warning
+ When using electrolytic capacitors **please make use that you respect the orientation** by checking for the + and - symbols on the shell. Inserting them with the wrong orientation can *destroy* the electrolyte, ruining the capacitor. Please make sure the "-" end is connected to the negative rail of your power.
+ <br>
+
+ <img src= "../imgs/Lab3/negcap.jpg" width="300px">
+:::
 
 The capacitors suppled by the RexQualis kit are manufactured by Hyncdz. You may assume these capacitors have a 20% tolerance. If you are using a capacitor from a different manufacturer, especially if it is a different kind of capacitor, please look up the data sheet for the component.
 ::::::
@@ -339,7 +345,7 @@ It is recommended that you modify your multimeter leads to free up your hands. Y
 For the first exercise, we are going to place a 10-μF capacitor in series with a 1-MΩ resistor. In addition, a voltmeter needs to be placed across the capacitor in order to visualize both charge-up and discharge situations. In this lab, the multimeter is our voltmeter.
 
 ::: Figure
-![setup](../imgs/circuit1.png)
+![setup](../imgs/Lab3/circuit1.png)
 :::
 
 Before starting the experiment, we will make some basic theoretical calculations on this circuit to calibrate our expectations. In addition to predicting the time constant we will observer, we will use the tolerances of our components to find our error interval. 
@@ -431,7 +437,7 @@ $$
 :::
 
 :::Figure 
-![setup](../imgs/circuit2.png)
+![setup](../imgs/Lab3/circuit2.png)
 :::
 
 
@@ -469,7 +475,7 @@ $$
 
 
 :::Figure
-![setup](../imgs/circuit3.png)
+![setup](../imgs/Lab3/circuit3.png)
 :::
 
 
@@ -506,7 +512,7 @@ $$
 
 
 ::: Figure
-![setup](../imgs/circuit4.png)
+![setup](../imgs/Lab3/circuit4.png)
 :::
 :::::: Exercise
 Repeat the **discharging cycle** in [Ex](#Ex-ex1) by connecting two capacitors in parallel, and two resistors in parallel, and the two components in series in the circuit. Make sure the voltmeter  is measuring the voltage across **both** capacitors.
@@ -526,7 +532,7 @@ Repeat the **discharging cycle** in [Ex](#Ex-ex1) by connecting two capacitors i
 ###  **@fa-hand-o-right@  Instructions :**
  #### **1. Answer all questions clearly, showing your work where appropriate.**
  #### **2. Starting on a seperate page:** 
-  - Write a short summary (~1 page, single spaced) describing the right-hand rule, how you tested it, and any important observations. 
+  - Write a short summary (~1 page, single spaced) describing RC circuits, how you measured the time constant, and any important observations. 
   - In this summary, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
 
  #### **3. Additional Information:**
@@ -534,7 +540,7 @@ Repeat the **discharging cycle** in [Ex](#Ex-ex1) by connecting two capacitors i
  
  ::::::Summary
  :::Hider Lab Submission
-  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6002332" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6131271&triggerview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
  :::
  ::::::
 
@@ -543,7 +549,7 @@ Repeat the **discharging cycle** in [Ex](#Ex-ex1) by connecting two capacitors i
 
 Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you'd like to just leave some comments, scroll to the bottom of the form.
 ::: Hider Open Feedback Form
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6emUXMkONPOrSeLX6Ud_CFF7H1B9NGXmdxhlqx8JCijFXUA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXZOfjBgVkho3_6_UGzAmWl72t3sh_TwCU2Zrg0QfaBnS8wg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
 
 <br>

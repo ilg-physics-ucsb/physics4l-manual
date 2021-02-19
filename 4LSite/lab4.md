@@ -1,347 +1,247 @@
-# Lab 4: RC Circuit
+# Lab 4: Faradays Law, Speed of Light
 
+:::::::::row
+::::::col l6
+### Farday's Law Section
 ::: Materials
 - Wire Leads
 - Breadboard 
-- Two 1-MΩ resistors
-- One 100-μF capacitor
-- One 10-μF capacitor
+- Magnet Wire
+- Option 1:
+    - Multimeter
+    - Magnets
+- Option 2:
+    - Power Block
+    - Transistor (kit)
+    - LED
+    - 10 $\Omega$ resistor
+    - 1000 $\Omega$ resistor 
 - A multimeter
 :::
-
-# Circuit Elements
-In this part of the lab, we will review the concepts and mathematical descriptions of some common circuit elements.
-
-
-## 1. Resistors and Ohm&rsquo;s Law
-If there is a potential difference, electrons (negatively charged) move from low potential to high potential. The movement of electrons forms current. Current is defined as the rate at which charges move:
-
-::: Equation
-$$
-I =  \frac{dQ}{dt}
-$$
-:::
-Resistors slow the rate at which charge flows. Current, resistance, and potential difference are related by Ohm&rsquo;s Law:
-
-::: Equation
-$$
-I =  \frac{\Delta V}{R}
-$$
-:::
-
-where ΔV is the voltage across the resistor in Volts (V), R is the resistance of the resistor in Ohms (Ω), and I is the current in the resistor in Amperes (A).
-######
-Recall that for resistors in series, the equivalent resistance is given by
-
-::: Equation
-$$
-R_{eq} =  R_{1}+R_{2}+R_{3}
-$$
-:::
-And for resistors in parallel, the equivalent resistance is given by
-
-::: Equation
-$$
-\frac{1}{R_{eq}} =  \frac{1}{R_{1}}+ \frac{1}{R_{2}}+ \frac{1}{R_{3}}
-$$
-:::
-
-::: Question
-A 5-kΩ resistor is placed in series with two 10-kΩ resistors in parallel. The entire circuit is connected to a power supply of 20 V. What is the voltage across each element?
-:::
-
-## 2. Capacitors
-
-::: LFigure antenna s
-![antenna location](../imgs/1.png)
-:::
-
-A capacitor is a device that stores energy by means of two closely spaced plates separated by an insulating material. By connecting a capacitor to a battery source, we will be able to collect charge on the capacitor. The energy is stored as an electrostatic field.
-
-
-
-The voltage across a capacitor is directly related to the amount of charge on the plates. A larger amount of charge results in a larger potential difference across the capacitor. The relation between the voltage across the capacitor and the amount of charge stored in it is given by
-
-::: Equation
-$$
-V =  \frac{Q}{C}
-$$
-:::
-
-where Q is the charge in Coulombs (C), C is the capacitance in Farads (F), and V is the voltage in Volts (V).
-######
-Using the definition of current (Equation 1), we have
-
-::: Equation
-$$
-I =  \frac{d(CV)}{dt} = C \frac{dV}{dt}
-$$
-:::
-
-which relates the current through a capacitor to the rate of change of the voltage. Note that it takes some time to build up charge. So the voltage across a capacitor cannot instantaneously increase.
-
-::: Question
-A 0.1-μF capacitor has 16 V across its terminals. How much charge does it hold?
-:::
-
-::: Question
-What is the current flowing through a 0.01-μF capacitor if the voltage across its terminals changes at a constant rate of 2 mV per second?
-:::
-
-::: Figure
-![capacitor charge/discharge plot](../imgs/2.png)
-:::
-Before the switch is closed, the capacitor begins without charge and thus carries 0 voltage. At the instant the switch is closed, the charging process begins, and charge starts to build up on the plates. The voltage, however, cannot change instantaneously. At this moment, because there is no charge on the plates, it is easy for charges to pass through. Therefore, the greatest amount of current flows at this first instant.
-######
-As the current flows, the capacitor becomes charged, and the voltage across it builds up gradually. As the capacitor&rsquo;s voltage increases, the voltage across the resistor decreases.  By  Ohm&rsquo;s Law, this means that less current flows through the resistor. Recall that the same current goes through all elements in series. Thus, less current through the resistor results in slower charging of the capacitor.
-######
-The charging process continues as the voltage across the capacitor asymptotically approaches that of the power source. At this point, the current decreases to 0, and voltage on the resistor goes to 0 as shown on the figure above.
-
-::: Question
-Why does the greatest amount of current flow initially? Why does it decrease as time passes?
-:::
-
-::: Question
-Why does the voltage across the resistor decrease to 0 V later in time?
-:::
-
-Discharging a capacitor reverses the process. Say the fully charged capacitor has voltage $V_0$. When the circuit is closed, the voltage on the capacitor will be dropped across the resistor, causing a current to flow. As the charges leave the capacitor, the voltage on the capacitor asymptotically falls to zero.
-
-::: Question
-Comment on how voltage changes across the capacitor and the resistor separately during the discharging process. You may use words or plots or both.
-:::
-
-Combining equations (2) and (6) and rearranging, we get 
-
-::: Equation
-$$
-\int_{V_0}^{V} \frac{dV}{V}=  - \frac{1}{RC}\int_{0}^{t} dt
-$$
-:::
-
-Solving this integral, we find out that the equation for the capacitor discharging is described by
-
-::: Equation
-$$
-V=  V_0 e^{- \frac{t}{RC}}
-$$
-:::
-This indicates that the voltage across the capacitor decreases exponentially as current passes through. The value RC is defined as the time constant, 𝛕. Therefore, the quantity RC has units of time, and the equation becomes
-
-::: Equation
-$$
-V(t)=  V_0 e^{- \frac{t}{\tau}}
-$$
-:::
-It is important to note that for one circuit, 𝛕 is constant.
-
-
-::: Question
-Write down the equation for a charging capacitor. You can assume that the fully charged capacitor has voltage $V_0$.
-:::
-
-In this lab, we will build the described RC circuit with a switchable battery source (iOLab device). When the battery source is turned on, the capacitor will charge up according to the equation above. When the battery is turned off, the capacitor will discharge instead.
-######
-In addition to calculating the time constant for different circuits, we will be wiring the capacitors in both series and parallel configurations. The equation for the equivalent capacitance for capacitors in series is
-
-::: Equation
-$$
-\frac{1}{C_{eq}} =  \frac{1}{C_1}+ \frac{1}{C_2}
-$$
-:::
-
-The equation for the equivalent capacitance for capacitors in parallel is
-
-::: Equation
-$$
-C_{eq} =  C_1+C_2
-$$
-:::
-# Experiment
-In this lab we will measure the time constant, $\tau$, of four different circuit configurations. The procedure for each of these labs is fairly quick and virtually identical. After the initial identification of your circuit components and the set-up of your first circuit, you will only have to switch out elements and record new data for each exercise.
-
-## 0. Pre-lab Set-up
-
----
+::::::
+::::::col l6
+### Speed of Light Section
 ::: Materials
+- Microwave
+- Pasta, Chocolate, or Melting Cheese 
+- Ruler
+- Microwave safe plate
+:::
+::::::
+:::::::::
 
-- Electronic Kit
+# Induction and the Electromotive Force
 
+We previously completed two projects focusing on the physics of moving charges -- their behavior in external magnetic fields and the magnetic fields they themselves generate -- we now move on to talk about moving *magnets*.
+
+As you may have learned by now, similarly to the way a moving charge (and, hence, a changing electric field) can generate a magnetic field, a changing magnetic field also induces an electric field. This electric field, like any, has the ability to do *work* [fn] Magnetic fields themselves cannot do work, but when energy is expended (e.g. by pushing a magnet) to cause a change of magnetic field or flux in some region, the resulting electric field can do work.[/fn] . Specifically, we will be interested in how it can do work to generate current in a wire. In this lab, we will investigate the current induced in a loop of wire in the vicinity of a moving magnetic source.
+
+
+The equation that describes the creation of an electric field by a changing magnetic field is Faraday’s Law. It states that if any open surface experiences a time-varying magnetic *flux*, then a net voltage (or emf) exists around the perimeter of that surface. Here, flux refers to the net magnitude and direction of magnetic field lines penetrating the area enclosed by a loop of wire, or 
+
+::: Equation
+$$
+\Phi_B= \vec B \cdot \vec A
+$$
 :::
 
-Even though the resistors are labeled in the electronics kit, it&rsquo;s useful to learn how the resistance is color coded. It is recommended to double check the 5-band code to make sure the resistors you are using are correct for the lab.
+For a coil with a loop of area $A$, Faraday’s Law predicts that the emf measured around the perimeter is
 
-### Resistors
-Learning to read and identify resistors is a crucial skill in real laboratory work. Resistors are the small capsule-shaped elements with wires on either end. You should notice that each resistor has a set of four colored bands around its body. The order and color of these bands indicate the element&rsquo;s resistance and *tolerance*, *i.e.*, its margin of error in percent.
-####
-In a 5-band resistor, the first four bands tell you the value of $R$, and the $5^{\rm th}$ band gives you the tolerance. To read your resistor, first you need to determine the correct reading direction. There should be a larger gap between the $4^{\rm th}$ and $5^{\rm th}$ (tolerance) bands.
-####
-There are two ways you can use the colors to assign values &ndash; either by using the lookup table below or by using an [online calculator](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code).
-
-:::Figure
-
-![](../imgs/resistor-color-chart.png)
-
+::: Figure:Equation
+$$
+V_{coil} =  V_{loop} = - \frac{d \Phi_B}{dt}
+$$
 :::
 
-Prior to starting the experiments, you should find the resistors for this lab and double check their resistance. In total, you should have:
+Note that the cause of Faraday’s Law is some **time-varying** external magnetic field. 
 
-- 10/100/220/330 Ω
-- 1/2/5.1/10/100 kΩ
-- 1 MΩ
-
-
-### Capacitors
-
-The capacitors, which are black cylindrical elements with wires coming from the bottom, are much easier to identify: simply read off the values printed on the side. You should find:
-
-- 10/100 μF
+:::Simulation
+<iframe src="https://kapawlak.github.io/PhDemoJS/Apps/Faradays_Law/Faradays_Law.html" width= "100%" height="850px" style="border:none;"></iframe>
+:::
+In which direction does the current flow in such a situation? The question is addressed by Lenz&rsquo;s law, which states that the magnetic field generated by the current flow (recall the previous lab experiment) will point in the direction *opposite* to the change  in the magnetic flux  from the external field -- the electron motion attempts to generate a $B$ field that &ldquo;cancels out&rdquo; the change in flux, so that the total field in the region is $\vec B =0$.
 
 :::Question
-In the following exercises, we will need:
-- Two 1-MΩ resistors
-
-Using the tolerance band, write down the values of these resistors with their uncertainty in the form:
-- ($1 \pm \delta_R$) MΩ
-- ($100 \pm \delta_C$) μF
-- ($10 \pm \delta_C$) μF
-
-Here $\delta_R$ should be an *absolute* uncertainty, not a percent. For example, if your tolerance was 1% on your 1-MΩ resistor, you would record the value as  ($1 \pm 0.01$) MΩ. For both capacitors, use the tolerance of 20% to calculate the uncertainty. We will use this later for error analysis. 
+Try to describe what would happen if, instead, the current generated a magnetic field that aligned with the external flux, recalling that a current itself generates a magnetic field. Which laws of physics would might this ultimately break? 
 :::
 
-Now let&rsquo;s set up 4 RC circuits. For each setup, you will measure the time constant and compare it to the theoretical value.
-## 1. A 10-μF capacitor and a 1-MΩ resistor in series
+For a coil with $N$ loops in series, the area increases to $NA$, so Faraday’s Law predicts that the emf measured around the perimeter is:
 
+::: Figure:Equation
+$$
+V_{coil} = N V_{loop} = - N\frac{d \Phi_B}{dt}
+$$
+:::
+The effect of these loops is essentially to amplify the emf by a factor of $N$. 
+
+This part of the lab will involve the study of Faraday’s Law and Lenz’s Law acting upon a coil. For Option 1, We will measure Lenz’s Law by moving a magnet suddenly toward or away from the coil, and observing the direction of current. For option 2, we will create a wireless power transmitter by creating magnetic field that oscillates very quickly, and capturing it with another coil connected to an LED. 
+
+# Farday's Law Experiments
+
+## Option 1: Lenz' Law
+
+
+:::Materials
+- Wire Leads
+- Breadboard 
+- Magnet Wire
+- Multimeter
+- Magnets
+:::
+
+::::::Exercise
+We will wind the coil around with the two ends inserted into the breadboard. The multimeter measurement leads should be inserted such that if the current in the loop moves counterclockwise, it will generate a positive voltage, and vice versa.
+:::RFigure coil m
+![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/coil.jpg)
+:::
+Setup:
+1. Ensure that you have removed as much enamel as possible from the tips of your Magnet wire.
+2. Coil the wire around something round, creating 10-15 loops. 
+3. To keep the coil in place, you can wrap the final loop of wire around itself.  
+4. Insert the wire ends into the breadboard and connect the multimeter.
+5. Move the north pole of the magnet toward the coil very quickly.
+6. Note the sign of the voltage. 
+
+
+
+
+:::Question
+1. In which direction does the voltage jump? 
+
+2. A positive voltage jump means that current is flowing from the negative lead to the positive lead. Based on the direction of your wire winding, is the current flowing clockwise or counter-clockwise?
+
+3. Now consider the orientation of your magnet, where the south pole should have been facing your loop. Does your observation of the current direction match Lenz's law?
+:::
+::::::
+
+
+
+## Option 2: Wireless Power Transmission
+
+
+:::Materials
+- Wire Leads
+- Breadboard 
+- Power Block
+- Transistor (kit)
+- LED
+- 10 $\Omega$ resistor
+- 1000 $\Omega$ resistor 
+:::
+
+::::::Exercise
+
+**Construction of the Transmitter Coil:**
+
+:::RFigure tcoil m
+![Example of a transmitter coil with the final loop tucked to keep it tidy](../imgs/Lab4/tcoil.jpg)
+:::
+
+1. Leaving a 5-10 cm of tail, wrap the coil 15 times around something round.
+2. Skip a 10-15 cm section of wire, and resume winding the wire in the same direction for another 15 turns. For the final loop, you can wrap the wire around itself to keep the loop stable.
+3. Cut the wire to leave another 5-10 cm of tail.
+4. The skipped wire from step 2 should create another "tail" in the center of your coil. Twist this section to secure it, and use scissors to cut it, leaving you 4 wire ends in total as in [Fi](#Fi-tcoil).
+
+####
+
+**Construction of the Receiver Coil:**
+
+:::RFigure coil2 xs
+![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/coil.jpg)
+:::
+
+1. Coil the wire around something round 15 times, leaving 5-10cm of tail on each side. 
+2. To keep the coil in place, you can wrap the final loop of wire around itself
+3. Twist the enamel-free ends of the coil with the leads of an LED.
+
+
+With the two DIY components built, we are now read to assemble the circuit
+
+
+
+####
+
+**Construction of the Circuit:**
+
+:::RFigure osc l
+![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
+:::
+
+
+1. Insert your transistor into the board such that each of the three prongs is in a different row. 
+2. With the flat edge of your transistor facing the right side, connect the bottom prong to ground using a 10 $\Omega$ resistor.
+3. The middle prong of the resistor should be connected to one of the **outer** wire end of your transmitter coil through a 1k $\Omega$ resistor.
+4. The remaining **outer** wire end should be connected to the final prong of the transistor.
+5. The two center wire ends created by cutting the tail should be plugged into the 3.3V positive rail. 
+
+
+**Testing the Transmission:**
+1. Turn on your circuit by pressing the button on your power block. 
+2. Bring your receiver coil with the LED attached to the transmitter coil. 
+
+:::Question
+1. Try lighting the LED by holding it up to the transmitter coil in both directions. What do you observe? 
+
+2. LEDs have a definite polarity and only light up if the current is flowing into the positive terminal and out of the negative terminal. Why does this agree with your observations above?
+
+3. The transistor causes a magnetic field oscillation at a frequency of about 6 MHz, or a peak-to-peak time of \~ 166 ns. If it takes 1.5 V to turn on your LED, estimate the minimum value of the maximum magnetic field induced during the oscillation.
+:::
+::::::
+
+
+
+# Light 
+In this section, we will use the wave nature of light to measure the speed of light indirectly. Microwave Ovens use microwaves, which--- you guessed it --- is simply ordinary light with a relatively large wavelength (compared to "visible" light, that is). Most microwaves operate in the 2.45 GHz frequency band, as this band is the most efficient at polarizing and vibrating water molecules in food.
+
+Since we know the frequency, $\nu = 2.45$ GHz, if we are able to determine the *wavelength*, $\lambda$, of the signal, we can find the speed of light by using the fundamental relationship:
+
+::: Equation
+$$
+c =  \nu \lambda 
+$$
+:::
+
+When a microwave is powered, it transmits coherent waves across the cooking chamber. We can use this to measure the wavelength of the light by placing a medium in the microwave, with the rotating platform removed, and noticing how it heats up unevenly.
+
+
+
+In this lab, we will use ordinary cheap food items as our medium. 
+
+
+::: Question
+a) Why is the difference in path length $2d$ and not just $d$?
+
+b) Examine the set up closely. You will find that the path difference is not exactly 2d. Explain why we can make this approximation in the calculation.
+:::
+
+::: Question
+Can we use a piece of wood as the reflector? Explain why or why not.
+:::
+
+# Measuring the Speed of Light
 ::: Materials
-- Wire Leads and breadboard
-- One 1-MΩ resistor
-- One 10-μF capacitor
-- A multimeter
-:::
-
-
-For the first exercise, we are going to place a 10-μF capacitor in series with a 1-MΩ resistor. In addition, a voltmeter needs to be placed across the capacitor in order to visualize both charge-up and discharge situations. In this lab, the multimeter is both our voltmeter *and* power supply.
-
-::: Figure
-![setup](../imgs/circuit1.png)
-:::
-
-
-::: Question
-a) Calculate the theoretical value of the time constant for this RC circuit. 
-
-AVOCADO
-b) c) missing for this version
+- Microwave
+- Pasta, Chocolate, or Melting Cheese 
+- Ruler
+- Microwave safe plate
 :::
 
 :::::: Exercise
 
-We will be using our wires, elements, multimeter and breadboard to create the circuit. The instructions here look long only because there is no elegant way to explain circuit construction in words. Feel free to check with the above circuit diagram while following the instructions. After you have set everything up, the wiring should make sense.
 
-Set-up:
-AVOCADO !
-1. Set up the power supply and voltmeter.
-2. Insert the resistor and capacitor into the breadboard. Note that sockets in a row (horizontal) within a given column are connected to each other, so the resistor should end in the same row (within the same column) in which the capacitor starts, to ensure that they are connected together.
-3. connect the power supply to the circuit
-4. connect the voltmeter across the capacitor.
-######
-This diagram shows how to connect elements in series and/or parallel. Note that all spots on the same row on the breadboard are connected.
+:::Figure tested xl
+![](../imgs/Lab4/choc.jpg)
 
-:::Figure
-
-![](../imgs/circuit.png)
-
+ We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
 :::
+1. Remove the rotating table from your microwave. You may need to place a microwave-safe cup or bowl upside down over the turning gear.
+2. On your microwave-safe plate, place your medium.
+3. Place the plate in the microwave and turn it on for 10-30 second intervals, until you see at least two spots that are melting/cooked
+4. Measure the distance between the center of these two spots.
 
 
+:::Figure pasta xl
+![](../imgs/Lab4/pasta.jpg)
 
-######
-Once you have wired the circuit, you are ready to collect data. 
-
-5. record the time it takes to charge the capacitor to ~0.63 of the maximum voltage. (Is a test run needed to find the max voltage?)
-6. Use the recorded time to estimate 𝛕.
-
-######
-::: Question
-### !  measure only the charging time?
-What are the values calculated from charge and discharge curves? Are they close? Is it sufficient to measure 𝛕 from only one of the curves? Explain your reasoning.
-:::
-::: Question
-(a) What is the value of 𝛕 that you measured? 
-
-(b) Calculate the discrepancy with the theoretical value.
-
-(c) Is the discrepancy within your error bounds? If not, propose some reasons for this. (Name possible sources of systematic error, *e.g.*, external factors like humidity or poor contact, that might lead to shorter discharge times, dying batteries, etc.)
-
+Do your best to measure from the center of the cooked region. Be sure to estimate your measurement error to analyze the precision of your result!
 :::
 ::::::
-
-## 2. A 10-μF capacitor and two 1-MΩ resistors in series
-:::LFigure s
-![setup](../imgs/circuit2.png)
-:::
-:::::: Exercise
-Repeat the procedure described in exercise 1 with two 1-MΩ resistors connected in series. This is now a new circuit with a new time constant.
-
-::: Question
-Calculate the theoretical value of the time constant for this RC circuit.
-:::
-
-::: Question
-Compare the experimental value of 𝛕 to the theoretical value.
-:::
-
-::: Question
-How is the discharge process different compared to that for the setup in 3.1?
-:::
-::::::
-
-## 3. A 10-μF capacitor, a 100-μF capacitor, and a 1-MΩ resistor in series
-::: Figure
-![setup](../imgs/circuit3.png)
-:::
-:::::: Exercise
-Repeat the procedure in 3.1 by adding a 100-μF capacitor in series in the circuit. You need to make sure that the voltmeter will be measuring the voltage across both capacitors.
-
-::: Question
-Calculate the equivalent capacitance and the theoretical value of the time constant.
-:::
-
-::: Question
-Compare the measured value of 𝛕 to the theoretical value.
-:::
-
-::: Question
-How is the discharge process different compared to that for the setup in 3.1?
-:::
-::::::
-
-## 4. A 10-μF capacitor and a 100-μF capacitor in parallel, in series with two parallel 1-MΩ resistors
-::: Figure
-![setup](../imgs/circuit4.png)
-:::
-:::::: Exercise
-Repeat the procedure in 3.1 by connecting two capacitors in parallel, and two resistors in parallel, and the two pairs of components in series in the circuit. Make sure the voltmeter  is measuring the voltage across both capacitors.
-
-::: Question
-Calculate equivalent capacitance and the theoretical value of the time constant.
-:::
-
-::: Question
-Compare the measured value of 𝛕 to the theoretical value.
-:::
-
-::: Question
-How is the discharge process different compared to that for the setup in 3.3? What can you infer about the equivalent capacitance in both circuits?
-:::
-::::::
-
-
-
-
-# Write-up
-
-:::Summary
-:::
-
-
