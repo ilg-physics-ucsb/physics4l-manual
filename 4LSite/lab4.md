@@ -202,7 +202,9 @@ $$
 
 When a microwave is powered, it transmits coherent waves across the cooking chamber. We can use this to measure the wavelength of the light by placing a medium in the microwave, with the rotating platform removed, and noticing how it heats up unevenly.
 
-
+:::Figure
+![](../imgs/Lab4/nodes.png)
+:::
 
 In this lab, we will use ordinary cheap food items as our medium. 
 
