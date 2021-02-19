@@ -132,6 +132,19 @@ Setup:
 ![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
 :::
 
+In this experiment, we will use a transistor to create a high-frequency oscillating magnetic field. While the behavior of transistors is a topic beyond the scope of this class, we will briefly present a cartoon of their function so you can understand how they are generating an oscillating field.
+
+Transistors have three leads: 
+
+In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage across bias terminal. We can abuse this by creating a situation that causes voltage to quickly accumulate and discharge on the bias terminal very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
+
+:::Figure trans xl
+![](../imgs/Lab4/trans.png)
+:::
+
+When the current into the emitter runs through a coil, the result is that a pulsed magnetic field is created from the very fast switching on and off of the current. If we connect the bias terminal to a secondary coil in the same orientation, the result is a magnetic field that oscillates between the maxima. 
+
+
 
 ::::::Exercise
 
