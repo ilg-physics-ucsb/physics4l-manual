@@ -316,5 +316,17 @@ $$
 :::
 
 # Write Up
+
+###  **@fa-hand-o-right@  Instructions :**
+ #### **1. Answer all questions clearly, showing your work where appropriate.**
+ #### **2. Starting on a seperate page:** 
+  - Write a short summary (~0.5 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
+  - Write a short summary (~0.5 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
+  - In these summaries, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
+
+ #### **3. Additional Information:**
+ - You should attach images of your plots,  data, and setup.  Doing so may allow you to regain partial or full credit even if your experiment fails.
+
+
 :::Summary
 :::
