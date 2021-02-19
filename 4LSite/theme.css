@@ -92,7 +92,7 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-#mdcontent p{
+#mdcontent > p{
 
     line-height:1.8!important;
 
@@ -234,9 +234,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 70%;
     text-align: center;
+ 
   }
 
-
+.Fig p{
+    line-height:1.2 !important;
+}
 
   .Fig>footer>h3{
     font-weight: var(--blurb-label-weight);
