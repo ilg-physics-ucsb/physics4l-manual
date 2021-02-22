@@ -136,7 +136,7 @@ In this experiment, we will use a transistor to create a high-frequency oscillat
 
 Transistors have three leads: 
 
-In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage between the base and the emitter. We can use this by creating a situation that causes voltage on the base terminal to rise and fall very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
+In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage between the base and the emitter, often called a *bias* voltage. We can use this by creating a situation that causes voltage on the base terminal to rise and fall very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
 
 :::Figure trans xl
 ![](../imgs/Lab4/trans.png)
