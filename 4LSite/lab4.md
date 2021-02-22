@@ -171,6 +171,11 @@ When the current into the emitter runs through a coil, the result is that a puls
 2. To keep the coil in place, you can wrap the final loop of wire around itself
 3. Twist the enamel-free ends of the coil with the leads of an LED.
 
+:::Figure transmitter xl
+![After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.](../imgs/Lab4/transmitter.gif)
+After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.
+:::
+
 
 With the two DIY components built, we are now read to assemble the circuit
 
@@ -180,25 +185,19 @@ With the two DIY components built, we are now read to assemble the circuit
 
 **Construction of the Circuit:**
 
-:::RFigure oscpic l
-![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
-:::
 
 
-<<<<<<< HEAD
-1. Insert your transistor into the board such that each of the three prongs is in a different row. 
-2. With the flat edge of your transistor facing the right side, connect the bottom prong to ground using a 10 $\Omega$ resistor.
-3. The middle prong of the transistor should be connected to one of the **outer** wire end of your transmitter coil through a 1k $\Omega$ resistor.
-4. The remaining **outer** wire end should be connected to the final prong of the transistor.
-5. The two center wire ends created by cutting the tail should be plugged into the 3.3V positive rail. 
-=======
+
 1. Insert your transistor into the board so that each of the three leads is in a different row. 
 2. With the flat edge of your transistor facing the right side, connect the bottom lead to ground through a 10-$\Omega$ resistor.
 3. The middle lead of the resistor should be connected to one of the **outer** wire ends of your transmitter coil through a-1k $\Omega$ resistor.
 4. The remaining **outer** wire end should be connected to the final lead of the transistor.
 5. The two center wire ends created by cutting the tail should be plugged into the 3.3-V positive rail. 
->>>>>>> 42c0f61674dd8c9290cc14d916e8f774ecd680cc
 
+:::Figure oscpic l
+![The full circuit](../imgs/Lab4/coil1.jpg)
+The full Ciruit
+:::
 
 **Testing the Transmission:**
 1. Turn on your circuit by pressing the button on your power block. 
@@ -325,6 +324,7 @@ $$
 1. Roughly measure the length of the inside your microwave in cm. 
 2. Is it close to a multiple of $d$?
 3. Give an argument as to why microwaves typically come in only a few standard sizes. 
+4. Why
 :::
 
 # Write Up
@@ -340,5 +340,17 @@ $$
  - You should attach images of your plots,  data, and setup.  Doing so may allow you to regain partial or full credit even if your experiment fails.
 
 
-:::Summary
+::::::Summary
+  :::Hider Lab Submission
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6236577&triggerview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
+ :::
+::::::
+
+# Feedback
+
+Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you&rsquo;d like just to leave some comments, scroll to the bottom of the form.
+::: Hider Open Feedback Form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs2N7niGtq0X3r9blr-wdvoqgGCb1_AR2fqgQCn8YyLawIQg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
+
+
