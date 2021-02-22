@@ -1,8 +1,8 @@
 # Lab 4: Faraday&rsquo;s Law, Speed of Light
 
 :::::::::row
-::::::col l6
-### Farday&rsquo;s Law Section
+::::::col l5
+### Farday's Law Section
 ::: Materials
 - Wire Leads
 - Breadboard 
@@ -19,7 +19,7 @@
 - A multimeter
 :::
 ::::::
-::::::col l6
+::::::col l7
 ### Speed of Light Section
 ::: Materials
 - Microwave
@@ -98,7 +98,7 @@ Setup:
 2. Coil the wire around something round, creating 10-15 loops. 
 3. To keep the coil in place, you can wrap the final loop of wire around itself.  
 4. Insert the wire ends into the breadboard and connect the multimeter.
-5. Move the north pole of the magnet toward the coil very quickly.
+5. Move the south pole of the magnet toward the coil very quickly.
 6. Note the sign of the voltage. 
 
 
@@ -127,6 +127,24 @@ Setup:
 - 10 $\Omega$ resistor
 - 1000 $\Omega$ resistor 
 :::
+
+:::RFigure osc l
+![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
+:::
+
+In this experiment, we will use a transistor to create a high-frequency oscillating magnetic field. While the behavior of transistors is a topic beyond the scope of this class, we will briefly present a cartoon of their function so you can understand how they are generating an oscillating field.
+
+Transistors have three leads: 
+
+In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage across bias terminal. We can abuse this by creating a situation that causes voltage to quickly accumulate and discharge on the bias terminal very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
+
+:::Figure trans xl
+![](../imgs/Lab4/trans.png)
+:::
+
+When the current into the emitter runs through a coil, the result is that a pulsed magnetic field is created from the very fast switching on and off of the current. If we connect the bias terminal to a secondary coil in the same orientation, the result is a magnetic field that oscillates between the maxima. 
+
+
 
 ::::::Exercise
 
@@ -162,7 +180,7 @@ With the two DIY components built, we are now read to assemble the circuit
 
 **Construction of the Circuit:**
 
-:::RFigure osc l
+:::RFigure oscpic l
 ![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
 :::
 
@@ -178,12 +196,21 @@ With the two DIY components built, we are now read to assemble the circuit
 1. Turn on your circuit by pressing the button on your power block. 
 2. Bring your receiver coil with the LED attached to the transmitter coil. 
 
+:::Figure light m
+![](../imgs/Lab4/light.gif)
+:::
+
 :::Question
 1. Try lighting the LED by holding the receiver coil up to the transmitter coil in both directions. What do you observe? 
 
 2. LEDs have a definite polarity, and light up only if the current is flowing into the positive terminal and out of the negative terminal. Why does this agree with your observations above?
 
-3. The transistor causes a magnetic field oscillation at a frequency of about 6 MHz, or a peak-to-peak time of \~ 166 ns. If it takes 1.5 V to turn on your LED, estimate the minimum value of the maximum magnetic field induced during the oscillation.
+3. The transistor causes a roughly sinusoidal magnetic field oscillation at a frequency of about $\omega \approx 6$ MHz, or a peak-to-peak time of \~ 166 ns. The magnetic field at any point around the transmitter loop can then be written
+    $$
+    \vec B(\vec r, t) = \vec B_{max}(r) \sin(\omega t)
+    $$
+If it takes 1.5 V to turn on your LED, estimate the **minimum** value of the maximum magnetic flux through your receiver, $\Phi_{max}$, induced during the oscillation. 
+
 :::
 ::::::
 
@@ -200,24 +227,45 @@ c =  \nu \lambda
 $$
 :::
 
+
 When a microwave is powered, it produces standing waves across the cooking chamber. We can use the resulting pattern to measure the wavelength of the light by placing a medium in the microwave, with the rotating platform removed, and noticing how it heats up unevenly.
 
-:::Figure
-![](../imgs/Lab4/nodes.png)
-:::
+The question we have to ask now is: How can we infer the wavelength of the microwaves using household objects? The answer is quite simple, actually! Since the microwaves deposit *energy* into water molecules, and that energy depends on the amplitude of the wave at that point, we can look for the first signs of "cooking" in the medium -- places where the wave amplitude is highest will heat faster than the surrounding region. Hence, the cooked regions represent the *antinodes* of the microwaves, and raw regions are near *nodes*. 
 
-In this lab, we will use ordinary, cheap food items as our medium. 
+
+:::::::::Figure micro
+### How Microwaves Work
+::::::col l4
+![](../imgs/Lab4/m1.png)
+A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it(typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
+::::::
+::::::col l4
+![](../imgs/Lab4/m2.png)
+ The wavelength of the microwaves is tuned to produce a standing wave.This is where you get two waves, one going in each direction, these interact to make some areas where there is a huge vibration and others where there are none.
+::::::
+::::::col l4
+![](../imgs/Lab4/m3.png)
+This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully so heated strongly.  Others where the microwaves are weak.  These areas separated by half a wavelength.  
+::::::
+:::row
+Because of the standing waves, modern microwave ovens contain turntables, otherwise parts of your food will be overcooked and others will still be raw.
+:::
+:::::::::
+
+
+Since we are finding distance between the location of the antinodes, $d$, our measured distances will represent *half* of our wavelength, $\lambda$.
+
 
 
 ::: Question
-a) Why is the difference in path length $2d$ and not just $d$?
-
-b) Examine the set up closely. You will find that the path difference is not exactly 2d. Explain why we can make this approximation in the calculation.
+Why is the distance between the food medium and the magnetron not important to the determination of $c$ in this experiment?
 :::
 
 ::: Question
-Can we use a piece of wood as the reflector? Explain why or why not.
+ Write the equation to calculate $c$ in terms of $d$ rather than $\lambda$.
 :::
+
+
 
 # Measuring the Speed of Light
 ::: Materials
@@ -246,4 +294,43 @@ Can we use a piece of wood as the reflector? Explain why or why not.
 
 Do your best to measure from the center of the cooked region. Be sure to estimate your measurement error, so that you will be able to determine the precision of your result!
 :::
+
+:::Question
+1. What is the distance between the centers of your cooked regions, $d$? 
+2. Estimate the uncertainty in this measurement, e.g. what are the largest and smallest values you'd expect to get if you were to measure this distance multiple times? Write your final answer as $(d \pm \delta d)$ as usual.
+3. Calculate the measured value and error of the speed of light using your results. Write your final answer as $(c \pm \delta c)$ as usual Recall that for a product $A = x y$, the formula for error is given by:
+$$
+\frac{\delta A}{A} \approx \Big|\frac{\delta x}{x}\Big| + \Big|\frac{\delta y}{y}\Big| 
+$$
+:::
 ::::::
+
+:::Question
+1. What is the *discrepancy* between your result and the accepted value of $c$?
+2. Is the discrepancy within the error bounds, $\delta c$ you calculated?
+3. Based on your answer to the above, do you think your measurement agrees with the accepted value of $c$? Why or why not?
+4. Are there any sources of systematic error (e.g. irregularities in food moisture, dirty microwave walls, other things that may affect microwave amplitude distribution) that may have affected your results? Give details about these possible sources and how they might affect your result.
+:::
+
+
+::: Question
+1. Roughly measure the length of the inside your microwave in cm. 
+2. Is it close to a multiple of $d$?
+3. Give an argument as to why microwaves typically come in only a few standard sizes. 
+:::
+
+# Write Up
+
+###  **@fa-hand-o-right@  Instructions :**
+ #### **1. Answer all questions clearly, showing your work where appropriate.**
+ #### **2. Starting on a seperate page:** 
+  - Write a short summary (~0.5 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
+  - Write a short summary (~0.5 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
+  - In these summaries, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
+
+ #### **3. Additional Information:**
+ - You should attach images of your plots,  data, and setup.  Doing so may allow you to regain partial or full credit even if your experiment fails.
+
+
+:::Summary
+:::
