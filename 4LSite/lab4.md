@@ -2,7 +2,7 @@
 
 :::::::::row
 ::::::col l5
-### Faraday's Law Section
+### Faraday&rsquo;s Law Section
 ::: Materials
 - Wire Leads
 - Breadboard 
@@ -136,13 +136,13 @@ In this experiment, we will use a transistor to create a high-frequency oscillat
 
 Transistors have three leads: 
 
-In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage across bias terminal. We can abuse this by creating a situation that causes voltage to quickly accumulate and discharge on the bias terminal very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
+In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage between the base and the emitter, often called a *bias* voltage. We can use this by creating a situation that causes voltage on the base terminal to rise and fall very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
 
 :::Figure trans xl
 ![](../imgs/Lab4/trans.png)
 :::
 
-When the current into the emitter runs through a coil, the result is that a pulsed magnetic field is created from the very fast switching on and off of the current. If we connect the bias terminal to a secondary coil in the same orientation, the result is a magnetic field that oscillates between the maxima. 
+When the current from the emitter runs through a coil, the result is that a pulsed magnetic field is created from the very fast switching on and off of the current. If we connect the base terminal to a secondary coil in the same orientation, the result is a magnetic field that oscillates between the maxima.
 
 
 
@@ -177,7 +177,7 @@ After wrapping your first 15 loops, create the central lead in the coil by pulli
 :::
 
 
-With the two DIY components built, we are now read to assemble the circuit
+With the two DIY components built, we are now ready to assemble the circuit.
 
 
 
@@ -187,7 +187,10 @@ With the two DIY components built, we are now read to assemble the circuit
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 067ebb90a10f7fdb7439134fdd6189910c497b5f
 1. Insert your transistor into the board so that each of the three leads is in a different row. 
 2. With the flat edge of your transistor facing the right side, connect the bottom lead to ground through a 10-$\Omega$ resistor.
 3. The middle lead of the resistor should be connected to one of the **outer** wire ends of your transmitter coil through a-1k $\Omega$ resistor.
@@ -237,30 +240,30 @@ $$
 
 When a microwave is powered, it produces standing waves across the cooking chamber. We can use the resulting pattern to measure the wavelength of the light by placing a medium in the microwave, with the rotating platform removed, and noticing how it heats up unevenly.
 
-The question we have to ask now is: How can we infer the wavelength of the microwaves using household objects? The answer is quite simple, actually! Since the microwaves deposit *energy* into water molecules, and that energy depends on the amplitude of the wave at that point, we can look for the first signs of "cooking" in the medium -- places where the wave amplitude is highest will heat faster than the surrounding region. Hence, the cooked regions represent the *antinodes* of the microwaves, and raw regions are near *nodes*. 
+The question we have to ask now is: How can we infer the wavelength of the microwaves by using household objects? The answer is quite simple, actually! Since the microwaves deposit *energy* into water molecules, and that energy depends on the amplitude of the wave at that point, we can look for the first signs of "cooking" in the medium -- places where the wave amplitude is highest will heat faster than the surrounding region. Hence, the cooked regions represent the *antinodes* of the microwaves, and raw regions are near *nodes*. 
 
 
 :::::::::Figure micro
 ### How Microwaves Work
 ::::::col l4
 ![](../imgs/Lab4/m1.png)
-A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it(typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
+A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it (typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
 ::::::
 ::::::col l4
 ![](../imgs/Lab4/m2.png)
- The wavelength of the microwaves is tuned to produce a standing wave.This is where you get two waves, one going in each direction, these interact to make some areas where there is a huge vibration and others where there are none.
+ The wavelength of the microwaves is tuned to produce a standing wave. This is where you get two waves, one going in each direction, which interact to make some areas where there is a huge vibration and others where there is none.
 ::::::
 ::::::col l4
 ![](../imgs/Lab4/m3.png)
-This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully so heated strongly.  Others where the microwaves are weak.  These areas separated by half a wavelength.  
+This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully, and so heated strongly, and others where the microwaves are weak.  These areas are separated by half a wavelength.
 ::::::
 :::row
-Because of the standing waves, modern microwave ovens contain turntables, otherwise parts of your food will be overcooked and others will still be raw.
+Because of the standing waves, modern microwave ovens contain turntables. Otherwise parts of your food would be overcooked and others would still be raw.
 :::
 :::::::::
 
 
-Since we are finding distance between the location of the antinodes, $d$, our measured distances will represent *half* of our wavelength, $\lambda$.
+Since we are finding distance between the locations of the antinodes, $d$, our measured distances will represent *half* of our wavelength, $\lambda$.
 
 
 
