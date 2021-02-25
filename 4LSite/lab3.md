@@ -364,7 +364,7 @@ $$
 The error bound, $\delta\tau$, of $\tau$ may be calculated as:
 :::Equation producterror
 $$
-\frac{\delta\tau}{\tau} \approx \Big|\frac{\delta R}{R}\Big| + \Big|\frac{\delta C}{C}\Big| 
+\frac{\delta\tau}{\tau} \sqrt{ \Big(\frac{\delta R}{R}\Big)^2 + \Big(\frac{\delta C}{C}\Big)^2}
 $$
 :::
 

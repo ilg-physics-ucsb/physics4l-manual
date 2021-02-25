@@ -134,7 +134,7 @@ Setup:
 
 In this experiment, we will use a transistor to create a high-frequency oscillating magnetic field. While the behavior of transistors is a topic beyond the scope of this class, we will briefly present a cartoon of their function so you can understand how they are generating an oscillating field.
 
-Transistors have three leads: 
+Transistors have three leads: The collector which "collects" current, the emitter which "emits" current, and the base which determines when current in the collector can flow to the emitter.
 
 In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage between the base and the emitter, often called a *bias* voltage. We can use this by creating a situation that causes voltage on the base terminal to rise and fall very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
 
@@ -187,10 +187,6 @@ With the two DIY components built, we are now ready to assemble the circuit.
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 067ebb90a10f7fdb7439134fdd6189910c497b5f
 1. Insert your transistor into the board so that each of the three leads is in a different row. 
 2. With the flat edge of your transistor facing the right side, connect the bottom lead to ground through a 10-$\Omega$ resistor.
 3. The middle lead of the resistor should be connected to one of the **outer** wire ends of your transmitter coil through a-1k $\Omega$ resistor.
@@ -199,7 +195,7 @@ With the two DIY components built, we are now ready to assemble the circuit.
 
 :::Figure oscpic l
 ![The full circuit](../imgs/Lab4/coil1.jpg)
-The full Ciruit
+The full transmitter circuit
 :::
 
 **Testing the Transmission:**
@@ -308,9 +304,9 @@ Do your best to measure from the center of the cooked region. Be sure to estimat
 :::Question
 1. What is the distance between the centers of your cooked regions, $d$? 
 2. Estimate the uncertainty in this measurement, e.g. what are the largest and smallest values you'd expect to get if you were to measure this distance multiple times? Write your final answer as $(d \pm \delta d)$ as usual.
-3. Calculate the measured value and error of the speed of light using your results. Write your final answer as $(c \pm \delta c)$ as usual Recall that for a product $A = x y$, the formula for error is given by:
+3. Calculate the measured value and error of the speed of light using your results. Write your final answer as $(c \pm \delta c)$ as usual Recall that for a product $A =XY$, the formula for error is given by:
 $$
-\frac{\delta A}{A} \approx \Big|\frac{\delta x}{x}\Big| + \Big|\frac{\delta y}{y}\Big| 
+\frac{\delta A}{A} =  \sqrt{ \Big(\frac{\delta X}{X}\Big)^2 + \Big(\frac{\delta Y}{Y}\Big)^2}
 $$
 :::
 ::::::
@@ -327,7 +323,7 @@ $$
 1. Roughly measure the length of the inside your microwave in cm. 
 2. Is it close to a multiple of $d$?
 3. Give an argument as to why microwaves typically come in only a few standard sizes. 
-4. Why
+4. What do you think the function of the mesh on the viewing screen of your microwave is?
 :::
 
 # Write Up
