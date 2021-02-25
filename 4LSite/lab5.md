@@ -15,7 +15,13 @@ By now you've learned that light is, fundamentally, electromagnetic radiation: m
 
 The nature of light, as physicists learned in 1905, is not actually classical at the microscopic level. As it turns out, quantum mechanics dictates that energy is quantized, and hence that light has a *particle* nature. We call these particles that carry electromagnetic energy **photons**.
 
-In 1905, Einstein published a seminal paper explaining the *Photoelectric Effect* using the notion of photons, and soon earning him his first Nobel Prize. The Photoelectric Effect is the observation that electrons are ejected from some materials (typically metals) when light is shone on its surface; however, the rate the electrons are ejected from the metal is not entirely proportional to the *intensity*, or the amount of light, as you might expect -- electrons seemed to only respond to light above a certain cut off frequency. For example, 
+
+:::RFigure ledp m
+![In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light's *intensity*.](../imgs/Lab5/pee.png)
+
+In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light's *intensity*.
+:::
+In 1905, Einstein published a seminal paper explaining the *Photoelectric Effect* using the notion of photons, and soon earning him his first Nobel Prize. The Photoelectric Effect is the observation that electrons are ejected from some materials (typically metals) when light is shone on its surface; however, the rate the electrons are ejected from the metal is not entirely proportional to the *intensity*, or the amount of light, as you might expect -- electrons seemed to only respond to light above a certain cut off frequency. This cut-off frequency is the the frequency at which a photon carries energy *equal to or grather than* the binding energy between the electron and the nucleus of the atom. 
 
 This discovery inevitably led to the development of Quantum Theory, and the notion of photons as the quantum mechanical carriers of electromagnetic energy.  Planck's constant gives the proportionality between frequency and energy for photons
 
@@ -32,6 +38,10 @@ The determination of Planck's constant was fairly difficult in the early 20th ce
 
 LEDs are specially manufactured semiconductor devices which basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials with special energy levels that are "doped". While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
 
+:::Figure ledp l
+![](../imgs/Lab5/ledp.jpg)
+:::
+
 At small voltages, the boundary of the materials in the LED acts similar to a capacitor: electrons are not able to flow between the layers freely, and accumulate on the surface. Unlike capacitors, however, once the voltage is increased beyond a threshold, electrons gain enough energy to "jump" across the material boundary. After the electron crosses this "gap", it has extra energy that dissipated by producing a photon of a specific frequency. The frequency of the photon is determined by the kinds of materials and chemical treatments the semiconductor is subjected to. 
 
 We can associate the threshold voltage needed to cause electrons to "jump the gap" with the gap energy as:
@@ -46,11 +56,11 @@ Despite the complicated things that happen on a microscopic level, indeed the si
 
 :::Equation ledper
 $$
-e V_{th} = h \nu_{gap}
+e V_{th} = h \nu
 $$
 :::
 
-[Eq](#Eq-ledper) has two unknowns: $\nu_gap$ and $V_{th}$. Luckily, we can measure the peak wavelength of the LED light for each provided component,  meaning that if then measure $V_{th}$, we can determine Planck's constant as:
+[Eq](#Eq-ledper) has two unknowns: $\nu$ and $V_{th}$. Luckily, we can measure the peak wavelength of the LED light for each provided component,  meaning that if then measure $V_{th}$, we can determine Planck's constant as:
 
 :::Equation planck
 $$
@@ -110,7 +120,7 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 7. Record the value of the voltage across the LED in a table like the one below
 :::Table
  
-| Color|$\lambda$ | $\nu$ |$V_{on}$|
+| Color|$\lambda$ | $\nu$ |$V_{th}$|
 | ------| ------| ------ |------| 
 |@fa-pencil@       |        |         |        |
 |@fa-pencil@     |        |         |        |
@@ -123,7 +133,7 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 1. Present your table of data, with an additional column showing the calculated value of $h$ for each LED
 :::Table
  
-| Color|$\lambda$ | $\nu$ |$V_{on}$|$h$|
+| Color|$\lambda$ | $\nu$ |$V_{th}$|$h$|
 | ------| ------| ------ |------|------| 
 |@fa-pencil@       |        |         |        |       |
 |@fa-pencil@     |        |         |        |       |
@@ -153,12 +163,12 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 
 **Steps:**
 1. Repeat the steps of [Ex](#Ex-led), but take **5** measurements for each LED color, resetting the potentiometer to 0V between each trial.
-2. Calculate the **average** turn on voltage, $\bar V_{on}$ for 5 trials, as well as the **standard deviation**, $\delta V_{on}$  . 
+2. Calculate the **average** turn on voltage, $\bar V_{th}$ for 5 trials, as well as the **standard deviation**, $\delta V_{th}$  . 
 3. Record these values in a table like the one below
 
 :::Table
  
-| Color|$\lambda$ | $\nu$ | $\bar V_{on}$| $\delta V_{on}$ |
+| Color|$\lambda$ | $\nu$ | $\bar V_{th}$| $\delta V_{th}$ |
 | ------| ------| ------ |------| ------| 
 |@fa-pencil@       |        |         |        |        |
 |@fa-pencil@     |        |         |        |        |
@@ -171,7 +181,7 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 ::::::Question
 1. Present your table of data, with two additional columns showing the calculated value of $\bar h$ for each LED, and the standard deviation of $h$. 
     :::Table
-    | Color|$\lambda$ | $\nu$ | $\bar V_{on}$| $\delta V_{on}$ |$\bar h$| $\delta h$ |
+    | Color|$\lambda$ | $\nu$ | $\bar V_{th}$| $\delta V_{th}$ |$\bar h$| $\delta h$ |
     | ------| ------| ------ |------| ------| ------| ------| 
     |@fa-pencil@       |        |         |        |        |       |        |
     |@fa-pencil@     |        |         |        |        |       |        |
@@ -182,13 +192,13 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
     \frac{\delta A}{A} = \sqrt{ \Big(\frac{\delta X}{X}\Big)^2 + \Big(\frac{\delta Y}{Y}\Big)^2}
     $$
 2. Make a scatter plot of 
-    - $\bar V_{on}$ v.s. $\nu$, 
-    - $(\bar V_{on} + \delta V_{on})$ v.s. $\nu$ 
-    - $(\bar V_{on} - \delta V_{on})$ v.s. $\nu$. 
+    - $\bar V_{th}$ v.s. $\nu$, 
+    - $(\bar V_{th} + \delta V_{th})$ v.s. $\nu$ 
+    - $(\bar V_{th} - \delta V_{th})$ v.s. $\nu$. 
 
     The later two plots are effectively showing the *error bars* on your first plot.
-3. From the equation relating $V_{on}$ and $\nu$, what is the significance of the slope of this plot? Calculate the accepted theoretical value
-3. Find the value of the slope for the line of best fit for $\bar V_{on}$ v.s. $\nu$. How does it compare to the accepted value you calculated?  
+3. From the equation relating $V_{th}$ and $\nu$, what is the significance of the slope of this plot? Calculate the accepted theoretical value
+3. Find the value of the slope for the line of best fit for $\bar V_{th}$ v.s. $\nu$. How does it compare to the accepted value you calculated?  
 4. What value of $h$ does your slope indicate? 
 5. Does your line of best fit intercept the origin? Explain what this means and provide some reasons for the observation.
 6. Is the calculation of $h$ from your slope more accurate than the individual measurements? Why do you think this is?
