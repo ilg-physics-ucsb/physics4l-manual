@@ -39,7 +39,7 @@ The determination of Planck's constant was fairly difficult in the early 20th ce
 :::LFigure ledp l
 ![](../imgs/Lab5/ledp.jpg)
 ####
-A cartoon of electrons subjected to a voltage, forcing them across the gap where they emit a photon
+A cartoon of electrons subjected to a voltage, forcing them across the gap where they emit a photon whose energy is equal to the gap energy
 :::
 LEDs are specially manufactured semiconductor devices which basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials with special energy levels that are "doped". While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
 
