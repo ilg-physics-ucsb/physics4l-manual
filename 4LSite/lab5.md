@@ -14,6 +14,7 @@
 
 By now you've learned that light is, fundamentally, electromagnetic radiation: mathematically, it is wave a solution to Maxwell's equations that features oscillating electric and magnetic fields that propagate through space. This classical picture of light if useful for many applications of optics, and provides an accurate description that is testable (as you have seen in the previous microwave lab). As you are nearing the completion of your introductory physics education, we now shift to looking beyond the classical behavior of physics and delving into the *quantum*.
 
+## Photons 
 The nature of light, as physicists learned in 1905, is not actually classical at the microscopic level. As it turns out, quantum mechanics dictates that energy is quantized, and hence that light has a *particle* nature. We call these particles that carry electromagnetic energy **photons**.
 
 
@@ -138,10 +139,10 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 7. Record the value of the voltage across the LED in a table like the one below
 :::Table
  
-| Color|$\lambda$ | $\nu$ |$V_{th}$|
-| ------| ------| ------ |------| 
-|@fa-pencil@       |        |         |        |
-|@fa-pencil@     |        |         |        |
+| Color|$\lambda$  |$V_{th}$|
+| ------| ------| ------ |
+|@fa-pencil@       |        |         |
+|@fa-pencil@     |        |         |
 
 :::
 8. Repeat for all LED colors.
@@ -151,10 +152,10 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 1. Present your table of data, with an additional column showing the calculated value of $h$ for each LED
 :::Table
  
-| Color|$\lambda$ | $\nu$ |$V_{th}$|$h$|
-| ------| ------| ------ |------|------| 
-|@fa-pencil@       |        |         |        |       |
-|@fa-pencil@     |        |         |        |       |
+| Color|$\lambda$ |$V_{th}$|$h$|
+| ------| ------| ------ |------|
+|@fa-pencil@       |        |         |        |
+|@fa-pencil@     |        |         |        | 
 
 :::
 2. Are your calculated values higher or lower than the accepted value of $h$?
@@ -215,7 +216,7 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
     - $(\bar V_{th} + \delta V_{th})$ v.s. $\nu$ 
     - $(\bar V_{th} - \delta V_{th})$ v.s. $\nu$. 
 
-    The later two plots are effectively showing the *error bars* on your first plot. You may use google sheets to do this.
+    The latter two plots are effectively showing the *error bars* on your first plot. You may use google sheets to do this.
 3. From the equation relating $V_{th}$ and $\nu$, what is the significance of the slope of this plot? Calculate the accepted theoretical value
 3. Find the value of the slope for the line of best fit for $\bar V_{th}$ v.s. $\nu$. How does it compare to the accepted value you calculated?  
 4. What value of $h$ does your slope indicate? 
