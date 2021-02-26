@@ -6,6 +6,7 @@
 - Breadboard and Wires
 - Potentiometer
 - 220 $\Omega$ resistor (or 2 100$\Omega$ resistors)
+- Multimeter
 :::
 
 
@@ -93,6 +94,7 @@ If you do not have these LEDs, it is acceptable to use these values and make a n
 - Breadboard and Wires
 - Potentiometer
 - 220 $\Omega$ resistor (or 2 100$\Omega$ resistors)
+- Multimeter
 :::
 
 In this part of the lab, we will set up the basic experiment which will allow us to measure $V_{th}$ for each of the LEDs. Since our power block does not allow us to modulate the voltage through the LED, we will use the 10k trim pot as a **voltage divider**, allowing us to interpolate between a continuous range of voltages using the analogue dial. The trim pot will be connected in series with a **current limiting** resistor to ensure that we do not blow out the LEDs, which can handle a maximum current of $30$ mA.
@@ -170,6 +172,7 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 - Breadboard and Wires
 - Potentiometer
 - 220 $\Omega$ resistor (or 2 100$\Omega$ resistors)
+- Multimeter
 :::
 
 
@@ -243,7 +246,7 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 
 ::::::Summary
   :::Hider Lab Submission
-  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6236577&triggerview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6277672&forceview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
  :::
 ::::::
 
@@ -251,7 +254,5 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 
 Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you&rsquo;d like just to leave some comments, scroll to the bottom of the form.
 ::: Hider Open Feedback Form
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs2N7niGtq0X3r9blr-wdvoqgGCb1_AR2fqgQCn8YyLawIQg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwRMJCLOQqad_xstc9veot0WyzSmMH3XCGxQ_918RWt0KvgA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
-
-
