@@ -12,7 +12,7 @@
 
 # Light, Photons, and Planck's Constant 
 
-By now you've learned that light is, fundamentally, electromagnetic radiation: mathematically, it is wave a solution to Maxwell's equations that features oscillating electric and magnetic fields that propagate through space. This classical picture of light if useful for many applications of optics, and provides an accurate description that is testable (as you have seen in the previous microwave lab). As you are nearing the completion of your introductory physics education, we now shift to looking beyond the classical behavior of physics and delving into the *quantum*.
+By now you've learned that light is, fundamentally, electromagnetic radiation: mathematically, it is a wave solution to Maxwell's equations that features oscillating electric and magnetic fields that propagate through space. This classical picture of light if useful for many applications of optics, and provides an accurate description that is testable (as you have seen in the previous microwave lab). As you are nearing the completion of your introductory physics education, we now shift to looking beyond the classical behavior of physics and delving into the *quantum*.
 
 ## Photons 
 The nature of light, as physicists learned in 1905, is not actually classical at the microscopic level. As it turns out, quantum mechanics dictates that energy is quantized, and hence that light has a *particle* nature. We call these particles that carry electromagnetic energy **photons**.
