@@ -126,7 +126,7 @@ In [Ex](#Ex-led), we will use the potentiometer as a voltage divider by connecti
 ::::::Exercise led
 In this exercise, you will construct a circuit to observe the turn on voltage of various LEDs.
 
-:::Figure circuit m
+:::RFigure circuit m
 ![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab5/SimpleSetup.jpg)
 :::
 **Setup:**
@@ -145,7 +145,7 @@ In this exercise, you will construct a circuit to observe the turn on voltage of
 |@fa-pencil@     |        |         |
 
 :::
-8. Repeat for all LED colors.
+8. Repeat for all LED colors by moving the jumper wire to the corresponding row.
 
 ::::::
 ::::::Question
