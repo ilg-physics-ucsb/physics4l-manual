@@ -121,7 +121,7 @@ In [Ex](#Ex-led), we will use the potentiometer as a voltage divider by connecti
 
  2. What are the maximum and minimum voltages obtainable and what $R_{1}$ corresponds to them?
 
- 3. What value of $R_{in}$ would produce 1.5V across the LED?
+ 3. What value of $R_{1}$ would produce 1.5V across the LED?
 
 ::::::
 
