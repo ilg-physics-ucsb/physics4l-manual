@@ -36,14 +36,14 @@ $$
 
 ## LEDs
 
-The determination of Planck's constant was fairly difficult in the early 20<sup>th</sup> century. It was first laboriously calculated by Planck in an elaborate *black body radiation* experiment, which requires deep knowledge of statistical physics and laboratory technique. Today, luckily, we can measure it quite easily, due to advances in solid-state circuitry and the invention of the light-emitting diode (LED).
+The determination of Planck&rsquo;s constant was fairly difficult in the early 20<sup>th</sup> century. It was first laboriously calculated by Planck in an elaborate *black body radiation* experiment, which requires deep knowledge of statistical physics and laboratory technique. Today, luckily, we can measure it quite easily, due to advances in solid-state circuitry and the invention of the light-emitting diode (LED).
 
 :::LFigure ledp l
 ![](../imgs/Lab5/ledp.jpg)
 ####
 A cartoon of electrons subjected to a voltage, which forces them across the gap where they emit a photon whose energy is equal to the gap energy
 :::
-LEDs are specially manufactured semiconductor devices that basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials that are &ldquo;doped.&rdquo; That is, one material has added to it a small amount of an element that has one fewer valence electron than it does, which results in vacancies, or &ldquo;holes&rdquo; (p-type).  The other type has added to it a small amount of an element that has one more valence electron that it does, which gives the material a slight excess of electrons (n-type). The energy levels in these materials are different from those in the original (undoped) material. While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
+LEDs are specially manufactured semiconductor devices that basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials that are &ldquo;doped.&rdquo; That is, one material has added to it a small amount of an element that has one valence electron fewer than it does, which results in vacancies, or &ldquo;holes&rdquo; (p-type).  The other type has added to it a small amount of an element that has one more valence electron than it does, which gives the material a slight excess of electrons (n-type). The energy levels in these materials are different from those in the original (undoped) material. While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
 
 
 
