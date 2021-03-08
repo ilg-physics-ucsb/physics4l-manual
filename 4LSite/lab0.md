@@ -13,7 +13,7 @@
 
 
 :::RFigure Phyphox s
-![The Phyphox Phone App in the iOS store](../imgs/phyphox.png)
+![The Phyphox Phone App in the iOS store](imgs/Lab0/phyphox.png)
 :::
 
 In this intro lab, we will learn how to use the Phyphox app to acquire data that we will later analyze. You can download the app from their [website](https://Phyphox.org/) or find it in the iOS/Google Play store. 
@@ -28,7 +28,7 @@ We will get familiar with the Phyphox app by investigating the external magnetic
 However, we actually need to know where the magnetometer even is! [Fi](#Fi-typical-phone) shows an image of a &ldquo;typical&rdquo; phone with a multitude of sensors. Unfortunately, this layout varies among device brands, models and even *versions* as increasingly innovative integrated circuit boards are manufactured.
 
 ::: LFigure typical-phone xs
-![A Typical Phone with a vast array of sensors](../imgs/typicalphone.png)
+![A Typical Phone with a vast array of sensors](imgs/Lab0/typicalphone.png)
 :::
 
 If we do not know the exact location of the magnetometer, it is difficult to make sense of magnetic field readings, whose strength varies with measurement distance. Our first task is, then, to find the location of the magnetometer on our phones. Since you will need to know this location for future labs, feel free to mark it with, for example, a small piece of tape.
@@ -127,7 +127,7 @@ First, let&rsquo;s identify the axes and directions of your magnetometer:
 ####
 
 :::Figure magnor s
-![Hyperphysics: The magnetic north pole is the geographic south pole!](../imgs/magneticnorth.png)
+![Hyperphysics: The magnetic north pole is the geographic south pole!](imgs/Lab0/magneticnorth.png)
 ####
 Hyperphysics: The magnetic north pole is the geographic south pole!
 :::
@@ -157,7 +157,7 @@ Now let&rsquo;s measure the direction of magnetic field from the  magnet.
 :::
 
 ::: Figure phonaxes m
-![Label your axes, including sign](../imgs/phoneaxes.png)
+![Label your axes, including sign](imgs/phoneaxes.png)
 :::
 
 
@@ -183,7 +183,7 @@ By observing how $B_z$ changes with the vertical motion of the magnet, you shoul
 
 In [Ex](#Ex-strengthanddirection), we asked you to identify the poles of your permanent magnet and make some qualitative observations about how field strength behaves as you move the magnet above the magnetometer. 
 :::RFigure bar_magnet xs
-  ![The magnetic field of a bar magnet has the characteristic of a &lsquo;dipole,&rsquo; in that its strength falls off more slowly in the direction perpendicular to its polarized axis, than along its axis. From far away, the behavior looks similar to that of a monopole](../imgs/BarMagnetFieldFRONT.png)
+  ![The magnetic field of a bar magnet has the characteristic of a &lsquo;dipole,&rsquo; in that its strength falls off more slowly in the direction perpendicular to its polarized axis, than along its axis. From far away, the behavior looks similar to that of a monopole](imgs/Lab0/BarMagnetFieldFRONT.png)
 :::
 We will now make a more quantitative measurement of the field surrounding the magnet. Unlike electric charges, magnetic charges do not exist as &ldquo;monopoles&rdquo; with a spherically symmetric magnetic-field, in our universe [fn] At least as far as we know! See [Wikipedia](https://en.wikipedia.org/wiki/Magnetic_monopole#Searches_for_magnetic_monopoles)[/fn]; the poles must always come in equal and opposite pairs, and the surrounding field is therefore changed. 
 
@@ -222,7 +222,7 @@ It should be emphasized that since we are using the uncalibrated magnetometer, y
 5. Double the distance to 1 cm, 2 cm, 4 cm, and record 1 second of data each.
 6. Export the data. For each measurement made above, calculate the average of the 1-second interval, and record the average field strength and the distance of the measurement in a table.
 :::Figure
-![Example set up for measuring magnetic strength vs. distance](../imgs/setup.png)
+![Example set up for measuring magnetic strength vs. distance](imgs/Lab0/setup.png)
 :::
 
 :::Question 

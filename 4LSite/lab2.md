@@ -37,7 +37,7 @@ In this lab, we will explore the Biot-Savart law by indirectly determining *the 
 
 
 ::: RFigure RHR xs
-![](../imgs/RHR.png)
+![](imgs/Lab2/RHR.png)
 :::
 
 For a long straight wire carrying a current, the magnetic field wraps around the line of current according to the right-hand rule, as shown in [Fi](#Fi-RHR). The strength of the measured field depends on the *current* passing through the wire and the *distance* from the wire at which you take a measurement. A qualitative, interactive example of this is given in [Si](#Si-long-straight).
@@ -84,7 +84,7 @@ As in Lab 0, we must subtract the background field to ensure the accuracy of the
  If the long wire you have is *enameled*, the enamel must be scraped off at the contact points, else the circuit will **NOT** conduct. The safest way to do this is to grip the ends of each wire with the alligator clips (or something similar), squeeze them closed, and pull. Doing this a few times should scrape off enough enamel to allow sufficient conduction.
 
 
-![iOLab](../imgs/stripwire_small.gif)
+![iOLab](imgs/Lab2/stripwire_small.gif)
 
 
 ::::::
@@ -116,10 +116,10 @@ In this geometry, the wire is sitting flat on the desk, parallel to the side of 
 
 :::::: Figure lined l
 :::col l6
-![Be sure your phone's magnetometer is aligned to the mark](../imgs/Lab2/lined.jpg)
+![Be sure your phone's magnetometer is aligned to the mark](imgs/Lab2/lined.jpg)
 :::
 :::col l6
-![Optional Button Setup](../imgs/Lab2/button.jpg)
+![Optional Button Setup](imgs/Lab2/button.jpg)
 
 Recommended Button Setup
 :::
@@ -129,10 +129,10 @@ Recommended Button Setup
 :::::::::RFigure data m
 ::::::row
 :::col l6
-![Use the pick data took to grab the values of the peaks](../imgs/Lab2/datareg.png)
+![Use the pick data took to grab the values of the peaks](imgs/Lab2/datareg.png)
 :::
 :::col l6
-![Use the pick data took to grab the values of the peaks](../imgs/Lab2/dataabs.jpg)
+![Use the pick data took to grab the values of the peaks](imgs/Lab2/dataabs.jpg)
 :::
 ::::::
 
@@ -194,7 +194,7 @@ Review your data, and make a table like the one below with appropriate units. Al
 - **Q:** My plot doesn&rsquo;t have well-defined peaks.
   - This happens when your power source is weak or if you do not use the button component. Please use the value of the largest spike. Click below for an example:
   :::Figure weak m
-  ![Value from initial spike](../imgs/Lab2/selectdata.png)
+  ![Value from initial spike](imgs/Lab2/selectdata.png)
   ::: 
   ####
 
@@ -246,7 +246,7 @@ Review your data, and make a table like the one below with appropriate units. Al
 :::::: Exercise
 We will now measure the magnetic field produced by a loop of current.
 ::: Figure looped m
-![Be sure that the phone&rsquo;s magnetometer is aligned to the center](../imgs/Lab2/looped.jpg)
+![Be sure that the phone&rsquo;s magnetometer is aligned to the center](imgs/Lab2/looped.jpg)
 :::
 
 1. Tape your long wire to a table so that it forms a closed loop. Try to make the loop as circular as possible. Record the radius of the loop.

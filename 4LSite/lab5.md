@@ -19,7 +19,7 @@ The nature of light, as physicists learned in 1905, is not actually classical at
 
 
 :::RFigure ledp m
-![In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light&rsquo;s *intensity*.](../imgs/Lab5/pee.png)
+![In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light&rsquo;s *intensity*.](imgs/Lab5/pee.png)
 
 In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light&rsquo;s *intensity*.
 :::
@@ -39,11 +39,11 @@ $$
 The determination of Planck&rsquo;s constant was fairly difficult in the early 20<sup>th</sup> century. It was first laboriously calculated by Planck in an elaborate *black body radiation* experiment, which requires deep knowledge of statistical physics and laboratory technique. Today, luckily, we can measure it quite easily, due to advances in solid-state circuitry and the invention of the light-emitting diode (LED).
 
 :::LFigure ledp l
-![](../imgs/Lab5/ledp.jpg)
+![](imgs/Lab5/ledp.jpg)
 ####
 A cartoon of electrons subjected to a voltage, which forces them across the gap where they emit a photon whose energy is equal to the gap energy
 :::
-LEDs are specially manufactured semiconductor devices that basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials that are &ldquo;doped.&rdquo; That is, one material has added to it a small amount of an element that has one valence electron fewer than it does, which results in vacancies, or &ldquo;holes&rdquo; (p-type).  The other type has added to it a small amount of an element that has one more valence electron than it does, which gives the material a slight excess of electrons (n-type). The energy levels in these materials are different from those in the original (undoped) material. While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
+LEDs are specially manufactured semiconductor devices that basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials that are &ldquo;doped.&rdquo; That is, one material has added to it a small amount of an element that has one valence electron fewer than it does, which results in vacancies, or &ldquo;holes&rdquo; (p-type).  The other type has added to it a small amount of an element that has one more valence electron than it does, which gives the material a slight excess of electrons (n-type). While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
 
 
 
@@ -106,7 +106,7 @@ In this part of the lab, we will set up the basic experiment, which will allow u
 The potentiometer in your kit is a variable resistor. The resistance between leads 1 and 3 is always approximately $10$ k$\Omega$. As you turn the dial, the resistance between leads 1 and 2 ranges from approximately $0 \Omega$ to approximately $10$ k$\Omega$.
 
 :::Figure vrr xl
-![A variable resistor functions like two resistors in series, whose values always add up to the total resistance. Adjusting the wiper affects only the resistance between leads 1 and 2, or leads 2 and 3 (but not between leads 1 and 3)](../imgs/Lab5/vrr.jpg)
+![A variable resistor functions like two resistors in series, whose values always add up to the total resistance. Adjusting the wiper affects only the resistance between leads 1 and 2, or leads 2 and 3 (but not between leads 1 and 3)](imgs/Lab5/vrr.jpg)
 
 A variable resistor functions like two resistors in series, whose values always add up to the total resistance. Adjusting the wiper affects only the resistance between leads 1 and 2, or leads 2 and 3 (but not between leads 1 and 3).
 :::
@@ -114,9 +114,11 @@ A variable resistor functions like two resistors in series, whose values always 
 In [Ex](#Ex-led), we will use the potentiometer as a voltage divider by connecting 1 to 3.3 V, 3 to ground, and 2 to a $220-\Omega$ resistor attached to the load.
 
 :::Figure cd m
-![](../imgs/Lab5/planckexp.png)
+![](imgs/Lab5/planckexp.png)
 :::
  
+
+ For the purpose of the following questions, treat the LED element as having infinite resistance, e.g. as an ideal capacitor, when analyzing the circuit diagram. This is appropriate for our experiment since we are working with the LEDs at voltages where they **do not emit light** or are just beginning to emit, and hence, pass no or negligible current.
  1. As a function of resistance between 1 and 2, $R_{1}$, the total resistance of the potentiometer $R_{tot}= 10$ k$\Omega$, and the current-limiting resistor $R_L= 220\ \Omega$, calculate the voltage across the LED. 
 
  2. What are the maximum and minimum voltages obtainable, and what $R_{1}$ corresponds to them?
@@ -129,7 +131,7 @@ In [Ex](#Ex-led), we will use the potentiometer as a voltage divider by connecti
 In this exercise, you will construct a circuit to observe the turn-on voltage of various LEDs.
 
 :::RFigure circuit m
-![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab5/SimpleSetup.jpg)
+![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab5/SimpleSetup.jpg)
 :::
 **Setup:**
 1. Using [Fi](#Fi-circuit) as a guide, connect lead 1 of your potentiometer to the positive rail, and lead 3 to the negative rail. Used in this fashion, your potentiometer acts as a **voltage divider**.

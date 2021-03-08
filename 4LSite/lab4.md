@@ -91,7 +91,7 @@ This part of the lab will involve the study of Faraday’s Law and Lenz’s Law 
 ::::::Exercise
 We will wind the coil around and insert the two ends into the breadboard. The multimeter measurement leads should be inserted so that if the current in the loop moves counterclockwise, it will generate a positive voltage, and vice versa.
 :::RFigure coil m
-![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/coil.jpg)
+![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab4/coil.jpg)
 :::
 Setup:
 1. Ensure that you have removed as much enamel as possible from the tips of your Magnet wire.
@@ -129,7 +129,7 @@ Setup:
 :::
 
 :::RFigure osc l
-![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/transistoroscillator.png)
+![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab4/transistoroscillator.png)
 :::
 
 In this experiment, we will use a transistor to create a high-frequency oscillating magnetic field. While the behavior of transistors is a topic beyond the scope of this class, we will briefly present a cartoon of their function so you can understand how they are generating an oscillating field.
@@ -139,7 +139,7 @@ Transistors have three leads: The collector which "collects" current, the emitte
 In general, transistors can be used in a variety of modes. In this lab, we will use them in the *charge collector* mode, which allows them to operate like a switch. In charge collector mode, current is blocked between the collector and emitter terminals *unless* there is a sufficient voltage between the base and the emitter, often called a *bias* voltage. We can use this by creating a situation that causes voltage on the base terminal to rise and fall very quickly, leading to the collector-emitter current being turned on and off at a high frequency.
 
 :::Figure trans xl
-![](../imgs/Lab4/trans.png)
+![](imgs/Lab4/trans.png)
 :::
 
 When the current from the emitter runs through a coil, the result is that a pulsed magnetic field is created from the very fast switching on and off of the current. If we connect the base terminal to a secondary coil in the same orientation, the result is a magnetic field that oscillates between the maxima.
@@ -151,7 +151,7 @@ When the current from the emitter runs through a coil, the result is that a puls
 **Construction of the Transmitter Coil:**
 
 :::RFigure tcoil m
-![Example of a transmitter coil with the final loop tucked to keep it tidy](../imgs/Lab4/Tcoil.jpg)
+![Example of a transmitter coil with the final loop tucked to keep it tidy](imgs/Lab4/Tcoil.jpg)
 :::
 
 1. Leaving a 5-10 cm of tail, wrap the wire 15 times around something round.
@@ -164,7 +164,7 @@ When the current from the emitter runs through a coil, the result is that a puls
 **Construction of the Receiver Coil:**
 
 :::RFigure coil2 xs
-![Example of a wrapped coil with the final loop tucked to keep it tidy](../imgs/Lab4/coil.jpg)
+![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab4/coil.jpg)
 :::
 
 1. Coil the wire around something round 15 times, leaving 5-10 cm of tail on each side. 
@@ -172,7 +172,7 @@ When the current from the emitter runs through a coil, the result is that a puls
 3. Twist the enamel-free ends of the coil with the leads of an LED.
 
 :::Figure transmitter xl
-![After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.](../imgs/Lab4/transmitter.gif)
+![After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.](imgs/Lab4/transmitter.gif)
 After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.
 :::
 
@@ -194,7 +194,7 @@ With the two DIY components built, we are now ready to assemble the circuit.
 5. The two center wire ends created by cutting the tail should be plugged into the 3.3-V positive rail. 
 
 :::Figure oscpic l
-![The full circuit](../imgs/Lab4/coil1.jpg)
+![The full circuit](imgs/Lab4/coil1.jpg)
 The full transmitter circuit
 :::
 
@@ -203,7 +203,7 @@ The full transmitter circuit
 2. Bring your receiver coil with the LED attached to the transmitter coil. 
 
 :::Figure light m
-![](../imgs/Lab4/light.gif)
+![](imgs/Lab4/light.gif)
 :::
 
 :::Question
@@ -242,15 +242,15 @@ The question we have to ask now is: How can we infer the wavelength of the micro
 :::::::::Figure micro
 ### How Microwaves Work
 ::::::col l4
-![](../imgs/Lab4/m1.png)
+![](imgs/Lab4/m1.png)
 A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it (typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
 ::::::
 ::::::col l4
-![](../imgs/Lab4/m2.png)
+![](imgs/Lab4/m2.png)
  The wavelength of the microwaves is tuned to produce a standing wave. This is where you get two waves, one going in each direction, which interact to make some areas where there is a huge vibration and others where there is none.
 ::::::
 ::::::col l4
-![](../imgs/Lab4/m3.png)
+![](imgs/Lab4/m3.png)
 This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully, and so heated strongly, and others where the microwaves are weak.  These areas are separated by half a wavelength.
 ::::::
 :::row
@@ -285,7 +285,7 @@ Why is the distance between the food medium and the magnetron not important to t
 
 
 :::Figure tested xl
-![](../imgs/Lab4/choc.jpg)
+![](imgs/Lab4/choc.jpg)
 
  We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
 :::
@@ -296,7 +296,7 @@ Why is the distance between the food medium and the magnetron not important to t
 
 
 :::Figure pasta xl
-![](../imgs/Lab4/pasta.jpg)
+![](imgs/Lab4/pasta.jpg)
 
 Do your best to measure from the center of the cooked region. Be sure to estimate your measurement error, so that you will be able to determine the precision of your result!
 :::
