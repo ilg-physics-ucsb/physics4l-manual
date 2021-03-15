@@ -4,28 +4,28 @@
 ::::::col l5
 ### Faraday&rsquo;s Law Section
 ::: Materials
-- Wire Leads
-- Breadboard 
-- Magnet Wire
+- [c] Wire Leads
+- [c] Breadboard 
+- [c] Magnet Wire
 - Option 1:
-    - Multimeter
-    - Magnets
+    - [c] Multimeter
+    - [c] Magnets
 - Option 2:
-    - Power Block
-    - Transistor (kit)
-    - LED
-    - 10 $\Omega$ resistor
-    - 2000 $\Omega$ resistor 
-- A multimeter
+    - [c] Power Block
+    - [c] Transistor (kit)
+    - [c] LED
+    - [c] 10 $\Omega$ resistor
+    - [c] 2000 $\Omega$ resistor 
+- [c] A multimeter
 :::
 ::::::
 ::::::col l7
 ### Speed of Light Section
 ::: Materials
-- Microwave
-- Pasta, Chocolate, or Melting Cheese 
-- Ruler
-- Microwave-safe plate
+- [c] Microwave
+- [c] Pasta, Chocolate, or Melting Cheese 
+- [c] Ruler
+- [c] Microwave-safe plate
 :::
 ::::::
 :::::::::
@@ -81,11 +81,11 @@ This part of the lab will involve the study of Faraday’s Law and Lenz’s Law 
 
 
 :::Materials
-- Wire Leads
-- Breadboard 
-- Magnet Wire
-- Multimeter
-- Magnets
+- [c] Wire Leads
+- [c] Breadboard 
+- [c] Magnet Wire
+- [c] Multimeter
+- [c] Magnets
 :::
 
 ::::::Exercise
@@ -119,13 +119,13 @@ Setup:
 
 
 :::Materials
-- Wire Leads
-- Breadboard 
-- Power Block
-- Transistor (kit)
-- LED
-- 10 $\Omega$ resistor
-- 1000 $\Omega$ resistor 
+- [c] Wire Leads
+- [c] Breadboard 
+- [c] Power Block
+- [c] Transistor (kit)
+- [c] LED
+- [c] 10 $\Omega$ resistor
+- [c] 1000 $\Omega$ resistor 
 :::
 
 :::RFigure osc l
@@ -275,10 +275,10 @@ Why is the distance between the food medium and the magnetron not important to t
 
 # Measuring the Speed of Light
 ::: Materials
-- Microwave
-- Pasta, Chocolate, or Melting Cheese 
-- Ruler
-- Microwave-safe plate
+- [c] Microwave
+- [c] Pasta, Chocolate, or Melting Cheese 
+- [c] Ruler
+- [c] Microwave-safe plate
 :::
 
 :::::: Exercise

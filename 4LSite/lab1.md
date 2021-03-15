@@ -1,13 +1,13 @@
 # Lab 1: Magnetic Force
 
 ::: Materials
-- Two or more magnets
-- Two short wire jumpers (kit)
-- Two medium wires (kit)
-- Circuit Power Block and Breadboard (kit)
-- Strip of Aluminum foil
-- Tape 
-- Cardboard for support, *e.g.*, the circuit kit box
+- [c] Two or more magnets
+- [c] Two short wire jumpers (kit)
+- [c] Two medium wires (kit)
+- [c] Circuit Power Block and Breadboard (kit)
+- [c] Strip of Aluminum foil
+- [c] Tape 
+- [c] Cardboard for support, *e.g.*, the circuit kit box
 :::
 
 
@@ -88,12 +88,12 @@ This week we will study the force experienced by moving electrons in a magnetic 
 
 ## 2. Force on a current-carrying &ldquo;wire&rdquo; near a magnet
 :::Materials
-- Two or more magnets
-- Two short jumper wires (kit)
-- Circuit Power Block and Breadboard (kit)
-- Thin strip of Aluminum foil, approximately 10-15 cm long
-- Tape
-- Cardboard, *e.g.* circuit kit box
+- [c] Two or more magnets
+- [c] Two short jumper wires (kit)
+- [c] Circuit Power Block and Breadboard (kit)
+- [c] Thin strip of Aluminum foil, approximately 10-15 cm long
+- [c] Tape
+- [c] Cardboard, *e.g.* circuit kit box
 :::
 
 Most of us don&rsquo;t have access to beams of charged  particles in free space (or methods to observe them easily), which makes a demonstration of Lorentz&rsquo;s force law similar to the simulation above quite impossible. Luckily for us, the force law is ubiquitous, and equally applies to the moving electrons in *materials* &ndash; such as current-carrying wires.
@@ -198,12 +198,12 @@ The Lorentz force acts on the electrons in the foil. Try to explain why the *ent
 
 ## 3. The Rotating Motor
 ::: Materials
-- A magnet
-- Medium Wire Leads, one magnetic, one non magnetic (kit)
-- Power Block
-- One steel screw
-- Cardboard (optional)
-- Alternate setup: One long wire, screw, and an AA or AAA cell
+- [c] A magnet
+- [c] Medium Wire Leads, one magnetic, one non magnetic (kit)
+- [c] Power Block
+- [c] One steel screw
+- [c] Cardboard (optional)
+- [c] Alternate setup: One long wire, screw, and an AA or AAA cell
 :::
 
 In this setup, we will be creating a simple homopolar motor. Homopolar motors, first constructed by Michael Faraday in 1821, prior to the discovery of electromagnetism, operate by means of the Lorentz force: A conductor with a current flowing through it, when placed in a magnetic field that is perpendicular to the current, feels a force in the direction perpendicular to both the magnetic field and the current. This force provides a torque around the axis of rotation.

@@ -1,13 +1,13 @@
 # Lab 3: RC Circuit
 
 ::: Materials
-- Wire Leads 
-- Breadboard 
-- Two 1-MΩ resistors 
-- One 100-μF capacitor
-- One 10-μF capacitor
-- A multimeter
-- Something to keep time
+- [c] Wire Leads 
+- [c] Breadboard 
+- [c] Two 1-MΩ resistors 
+- [c] One 100-μF capacitor
+- [c] One 10-μF capacitor
+- [c] A multimeter
+- [c] Something to keep time
 :::
 
 # Circuit Elements and their Interactions
@@ -334,11 +334,11 @@ It is recommended that you modify your multimeter leads to free up your hands. Y
 ## 1. A 10-μF capacitor and a 1-MΩ resistor in series
 
 ::: Materials
-- Wire Leads and breadboard
-- One 1-MΩ resistor
-- One 10-μF capacitor
-- A multimeter
-- Something to keep time
+- [c] Wire Leads and breadboard
+- [c] One 1-MΩ resistor
+- [c] One 10-μF capacitor
+- [c] A multimeter
+- [c] Something to keep time
 :::
 
 
@@ -429,11 +429,11 @@ $$
 ## 2. A 10-μF capacitor and two 1-MΩ resistors in series
 
 ::: Materials
-- Wire Leads and breadboard
-- Two 1-MΩ resistor
-- One 10-μF capacitor
-- A multimeter
-- Something to keep time
+- [c] Wire Leads and breadboard
+- [c] Two 1-MΩ resistor
+- [c] One 10-μF capacitor
+- [c] A multimeter
+- [c] Something to keep time
 :::
 
 :::Figure 
@@ -466,11 +466,11 @@ $$
 
 ## 3. A 10-μF capacitor, a 100-μF capacitor, and a 1-MΩ resistor in series
 ::: Materials
-- Wire Leads and breadboard
-- One 1-MΩ resistor
-- One 10-μF capacitor
-- One 100-μF capacitor
-- A multimeter
+- [c] Wire Leads and breadboard
+- [c] One 1-MΩ resistor
+- [c] One 10-μF capacitor
+- [c] One 100-μF capacitor
+- [c] A multimeter
 :::
 
 
@@ -501,11 +501,11 @@ $$
 
 ## 4. A 10-μF capacitor and a 100-μF capacitor in parallel, in series with two parallel 1-MΩ resistors
 ::: Materials
-- Wire Leads and breadboard
-- Two 1-MΩ resistor
-- One 10-μF capacitor
-- One 100-μF capacitor
-- A multimeter
+- [c] Wire Leads and breadboard
+- [c] Two 1-MΩ resistor
+- [c] One 10-μF capacitor
+- [c] One 100-μF capacitor
+- [c] A multimeter
 :::
 
 

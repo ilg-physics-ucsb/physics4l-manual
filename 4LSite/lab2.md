@@ -1,11 +1,11 @@
 # Lab 2: Magnetic Field
 
 ::: Materials
-- Your Phone with Phyphox
-- Long insulated wire (~0.8-1 m)
-- Circuit Power Block and Breadboard (kit)
-- Paper and ruler
-- Optional: Button component from RexQualis kit
+- [c] Your Phone with Phyphox
+- [c] Long insulated wire (~0.8-1 m)
+- [c] Circuit Power Block and Breadboard (kit)
+- [c] Paper and ruler
+- [c] Optional: Button component from RexQualis kit
 :::
 
 # The Biot-Savart Law
@@ -94,10 +94,10 @@ As in Lab 0, we must subtract the background field to ensure the accuracy of the
 ## 2. Long straight wire
 
 ::: Materials
-- Your phone with Phyphox
-- A long wire (~0.8-1 m)
-- Power Block
-- Paper and ruler
+- [c] Your phone with Phyphox
+- [c] A long wire (~0.8-1 m)
+- [c] Power Block
+- [c] Paper and ruler
 :::
 
 ####
@@ -238,9 +238,9 @@ Review your data, and make a table like the one below with appropriate units. Al
 ## 3. Loop of wire
 
 ::: Materials
-- Your Phone with Phyphox
-- A long wire (~0.8-1 m)
-- Power Block
+- [c] Your Phone with Phyphox
+- [c] A long wire (~0.8-1 m)
+- [c] Power Block
 :::
 
 :::::: Exercise

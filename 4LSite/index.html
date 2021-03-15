@@ -65,7 +65,7 @@
 
 
 <body>
-  
+
   <!-- Navbar -->
 
   <script>init_nav()</script>
@@ -85,6 +85,7 @@
 
 
   <!-- Sidebar -->
+ 
   <nav class="w3-sidebar w3-bar-block w3-collapse w3-medium theme-l5 w3-animate-left" id="mySidebar"
     style='width: 350px'>
     <a href="javascript:void(0)" onclick="w3_close()"
@@ -95,25 +96,12 @@
     <button type="button" id="collapsible" class='w3-bar-item w3-cell-bottom' onclick="sidebarFold()">
       <b>Toggle Chat <i class="fa fa-comments-o"></i></b>
     </button>
-
     <div id="chatscreen" class="w3-hide w3-animate-slide w3-bar-item">
-      <div id='nectirbut'>
-        <button class="btn btn-success" style="font-face: 'Source Sans Pro'; 
-      font-weight: bold; font-size: larger; 
-      background-color: #4fa199!important; 
-      border:0px; text-align: center;width:100%;
-       display: block; color:white;" onclick=" window.open('https://ucsb.nectir.io/channel/physics4l')">
-          Go To Nectir Workspace</button>
-      </div>
-      <iframe width="100%" height="100%" frameborder="0" src="https://ucsb.nectir.io/channel/physics4l"
-        webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="microphone; camera"
-        id="chatframe"></iframe>
-
+      <button class="btn btn-success" id="nbutt"> Go To Nectir Workspace</button>
+      <iframe width="100%" height="100%" frameborder="0" allow="microphone; camera" id="chatframe"></iframe>
     </div>
-
-
-
     </div>
+    <script>init_apps()</script>
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->

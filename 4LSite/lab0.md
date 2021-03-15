@@ -2,18 +2,20 @@
 
 
 :::Materials 
-- Your phone with the Phyphox App installed
+- [c] Your phone with the Phyphox App installed
   - See instructions in Part I
-- A magnet
-- Ruler
-- Steel screw
+- [c] A magnet
+- [c] Ruler
+- [c] Steel screw
 :::
 
 # The Phyphox App
 
 
-:::RFigure Phyphox s
+:::RFigure Phyphox m
 ![The Phyphox Phone App in the iOS store](imgs/Lab0/phyphox.png)
+
+The Phyphox Phone App
 :::
 
 In this intro lab, we will learn how to use the Phyphox app to acquire data that we will later analyze. You can download the app from their [website](https://Phyphox.org/) or find it in the iOS/Google Play store. 
@@ -27,8 +29,9 @@ You are encouraged to play with Phyphox, explore its capabilities and the experi
 We will get familiar with the Phyphox app by investigating the external magnetic field of a magnet with your phone&rsquo;s magnetometer.
 However, we actually need to know where the magnetometer even is! [Fi](#Fi-typical-phone) shows an image of a &ldquo;typical&rdquo; phone with a multitude of sensors. Unfortunately, this layout varies among device brands, models and even *versions* as increasingly innovative integrated circuit boards are manufactured.
 
-::: LFigure typical-phone xs
+::: LFigure typical-phone s
 ![A Typical Phone with a vast array of sensors](imgs/Lab0/typicalphone.png)
+A Typical Phone with a vast array of sensors
 :::
 
 If we do not know the exact location of the magnetometer, it is difficult to make sense of magnetic field readings, whose strength varies with measurement distance. Our first task is, then, to find the location of the magnetometer on our phones. Since you will need to know this location for future labs, feel free to mark it with, for example, a small piece of tape.
@@ -48,9 +51,9 @@ For  experiments, be mindful of the environment you are working in! An appropria
 ## 2. Get to know your magnetometer
 
 ::: Materials
-- Your phone with Phyphox
-- A magnet
-- Steel screw
+- [c] Your phone with Phyphox
+- [c] A magnet
+- [c] Steel screw
 :::
 
 Since we know that the field of a magnet is strongest near its poles, we will run a magnetized object around the phone to pinpoint where the reading is highest. It’s never in the center of the device, so you can’t make an accurate measurement just by moving a magnetic source toward or away from the face of your phone.  Usually, the magnetometer is located somewhere at the edge of the phone, and its exact location depends on the brand and model.
@@ -104,8 +107,8 @@ Therefore, for the purpose of measuring the *raw* strength of a magnetic field, 
 ## 3. Measure the direction and strength of a magnetic field with Phyphox
 
 ::: Materials
-- Your phone with Phyphox
-- A magnet
+- [c] Your phone with Phyphox
+- [c] A magnet
 :::
 
 ####
@@ -172,10 +175,10 @@ By observing how $B_z$ changes with the vertical motion of the magnet, you shoul
 
 ## 4. Measure the field around a magnetic source
 :::Materials
-- Your phone
-- A magnet
-- Ruler
-- Steel screw
+- [c] Your phone
+- [c] A magnet
+- [c] Ruler
+- [c] Steel screw
 :::
 
 
