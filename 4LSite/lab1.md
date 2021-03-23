@@ -309,11 +309,13 @@ Along with your table, include an image of each trial. Include arrows to show th
  - You should attach images of your plots, data, and setup.  Doing so may allow you to regain partial or full credit even if your experiment fails.
  
  ::::::Summary
- :::Hider Lab Submission
+ ::: Hider Lab Submission
   <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6002332" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
- :::
- ::::::
 
+ :::
+
+ ::::::
+ 
 
 # Feedback
 

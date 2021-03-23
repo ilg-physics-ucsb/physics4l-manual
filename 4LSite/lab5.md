@@ -1,248 +1,127 @@
-# Lab 5: Planck&rsquo;s Constant 
+# Lab 5: Speed of Light
 
+
+### Speed of Light Section
 ::: Materials
-- Red, Blue, Green, Yellow LEDs
-- Power Block
-- Breadboard and Wires
-- Potentiometer
-- 220-$\Omega$ resistor (or 2 100-$\Omega$ resistors)
-- Multimeter
+- [c] Microwave
+- [c] Pasta, Chocolate, or Melting Cheese 
+- [c] Ruler
+- [c] Microwave-safe plate
 :::
 
 
-# Light, Photons, and Planck&rsquo;s Constant 
 
-By now you&rsquo;ve learned that light is, fundamentally, electromagnetic radiation: mathematically, it is a wave solution to Maxwell&rsquo;s equations that features oscillating electric and magnetic fields that propagate through space. This classical picture of light is useful for many applications of optics, and provides an accurate description that is testable (as you have seen in the previous microwave lab). As you are nearing the completion of your introductory physics education, we now shift to looking beyond the classical behavior of physics and delving into the *quantum* realm.
+# Light 
+In this section, we will use the wave nature of light to measure the speed of light indirectly. Microwave ovens use microwaves, which -- you guessed it -- are simply ordinary light with a relatively large wavelength (compared to &ldquo;visible&rdquo; light, that is). Most microwaves operate in the 2.45 GHz frequency band, as this band is the most efficient at exciting rotations of water molecules in food.
 
-## Photons 
-The nature of light, as physicists learned in 1905, is not actually classical at the microscopic level. As it turns out, quantum mechanics dictates that energy is quantized, and hence that light has a *particle* nature. We call these particles that carry electromagnetic energy **photons**.
+Since we know the frequency, $\nu = 2.45$ GHz, if we are able to determine the *wavelength*, $\lambda$, of the signal, we can find the speed of light by using the fundamental relationship:
 
-
-:::RFigure ledp m
-![In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light&rsquo;s *intensity*.](imgs/Lab5/pee.png)
-
-In the photoelectric effect, electrons can be ejected from a conductor if the incident light is above some threshold frequency corresponding to the *binding energy* of the electron in the valence orbital. If the frequency is less than this threshold, ejection will not occur regardless of the light&rsquo;s *intensity*.
-:::
-In 1905, Einstein published a seminal paper elucidating the *Photoelectric Effect* using the notion of photons, earning him his Nobel Prize. The Photoelectric Effect is the observation that electrons are ejected from some materials (typically metals) when light is shone on their surface. The rate at which the electrons are ejected from the metal, however, is not entirely proportional to the *intensity* (or the amount of light) as you might expect -- electrons seem only to respond to light that is *above* a certain cut-off frequency. From this empirical fact, coupled with progress in understanding *black body radiation*, it became clear to Einstein, that light must have a particle-like nature.
-
-Einstein argued that the special, material-dependent cut-off frequency for ejecting electrons is precisely the frequency at which a photon&rsquo;s energy is *equal to or greater than* the binding energy between the electron and the nucleus of the atom. The implication was then that these light particles are directly converted into an electron&rsquo;s kinetic energy, allowing it to escape the electrostatic potential in an atom.
-
-This discovery inevitably led to the development of quantum theory, and the notion of photons as the quantum mechanical carriers of electromagnetic energy.  Planck&rsquo;s constant gives the proportionality between frequency and energy for photons in the Planck-Einstein Relation:
-:::Equation per
+::: Equation
 $$
-E= h \nu
-$$
-:::
-
-## LEDs
-
-The determination of Planck&rsquo;s constant was fairly difficult in the early 20<sup>th</sup> century. It was first laboriously calculated by Planck in an elaborate *black body radiation* experiment, which requires deep knowledge of statistical physics and laboratory technique. Today, luckily, we can measure it quite easily, due to advances in solid-state circuitry and the invention of the light-emitting diode (LED).
-
-:::LFigure ledp l
-![](imgs/Lab5/ledp.jpg)
-####
-A cartoon of electrons subjected to a voltage, which forces them across the gap where they emit a photon whose energy is equal to the gap energy
-:::
-LEDs are specially manufactured semiconductor devices that basically accomplish the photoelectric effect in reverse. An LED contains layers of two different semiconductor materials that are &ldquo;doped.&rdquo; That is, one material has added to it a small amount of an element that has one valence electron fewer than it does, which results in vacancies, or &ldquo;holes&rdquo; (p-type).  The other type has added to it a small amount of an element that has one more valence electron than it does, which gives the material a slight excess of electrons (n-type). While the theory of semiconductors is far beyond the scope of this course, and is better treated in a solid-state physics class, we will briefly sketch the fundamental process that leads to photon emission below.
-
-
-
-At small voltages, the boundary of the materials in the LED (the p-n junction) acts similarly to a capacitor. Electrons are not able to flow freely between the layers, and they accumulate on the surface. Unlike the situation with capacitors, however, once the voltage is increased beyond a threshold, electrons gain enough energy to &ldquo;jump&rdquo; across the material boundary. After the electron crosses this &ldquo;gap,&rdquo; it has extra energy, which is dissipated by the production of a photon of a specific frequency. The frequency of the photon is determined by the kinds of materials in the semiconductor, and the chemical treatments to which it is subjected.
-
-We can associate the threshold voltage needed to cause electrons to &ldquo;jump the gap&rdquo; with the gap energy by:
-
-:::Equation led
-$$
-E_{gap} = e V_{th}
-$$
-:::
-
-Despite the complicated things that happen on a microscopic level, indeed the simple, naive, form of [Eq](#Eq-led) is actually true to a decent level of precision! We can then combine this relation with [Eq](#Eq-per) to obtain the functional equation
-
-:::Equation ledper
-$$
-e V_{th} = h \nu
-$$
-:::
-
-[Eq](#Eq-ledper) has two unknowns: $\nu$ and $V_{th}$. Luckily, we can measure the peak wavelength of the LED light for each provided component,  meaning that if then measure $V_{th}$, we can determine Planck&rsquo;s constant as:
-
-:::Equation planck
-$$
- h = \frac{e V_{th} \lambda}{c}
+c =  \nu \lambda 
 $$
 :::
 
 
-For the LEDs supplied in the RexQualis kit, the following Table shows the wavelength of the dominant peaks and its error:
-:::Table
-| Color|$\lambda$ (nm) | $\delta \lambda$ (nm)|
-| ------| ------| ------ |
-| Red  | 625| $\pm$ 5 |
-|Yellow|592| $\pm$ 3 |
-|Green |517| $\pm$ 3 |
-|Blue |465| $\pm$ 5 |
+When a microwave is powered, it produces standing waves across the cooking chamber. We can use the resulting pattern to measure the wavelength of the light by placing a medium in the microwave, with the rotating platform removed, and noticing how it heats up unevenly.
+
+The question we have to ask now is: How can we infer the wavelength of the microwaves by using household objects? The answer is quite simple, actually! Since the microwaves deposit *energy* into water molecules, and that energy depends on the amplitude of the wave at that point, we can look for the first signs of "cooking" in the medium -- places where the wave amplitude is highest will heat faster than the surrounding region. Hence, the cooked regions represent the *antinodes* of the microwaves, and raw regions are near *nodes*. 
+
+
+:::::::::Figure micro
+### How Microwaves Work
+::::::col l4
+![](imgs/Lab4/m1.png)
+A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it (typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
+::::::
+::::::col l4
+![](imgs/Lab4/m2.png)
+ The wavelength of the microwaves is tuned to produce a standing wave. This is where you get two waves, one going in each direction, which interact to make some areas where there is a huge vibration and others where there is none.
+::::::
+::::::col l4
+![](imgs/Lab4/m3.png)
+This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully, and so heated strongly, and others where the microwaves are weak.  These areas are separated by half a wavelength.
+::::::
+:::row
+Because of the standing waves, modern microwave ovens contain turntables. Otherwise parts of your food would be overcooked and others would still be raw.
+:::
+:::::::::
+
+
+Since we are finding distance between the locations of the antinodes, $d$, our measured distances will represent *half* of our wavelength, $\lambda$.
+
+
+
+::: Question
+Why is the distance between the food medium and the magnetron not important to the determination of $c$ in this experiment?
 :::
 
-If you do not have these LEDs, it is acceptable to use these values and make a note in your analysis of the results. 
-
-# Using an LED to measure $h$
-
-
+::: Question
+ Write the equation to calculate $c$ in terms of $d$ rather than $\lambda$.
+:::
 
 
+
+# Measuring the Speed of Light
 ::: Materials
-- Red, Blue, Green, Yellow LEDs
-- Power Block
-- Breadboard and Wires
-- Potentiometer
-- 220-$\Omega$ resistor (or 2 100-$\Omega$ resistors)
-- Multimeter
+- [c] Microwave
+- [c] Pasta, Chocolate, or Melting Cheese 
+- [c] Ruler
+- [c] Microwave-safe plate
 :::
 
-In this part of the lab, we will set up the basic experiment, which will allow us to measure $V_{th}$ for each of the LEDs. Since our power block does not allow us to modulate the voltage across the LED, we will use the 10-k trim pot as a **voltage divider**, allowing us to interpolate over a continuous range of voltages by using the analogue dial. The trim pot will be connected in series with a **current limiting** resistor to ensure that we do not blow out the LEDs, which can handle a maximum current of $30$ mA.
+:::::: Exercise
 
-::::::Question
-The potentiometer in your kit is a variable resistor. The resistance between leads 1 and 3 is always approximately $10$ k$\Omega$. As you turn the dial, the resistance between leads 1 and 2 ranges from approximately $0 \Omega$ to approximately $10$ k$\Omega$.
 
-:::Figure vrr xl
-![A variable resistor functions like two resistors in series, whose values always add up to the total resistance. Adjusting the wiper affects only the resistance between leads 1 and 2, or leads 2 and 3 (but not between leads 1 and 3)](imgs/Lab5/vrr.jpg)
+:::Figure tested xl
+![](imgs/Lab4/choc.jpg)
 
-A variable resistor functions like two resistors in series, whose values always add up to the total resistance. Adjusting the wiper affects only the resistance between leads 1 and 2, or leads 2 and 3 (but not between leads 1 and 3).
+ We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
 :::
+1. Remove the rotating table from your microwave. You may need to place a microwave-safe cup or bowl upside down over the turning gear.
+2. Place your medium on the microwave-safe plate.
+3. Set the plate in the microwave and turn it on for 10- to 30-second intervals, until you see at least two spots that are melting/cooked
+4. Measure the distance between the centers of these two spots.
 
-In [Ex](#Ex-led), we will use the potentiometer as a voltage divider by connecting 1 to 3.3 V, 3 to ground, and 2 to a $220-\Omega$ resistor attached to the load.
 
-:::Figure cd m
-![](imgs/Lab5/planckexp.png)
+:::Figure pasta xl
+![](imgs/Lab4/pasta.jpg)
+
+Do your best to measure from the center of the cooked region. Be sure to estimate your measurement error, so that you will be able to determine the precision of your result!
 :::
- 
-
- For the purpose of the following questions, treat the LED element as having infinite resistance, e.g. as an ideal capacitor, when analyzing the circuit diagram. This is appropriate for our experiment since we are working with the LEDs at voltages where they **do not emit light** or are just beginning to emit, and hence, pass no or negligible current.
- 1. As a function of resistance between 1 and 2, $R_{1}$, the total resistance of the potentiometer $R_{tot}= 10$ k$\Omega$, and the current-limiting resistor $R_L= 220\ \Omega$, calculate the voltage across the LED. 
-
- 2. What are the maximum and minimum voltages obtainable, and what $R_{1}$ corresponds to them?
-
- 3. What value of $R_{1}$ would produce 1.5 V across the LED?
-
-::::::
-
-::::::Exercise led
-In this exercise, you will construct a circuit to observe the turn-on voltage of various LEDs.
-
-:::RFigure circuit m
-![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab5/SimpleSetup.jpg)
-:::
-**Setup:**
-1. Using [Fi](#Fi-circuit) as a guide, connect lead 1 of your potentiometer to the positive rail, and lead 3 to the negative rail. Used in this fashion, your potentiometer acts as a **voltage divider**.
-2. Connect your $220-\Omega$ resistor in series with lead 2 of the potentiometer. 
-3. Place your colored LEDs in different rows, with their negative end in the negative rail.  
-4. Connect your multimeter between the negative rail and the  $220-\Omega$ resistor row, and turn it on in DC Volts mode.
-5. Run a jumper wire from your $220-\Omega$ resistor to one of the LEDs. 
-6. Turn on your power block and rotate the potentiometer dial until you see the LED just barely light.
-7. Record the value of the voltage across the LED in a table like the one below.
-:::Table
- 
-| Color|$\lambda$  |$V_{th}$|
-| ------| ------| ------ |
-|@fa-pencil@       |        |         |
-|@fa-pencil@     |        |         |
-
-:::
-8. Repeat for all LED colors by moving the jumper wire to the corresponding row.
-
-::::::
-::::::Question
-1. Present your table of data, with an additional column showing the calculated value of $h$ for each LED
-:::Table
- 
-| Color|$\lambda$ |$V_{th}$|$h$|
-| ------| ------| ------ |------|
-|@fa-pencil@       |        |         |        |
-|@fa-pencil@     |        |         |        | 
-
-:::
-2. Are your calculated values higher or lower than the accepted value of $h$?
-3. Comment on why you think your values are higher or lower.
-::::::
-
-# Improving the measurement of $h$
-
-
-
-
-::: Materials
-- Red, Blue, Green, Yellow LEDs
-- Power Block
-- Breadboard and Wires
-- Potentiometer
-- 220-$\Omega$ resistor (or 2 100-$\Omega$ resistors)
-- Multimeter
-:::
-
-
-
-::::::Exercise led2
-We will refine the measurement of $h$ by performing the measurement multiple times, and then calculating the value of $h$ from a linear relationship.
-
-**Steps:**
-1. Repeat the steps of [Ex](#Ex-led), but take **five** measurements for each LED color, resetting the potentiometer to 0 V after each trial.
-2. Calculate the **average** turn-on voltage, $\bar V_{th}$ for 5 trials, as well as the **standard deviation**, $\delta V_{th}$. 
-3. Record these values in a table like the one below.
-
-:::Table
- 
-| Color|$\lambda$ | $\nu$ | $\bar V_{th}$| $\delta V_{th}$ |
-| ------| ------| ------ |------| ------| 
-|@fa-pencil@       |        |         |        |        |
-|@fa-pencil@     |        |         |        |        |
-
-:::
-8. Repeat for all LED colors.
-
-::::::
-
-::::::Question
-1. Present your table of data, with two additional columns showing the calculated value of $\bar h$ for each LED, and the standard deviation of $h$. 
-    :::Table
-    | Color|$\lambda$ | $\nu$ | $\bar V_{th}$| $\delta V_{th}$ |$\bar h$| $\delta h$ |
-    | ------| ------| ------ |------| ------| ------| ------| 
-    |@fa-pencil@       |        |         |        |        |       |        |
-    |@fa-pencil@     |        |         |        |        |       |        |
-
-    :::
-    The standard deviation of a product $A=XY$ is calculated as
-    $$
-    \frac{\delta A}{A} = \sqrt{ \Big(\frac{\delta X}{X}\Big)^2 + \Big(\frac{\delta Y}{Y}\Big)^2}
-    $$
-2. Make a single scatter plot containing 
-    - $\bar V_{th}$ vs. $\nu$
-    - $(\bar V_{th} + \delta V_{th})$ vs. $\nu$
-    - $(\bar V_{th} - \delta V_{th})$ vs. $\nu$
-
-    The latter two plots are effectively showing the *error bars* on your first plot. You may use Google sheets to do this.
-3. From the equation relating $V_{th}$ and $\nu$, what is the significance of the slope of this plot? Calculate the accepted theoretical value.
-3. Find the value of the slope for the line of best fit for $\bar V_{th}$ vs. $\nu$. How does it compare to the accepted value you calculated?  
-4. What value of $h$ does your slope indicate? 
-5. Does your line of best fit intercept the origin? Explain what this means and provide some reasons for the observation.
-6. Is the calculation of $h$ from your slope more accurate than the individual measurements? Why do you think this is?
-::::::
-
 
 :::Question
+1. What is the distance between the centers of your cooked regions, $d$? 
+2. Estimate the uncertainty in this measurement, e.g. what are the largest and smallest values you'd expect to get if you were to measure this distance multiple times? Write your final answer as $(d \pm \delta d)$ as usual.
+3. Calculate the measured value and error of the speed of light using your results. Write your final answer as $(c \pm \delta c)$ as usual Recall that for a product $A =XY$, the formula for error is given by:
+$$
+\frac{\delta A}{A} =  \sqrt{ \Big(\frac{\delta X}{X}\Big)^2 + \Big(\frac{\delta Y}{Y}\Big)^2}
+$$
+:::
+::::::
 
-1. Which source of uncertainty, $\delta V_{th}$ or $\delta \lambda$, do you think influences the *precision* of your results more? Explain.
-2. Which do you think influences your *accuracy* more? Explain.
+:::Question
+1. What is the *discrepancy* between your result and the accepted value of $c$?
+2. Is the discrepancy within the error bounds, $\delta c$ you calculated?
+3. Based on your answer to the above, do you think your measurement agrees with the accepted value of $c$? Why or why not?
+4. Are there any sources of systematic error (e.g. irregularities in food moisture, dirty microwave walls, other things that may affect microwave amplitude distribution) that may have affected your results? Give details about these possible sources and how they might affect your result.
 :::
 
 
+::: Question
+1. Roughly measure the length of the inside your microwave in cm. 
+2. Is it close to a multiple of $d$?
+3. Give an argument as to why microwaves typically come in only a few standard sizes. 
+4. What do you think the function of the mesh on the viewing screen of your microwave is?
+:::
 
-# Write-up
+# Write Up
 
 ###  **@fa-hand-o-right@  Instructions :**
  #### **1. Answer all questions clearly, showing your work where appropriate.**
  #### **2. Starting on a seperate page:** 
-  - Write a short summary (~ 1 page, single spaced) describing Planck&rsquo;s constant, how you tested it, and any important observations.
+  - Write a short summary (~0.5 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
+  - Write a short summary (~0.5 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
   - In these summaries, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
 
  #### **3. Additional Information:**
@@ -251,7 +130,7 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 
 ::::::Summary
   :::Hider Lab Submission
-  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6277672&forceview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
+  <iframe id="contentframe" width="100%" src="https://gauchospace.ucsb.edu/courses/mod/lti/launch.php?id=6236577&triggerview=0" allow="microphone https://coursekit.google.com; camera https://coursekit.google.com; geolocation https://coursekit.google.com; midi https://coursekit.google.com; encrypted-media https://coursekit.google.com;" allowfullscreen="1" style="height: 500px;"></iframe>
  :::
 ::::::
 
@@ -259,5 +138,7 @@ We will refine the measurement of $h$ by performing the measurement multiple tim
 
 Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you&rsquo;d like just to leave some comments, scroll to the bottom of the form.
 ::: Hider Open Feedback Form
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwRMJCLOQqad_xstc9veot0WyzSmMH3XCGxQ_918RWt0KvgA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs2N7niGtq0X3r9blr-wdvoqgGCb1_AR2fqgQCn8YyLawIQg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
+
+

@@ -88,7 +88,7 @@ body {
 }
 
 /* Maincontent background is transparent */
-#mdcontent {
+#mdcontent, #testcontent {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -123,6 +123,16 @@ body {
 }
 
 
+/*Cards*/
+
+.pink header{  
+    background-color: rgb(195, 138, 148);
+    color:white
+}
+.pink header h3{
+    font-family: var(--minor-font)
+}
+
 /*********************************************************************************/
 /* Blurb Settings */
 
@@ -155,9 +165,33 @@ body {
     --box-shadow-color:  var(--l5-bg)!important;
 }
 
-.Exercise header, .Exercise footer{
+.Exercise > .ac-label:hover:before {
+    background-color: var(--l4-bg);
+    color: var(--l2-font);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+.Exercise > .ac-label:before, .Exercise > .ac-input:checked + .ac-label:before {
+    background-color: var(--l3-bg);
+    color:white;
+    ransition: background-color 0.2s ease-in-out;
+}
+
+
+.Exercise > .ac-input:checked + label{
+    background-color: #009688;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+.Exercise > .ac-text, .Exercise .ac-sub-text {
+    opacity: 0.2;
+    max-height: 57px;
+}
+
+.Exercise > .ac-label{
     background-color: var(--l3-bg);
     color: var(--l2-font);
+    transition: background-color 0.5s ease-in-out;
 }
 
 /* Simulation Card */
@@ -168,7 +202,12 @@ body {
     --box-shadow-color: var(--primary-light)!important;
 }
 
-.Simulation header, .Simulation footer{
+.Simulation > .ac-text, .Exercise .ac-sub-text {
+    opacity: 0.2;
+    max-height: 0px ;
+}
+
+.Simulation .ac-label, .Simulation footer{
     background-color:var(--primary);
     color: var(--primary-font);
 }
@@ -301,17 +340,20 @@ tbody > tr:nth-child(odd){background-color:var(--l3-bg)!important}
 
 
 /*Hiders*/
-.Hider > header {
+.Hider > .ac-label {
     background-color: var(--primary-dark);
     color: var(--primary-font);
     font-size: 100%!important;
+    font-weight: lighter;
   }
 
-  .Hider > footer {
-    background-color: var(--primary-dark);
-    color: var(--primary-font);
-    font-size: 100%!important;
-  }
+
+  .Hider > .ac-text, .Exercise .ac-sub-text {
+    opacity: 0.2;
+    max-height: 1px ;
+    
+}
+
 .Hider li, .Hider ol{
     text-align: left;
 }
