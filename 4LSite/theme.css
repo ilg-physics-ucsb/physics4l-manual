@@ -280,6 +280,11 @@ body {
     line-height:1.2 !important;
 }
 
+.Fig img{
+    padding-bottom: 10px;
+}
+
+
   .Fig>footer>h3{
     font-weight: var(--blurb-label-weight);
 
