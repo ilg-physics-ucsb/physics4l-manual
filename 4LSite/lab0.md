@@ -85,25 +85,67 @@ We will now describe the process you will  use to find the location of the magne
 
 
 ## 2. To calibrate or not to calibrate? 
-Now that we have found the location of the magnetometer, the next step is to gain a working knowledge of its features. On Phyphox, you can see that the magnetometer has a *calibrated* and *uncalibrated* mode. Think about which mode you should use for the purpose of measuring the magnetic field strength of a magnet.
+
+
+Now that we have found the location of the magnetometer, the next step is to gain a working knowledge of its features. On Phyphox, you can see that (depending on the model of your phone) the magnetometer has a *calibrated* and *uncalibrated* mode. Before we discuss which mode is appropriate for our experiments, let's first cover the concept of calibration.
+
+The process of calibration allows us to quantify a measurement of some *physical quantity* as a *number* (or set of numbers) that have meaning **relative** to some known, or universal, standard. The standard you are calibrating against can depend on the specific context of your experiment, or the physical characteristics of your measurement instrument.
+
+::::::Hider Examples of Calibration: Click to read more
+
+- @fa-chevron-right@ Cheap analogue kitchen scales have a weighing platform elevated from the base by a spring. The platform is attached to a rack and pinion gear that physically rotates an indicator needle on the front of the machine. The markings on the front are calibrated by measuring standard masses and creating a numerical scale that matches these known locations. 
+:::Figure scales l
+![](imgs/Lab0/scale.png)
+:::
+- @fa-chevron-right@ Spectrometers, which separate and measure the components of light, are calibrated by making a measurement of a sample with peaks of known wavelength. A common choice for calibration is the mercury emission spectrum as it contains a doublet that allows one to estimate both the location *and* scale of incident light. 
+- 
+::::::
 
 ::: Question
-The process of calibration allows us to quantify a measurement of some *physical quantity* as a *number* (or set of numbers) that have meaning **relative** to some known, universal, standard. Imagine tossing a ball to your friend, 
-:::
- 
-Since the magnetometer is very sensitive, any kind of unwanted magnetization will affect your measurements. Unfortunately, your phone is full of things that create magnetic fields and that can be easily magnetized. This is why the magnetometer is usually at the edge — to isolate it as much as possible. 
+Imagine the following scenario:
 
-If your phone is exposed to a strong magnetic field, part of your device's integrated circuit might become magnetized, leaving your compass pointing in the wrong direction. Nearly every phone has some strategy to calibrate the magnetometer under these circumstances. You might trigger this when measuring the strength of a magnetic field. For your phone to make sure that the compass is working, it will automatically subtract the component from the external field to get calibrated data. This could be a problem if you try to measure a higher magnetic field on purpose.
+
+:::RFigure temps l
+![](imgs/Lab0/temps.jpg)
+
+
+:::
+
+Calibration is very useful when it is applied appropriately. However, in our case, your phone is attempting to calibrate itself under the assumption that the only magnetic field that is present is Earth's (which is clearly not the case when experimenting with magnets)! The reason phones do this is because the primary function of the magnetometer is actually the compass/maps app on your phone: if your phone is exposed to a strong magnetic field, part of your device's integrated circuit might become magnetized, leaving your compass pointing in the complete wrong direction.
+:::RFigure calibration xl
+![An example of bringing a magnet close to my phone's magnetometer. In calibrated mode, you can see that the phone is attempting to correct the field based on the phone's gyroscope, assuming that the additional magnetic field detected is from an accidentally magnetized component, giving me an artificially decreasing field. In the uncalibrated mode, the phone's magnetometer reading does not self-adjust.](imgs/Lab0/calibration.png)
+An example of bringing a magnet close to my phone's magnetometer. In calibrated mode, you can see that the phone is attempting to correct the field based on the phone's gyroscope, assuming that the additional magnetic field detected is from an accidentally magnetized component, giving me an artificially decreasing field. In the uncalibrated mode, the phone's magnetometer reading does not self-adjust.
+:::
+How and when is your phone applying calibration, exactly? Unlike devices such as scales and thermometers, the phone is constantly calibrating itself: since the magnetometer is very sensitive, any kind of unwanted magnetization will affect your measurements — unfortunately, your phone is full of things that create magnetic fields and that can be easily magnetized [fn] This is why the magnetometer is usually at the edge — to isolate it as much as possible [/fn]. While the method varies slightly between devices, in general it should look quite similar to this:
+
+1. Assume that the only external magnetic field is Earth's magnetic field (who's magnitude is around $50$mT).
+2. Use the gyroscope to determine the phone's orientation, and the components of Earth's field that should be measured
+3. Using the magnetometer, obtain a signal that represents the strength of the total magnetic field.
+3. Assume that the *internal* magnetization of the phone is the difference between the measurement and Earth's field, and try to correct the reading toward this value.
+
+<br>
+<br>
+<br>
+
+The easiest way to get a feel for how your phones calibration (or lack there of) may affect your data is simply to play with it. In the next exercise, we will carefully bring a stronger magnetic field close to the magnetometer and see how the phone reacts in both calibrated and uncalibrated modes.
+
+
+
+
 
 :::::: Exercise 
-Now make a magnetometer measurement by putting the magnet somewhere around your phone. Make sure the absolute field strength is 100 µT or more. Then you can rotate the phone about every axis while measuring, and if your phone applies a calibration to the reading, at some point the readings will suddenly drop (usually to around 50 µT, sometimes less). 
+We will now make a magnetometer measurement by putting the magnet somewhere around your phone. Make sure the absolute field strength is 100 µT or more. Then you can rotate the phone about every axis while measuring, and if your phone applies a calibration to the reading, at some point the readings will suddenly drop (usually to around 50 µT, sometimes less). 
 
 During calibration, the magnetometer uses the Earth's magnetic field in conjunction with its gyroscope to determine the relative orientation of its sensors. Since the $x$, $y$ and $z$ directions are mutually orthogonal, it analyzes how rotation along each of these axes affects the sensor measurement, to determine how these axes are aligned relative to the device. 
+
+
 ::: Question
-For a phone that applies active calibration, why do you expect to see the change in readings?
+Try this exercise in both calibrated and uncalibrated mode and then answer the following questions. If you phone does not have one of these modes, please do it for whichever it does have [fn]Your response to this question will help the TAs assess your work in this and future experiments that use the magnetometer[/fn]
 :::
-Therefore, for the purpose of measuring the *raw* strength of a magnetic field, you should switch to the *uncalibrated* magnetometer. 
+1. Attach a screenshot and a brief description of what happens when bringing a magnet close to your phone in calibrated and uncalibrated mode.
+2. Which mode do you think you should use to measure magnetic fields with the most accuracy in this course? If you only have one mode, comment on the accuracy you think this mode has and why.
 ::::::
+
 
 
 
@@ -156,14 +198,14 @@ Now let's measure the direction of magnetic field from the  magnet.
 5.  Stop recording to view the collected data. 
 
 ::: Question
-1. Identify the axis name and sign in [Fi](#Fi-phonaxes) for your phone.
+1. Identify the axis name and sign in [Fi](#Fi-phonaxes) for your phone. [fn]Your response to this question will help the TAs assess your work in this and future experiments that use the magnetometer[/fn]
 2. Why does $B_z$ change when you move the magnet vertically?
 3. Describe the change you observed in the plot after you flipped the magnet, and give a possible explanation.
 
 :::
 
 ::: Figure phonaxes m
-![Label your axes, including sign](imgs/phoneaxes.png)
+![Label your axes, including sign](imgs/Lab0/phoneaxes.png)
 :::
 
 
