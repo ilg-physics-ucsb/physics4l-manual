@@ -101,15 +101,17 @@ The process of calibration allows us to quantify a measurement of some *physical
 - 
 ::::::
 
-::: Question
+:::::: Question
 Imagine the following scenario:
 
 
 :::RFigure temps l
 ![](imgs/Lab0/temps.jpg)
-
-
 :::
+You are in the lab and need to know the room temperature for an experiment. After shuffling through the drawers, the only thermometer you can find is an old mercury thermometer who's markings have worn off. Being as clever as you are, you realize that you can calibrate the thermometer by measuring the freezing point and boiling point of water.   
+
+Using a ruler on your screen to calibrate the measurement, click on the image to the right and determine the temperature of the room in Celsius. Be sure to describe how you obtained your final result.
+::::::
 
 Calibration is very useful when it is applied appropriately. However, in our case, your phone is attempting to calibrate itself under the assumption that the only magnetic field that is present is Earth's (which is clearly not the case when experimenting with magnets)! The reason phones do this is because the primary function of the magnetometer is actually the compass/maps app on your phone: if your phone is exposed to a strong magnetic field, part of your device's integrated circuit might become magnetized, leaving your compass pointing in the complete wrong direction.
 :::RFigure calibration xl
@@ -254,7 +256,7 @@ Measurements of disk and bar-like magnets from close (but not *too* close) dista
 :::::: Exercise
 As your final exercise in getting familiar with the magnetometer, you will attempt to verify your prediction quantitatively.
 
-It should be emphasized that since we are using the uncalibrated magnetometer, you have to **subtract the background** from the measurements. The background includes Earth's magnetic field and local fields from nearby electronic devices and metals.
+It should be emphasized that since we are using the uncalibrated magnetometer, you have to manually calibrate it by **subtracting the background** from the measurements. The background includes Earth's magnetic field and local fields from nearby electronic devices and metals.
 
 :::Note
  Be careful! Do not to move or rotate your phone between data aquisitions, because this would change the background contribution.
