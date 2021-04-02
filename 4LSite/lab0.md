@@ -143,9 +143,10 @@ During calibration, the magnetometer uses the Earth's magnetic field in conjunct
 
 ::: Question
 Try this exercise in both calibrated and uncalibrated mode and then answer the following questions. If you phone does not have one of these modes, please do it for whichever it does have [fn]Your response to this question will help the TAs assess your work in this and future experiments that use the magnetometer[/fn]
-:::
+
 1. Attach a screenshot and a brief description of what happens when bringing a magnet close to your phone in calibrated and uncalibrated mode.
 2. Which mode do you think you should use to measure magnetic fields with the most accuracy in this course? If you only have one mode, comment on the accuracy you think this mode has and why.
+:::
 ::::::
 
 
