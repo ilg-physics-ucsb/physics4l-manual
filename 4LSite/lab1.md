@@ -4,7 +4,7 @@
 - [c] Two or more magnets
 - [c] Two short wire jumpers (kit)
 - [c] Two medium wires (kit)
-- [c] Circuit Power Block and Breadboard (kit)
+- [c] Circuit Power Block, 10 $\Omega$ Resistors and Breadboard (kit) OR AA Battery
 - [c] Strip of Aluminum foil
 - [c] Tape 
 - [c] Cardboard for support, *e.g.*, the circuit kit box
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presence of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some deep, unsolved mysteries of quantum electrodynamics [fn] The Lorentz Force, when analyzed for a point charge, results in a strange paradox that predicts &ldquo;signals from the future&rdquo; causing spontaneous acceleration of particles. Despite this being an equation from Classical Electrodynamics, the problem persists into Quantum Electrodynamics without a well-accepted solution. Surprisingly, the current perspective assumes that electroweak unification is necessary to resolve the paradox.  (See [wikipedia](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future) for more information.)[/fn]. For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
+which describes the force, $\vec F$, that acts on a charge, $q$, moving with a velocity $\vec v$ in the presence of electric and magnetic fields, $\vec E$ and $\vec B$ respectively. This relation is immensely important not only to foundational physics, but also to electrical engineering and various scientific applications: it allows the creation of motors, mass spectrometers, particle detectors and accelerators like the LHC. For the aspiring theorist, this force law should be intrinsically interesting: it’s the origin of some deep, unsolved mysteries of quantum electrodynamics [fn] The Lorentz Force, when analyzed for a point charge, results in a strange paradox that predicts "signals from the future" causing spontaneous acceleration of particles. Despite this being an equation from Classical Electrodynamics, the problem persists into Quantum Electrodynamics without a well-accepted solution. Surprisingly, the current perspective assumes that electroweak unification is necessary to resolve the paradox.  (See [wikipedia](https://en.wikipedia.org/wiki/Abraham%E2%80%93Lorentz_force#Signals_from_the_future) for more information.)[/fn]. For these reasons, our first lab will be a real, tangible investigation of this mysterious force law.
 
 
 For the purpose of this laboratory experiment, we are concerned with the force in the absence of an external electric field, $\vec E = 0$, so our equation will read:
@@ -39,7 +39,7 @@ This equation gives us two independent and important pieces of information, name
 :::LFigure rhr s
 ![](imgs/Lab1/crossproduct.png)
 ::: 
-The direction can be determined by means of the so-called &ldquo;right-hand rule,&rdquo; shown in [Fi](#Fi-rhr). The right-hand rule is a mnemonic device for quickly working out the direction of a cross product: If you extend the index and middle fingers of your right hand in the directions of the first and second vectors in the product, respectively, your extended thumb points in the direction of the resultant.
+The direction can be determined by means of the so-called "right-hand rule," shown in [Fi](#Fi-rhr). The right-hand rule is a mnemonic device for quickly working out the direction of a cross product: If you extend the index and middle fingers of your right hand in the directions of the first and second vectors in the product, respectively, your extended thumb points in the direction of the resultant.
 
 
 Aside from the *direction*, we also need to know about the *strength*. The magnitude of the product depends, of course, on the magnitudes of the original vectors, but also on the *angle* between the two vectors:
@@ -86,17 +86,17 @@ This week we will study the force experienced by moving electrons in a magnetic 
 
 
 
-## 2. Force on a current-carrying &ldquo;wire&rdquo; near a magnet
+## 2. Force on a current-carrying "wire" near a magnet
 :::Materials
 - [c] Two or more magnets
 - [c] Two short jumper wires (kit)
-- [c] Circuit Power Block and Breadboard (kit)
+- [c] Circuit Power Block, 10 $\Omega$ Resistors and Breadboard (kit) OR AA Battery
 - [c] Thin strip of Aluminum foil, approximately 10-15 cm long
 - [c] Tape
 - [c] Cardboard, *e.g.* circuit kit box
 :::
 
-Most of us don&rsquo;t have access to beams of charged  particles in free space (or methods to observe them easily), which makes a demonstration of Lorentz&rsquo;s force law similar to the simulation above quite impossible. Luckily for us, the force law is ubiquitous, and equally applies to the moving electrons in *materials* &ndash; such as current-carrying wires.
+Most of us don't have access to beams of charged  particles in free space (or methods to observe them easily), which makes a demonstration of Lorentz's force law similar to the simulation above quite impossible. Luckily for us, the force law is ubiquitous, and equally applies to the moving electrons in *materials* &ndash; such as current-carrying wires.
 
 In a wire, a current is carried by many electrons moving along its length because of the voltage difference between its ends.  Recall that in this case,
 
@@ -120,13 +120,13 @@ where $n$ is the number of electrons per unit volume, $q_e$ is the charge of an 
 
 
 :::::: Exercise
-In this experiment, we will fix a strip of aluminum foil, which behaves as a &ldquo;wire&rdquo;, so that it runs perpendicular to the field generated by our magnet. When you connect the foil to the terminals of your breadboard, so that a current is generated, you will observe and record the effects of the Lorentz force, and explain if it matches your expectations based on the &ldquo;right-hand rule.&rdquo; The reason for using foil is its thickness &ndash; it is much easier to observe bending in foil vs. stiffer wire.
+In this experiment, we will fix a strip of aluminum foil, which behaves as a "wire", so that it runs perpendicular to the field generated by our magnet. When you connect the foil to the terminals of your breadboard, so that a current is generated, you will observe and record the effects of the Lorentz force, and explain if it matches your expectations based on the "right-hand rule." The reason for using foil is its thickness &ndash; it is much easier to observe bending in foil vs. stiffer wire.
 :::Figure foilbox m
-  ![ Example of the setup. The foil runs perpendicular to the magnet&rsquo;s B field. ](imgs/Lab1/foilbox.jpg)
+  ![ Example of the setup. The foil runs perpendicular to the magnet's B field. ](imgs/Lab1/foilbox.jpg)
 
   Example of the setup. The foil runs 
 
-  perpendicular to the magnet&rsquo;s $\vec B$ field. 
+  perpendicular to the magnet's $\vec B$ field. 
 :::
 ***Foil Circuit:***
 1. On each end of the aluminum foil strip, wrap it around the short wire jumpers and tape to secure, leaving a few cm of foil. 
@@ -135,13 +135,14 @@ In this experiment, we will fix a strip of aluminum foil, which behaves as a &ld
 
   Wrap the foil around the leads and tape to secure. 
 :::
-2. Insert this into the breadboard, with the leads going into + and - terminals on the 5-V power lines. Be sure to bend the tips of the leads so that the flat face of the foil is pointing up and down, as in [Fi](#Fi-foilbox).
-3. Taking your cardboard support, place one magnet on either side of the foil so that they hold their place. Adjust their height to be level with the foil from the previous step. Make sure your magnets&rsquo; poles have been labeled!
 :::RFigure foilmove m
   ![The foil is moving "up" in my setup.](imgs/Lab1/foilbend.gif)
 
   The foil moving "up".
 :::
+2. Insert this into the breadboard, with the leads going into + and - terminals on the 5-V power lines. Be sure to bend the tips of the leads so that the flat face of the foil is pointing up and down, as in [Fi](#Fi-foilbox).
+3. Taking your cardboard support, place one magnet on either side of the foil so that they hold their place. Adjust their height to be level with the foil from the previous step. Make sure your magnets' poles have been labeled!
+
 4. Plug your powerblock into your laptop or a USB charger.
 5. Press the button on your powerblock to allow current to flow.
 6. Note the direction in which the foil moves, and **press the button again to prevent the circuit from overheating**.
@@ -183,13 +184,19 @@ The Lorentz force acts on the electrons in the foil. Try to explain why the *ent
 ::::::
 
 :::Hider Mini FAQ for Exercise 1
-- **Q:** My observations don&rsquo;t match the RHR!
+- **Q:** My powerblock light is turning off!
+  - This means that your power block is short-circuited -- there is a capacitor switch that shuts down the block if the current through it is too high. This may happen with higher voltage power sources.  
+  - A fix for this would be to insert a 100$\Omega$ resistor in series with your foil. **Be Careful**: using a resistance lower than 100$\Ohm$ may lead to it heating up if the circuit is left on.  
+  - Rather than insert a resistor, you might also consider removing the battery from your multimeter and using this as your power source instead, by connecting the rails to the + and - terminals of the battery
+  
+
+- **Q:** My observations don't match the RHR!
   - Did you record the current direction correctly? 
   - Is your power block installed upside down so that the + and - terminals are connected to the wrong power rails?
   - Did you misidentify the polarity of your magnets?
   ####
 
-- **Q:** My foil doesn&rsquo;t move enough to see the direction!
+- **Q:** My foil doesn't move enough to see the direction!
   - Make sure you are using the 5-V power terminals for the largest effect!
   - Adding more magnets to your stack will increase the strength of the interaction.
   - If the foil is pulled too stiff, it will not be able to overcome the tension to bend. Try loosening it.
@@ -223,7 +230,7 @@ By noting the direction in which the current is flowing, as well as the directio
 
 
 :::::: Exercise
-With the knowledge of the magnet&rsquo;s orientation from the previous lab, we will now construct a simple homopolar motor by following these steps:
+With the knowledge of the magnet's orientation from the previous lab, we will now construct a simple homopolar motor by following these steps:
 
 :::Figure screwbox m
   ![ My setup: The screw hangs from the magnetic wire, which is supported by the box. You can, of course, simply hold the wire instead. My second (non-magnetic) wire is connected to the power rail. The motor spins when I touch the second red wire to the edge of the magnet  ](imgs/Lab1/screwbox.jpg)
@@ -272,6 +279,26 @@ Along with your table, include an image of each trial. Include arrows to show th
 :::
 
 ::::::
+
+
+:::Hider Mini FAQ for Exercise 2
+- **Q:** My powerblock light is turning off!
+  - This means that your power block is short-circuited -- there is a capacitor switch that shuts down the block if the current through it is too high. This may happen with higher voltage power sources.  
+  - A fix for this would be to insert a 100$\Omega$ resistor in series with your motor. **Be Careful**: using a resistance lower than 100$\Ohm$ may lead to it heating up if the circuit is left on.  
+  - Rather than insert a resistor, you might also consider removing the battery from your multimeter and doing the battery version of this experiment (below)
+  
+- **Q:** My observations don't match the RHR!
+  - Did you record the current direction correctly? 
+  - Is your power block installed upside down so that the + and - terminals are connected to the wrong power rails?
+  - Did you misidentify the polarity of your magnets?
+  ####
+
+- **Q:** My magnet/screw doesn't rotate!
+  - The most common cause of this is friction. I have found that balancing the screw on the side of the wire end, rather than directly on the tip as in [Fi](#Fi-magnetized) reduces friction. Also try to touch the side of the magnet with the wire as lightly as possible to reduce friction.
+  - Make sure you are using the 5-V power terminals for the largest effect!
+  - Adding more magnets to your stack will increase the strength of the interaction
+:::
+
 ::::::Hider Alternate set-up with battery
 1. Place the flat head of your screw on top of the neodymium magnet, with the north (⨀) pole facing upward. The screw should now also be magnetized so that picking it up also picks up the magnet beneath it.
 2. Holding the battery in the air with the positive terminal facing up, touch the negative terminal to the pointed end of the screw. The magnetization should allow you to pick up the screw + magnet by lifting the battery.
@@ -284,18 +311,7 @@ Along with your table, include an image of each trial. Include arrows to show th
 :::
 ::::::
 
-:::Hider Mini FAQ for Exercise 2
-- **Q:** My observations don&rsquo;t match the RHR!
-  - Did you record the current direction correctly? 
-  - Is your power block installed upside down so that the + and - terminals are connected to the wrong power rails?
-  - Did you misidentify the polarity of your magnets?
-  ####
 
-- **Q:** My magnet/screw doesn&rsquo;t rotate!
-  - The most common cause of this is friction. I have found that balancing the screw on the side of the wire end, rather than directly on the tip as in [Fi](#Fi-magnetized) reduces friction. Also try to touch the side of the magnet with the wire as lightly as possible to reduce friction.
-  - Make sure you are using the 5-V power terminals for the largest effect!
-  - Adding more magnets to your stack will increase the strength of the interaction
-:::
 
 # Write-up
 
@@ -319,7 +335,7 @@ Along with your table, include an image of each trial. Include arrows to show th
 
 # Feedback
 
-Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you&rsquo;d like just to leave some comments, scroll to the bottom of the form.
+Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you'd like just to leave some comments, scroll to the bottom of the form.
 ::: Hider Open Feedback Form
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi9DpfESfGorSAIpLdC2CqHFpPXygltJ7nGDA2VtsKpyI8nQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::
