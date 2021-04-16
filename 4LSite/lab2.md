@@ -151,7 +151,7 @@ The power block has an internal switch to shut off the power if it is shorted, w
 7. Quickly move your phone, aligning the magnetometer with the next line.
 8. Repeat steps 6 & 7 for all lines.
 ::: Question
-Do(es) the dip(s) match your prediction from question 1? Comment on whether the assumption can be made or not.
+From your answer to question 1, comment on whether the height of the phone affects your measurements and how you came to that conclusion.
 :::
 
 
