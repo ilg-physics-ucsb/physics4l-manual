@@ -58,7 +58,7 @@ $$
 :::
 The effect of these loops is essentially to amplify the emf by a factor of $N$. 
 
-This part of the lab will involve the study of Faraday’s Law and Lenz’s Law acting upon a coil. For Option 1, We will measure Lenz’s Law by moving a magnet suddenly toward or away from the coil, and observing the direction of current. For option 2, we will create a wireless power transmitter by creating a magnetic field that oscillates very quickly, and capturing it with another coil connected to an LED. 
+This part of the lab will involve the study of Faraday’s Law and Lenz’s Law acting upon a coil. For Exercise 1, we will observe Lenz’s Law by dropping a magnet through a conducting tube. For Exercise 2, we will create a wireless power transmitter by creating a magnetic field that oscillates very quickly, and capturing it with another coil connected to an LED. 
 
 # Faraday's Law Experiments
 
@@ -80,7 +80,7 @@ In this exercise, we will observe a fairly dramatic demonstration of Lenz's law 
 2. Drop the magnets through the center of the tube and observe what happens
 
 :::Question
-1. Did the magnet fall slower or faster than usual?
+1. Did the magnet fall slower or faster than when in the absence of aluminum foil?
 2. What direction, relative to the magnet's velocity, did the induced current result in a force?
 3. Does this agree with Lenz's Law? Explain your reasoning.
 :::
@@ -121,7 +121,7 @@ For the following questions, you can assume that the magnet reaches terminal vel
 2. What is the total length of the tube?
 3. What is the weight of your magnet? 
 4. What is the *total work done* on the magnet by Faraday's Law?
-5. What is the power supplied by your magnet falling through your aluminum tube?
+5. What is the power supplied (in Watts) by your magnet falling through your aluminum tube?
 :::
 :::::::::
 
