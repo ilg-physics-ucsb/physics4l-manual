@@ -134,7 +134,7 @@ $$
 \vec F_{tot} = - m g \hat z  - \sigma b v \hat v
 $$
 where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $v$ is the speed of the magnet, and $b$ characterizes the strength of the magnet.
-1. Using the above equation, find an expression for the terminal velocity $v_t$ in terms of $m$, $g$, $b$ and $\sigma$.[fn] Hint: What is the total force, $\vec F_{tot}$ on a falling body that has reached terminal velocity?[/fn]
+1. Using the above equation, find an expression for the terminal velocity $v_t$ in terms of $m$, $g$, $b$ and $\sigma$. [fn] Hint: What is the total force, $F_{tot}$ on a falling body that has reached terminal velocity? [/fn]
 2. Using your **data** from [Qu](#Qu_magnet-dat), calculate the terminal velocity of your magnet. You may assume that the terminal velocity is reached instantaneously.
 3. The electrical conductivity of aluminum is $3.8 \times 10^7$ S m$^{-1}$ (siemens per meter). Using your equation for terminal velocity and the rest of your data, calculate $b$.
 :::
