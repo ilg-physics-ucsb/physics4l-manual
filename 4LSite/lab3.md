@@ -132,12 +132,18 @@ For the following questions, you can assume that the magnet reaches terminal vel
 Faraday's Law causes a drag force that is very similar to that caused by air resistance[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn]. For our magnet in a cylinder at low speeds, this can be written:
 
 $$
-\vec F_{tot} = - m g \hat z  - \sigma b v \hat v
+\vec F_{tot} = - m g \hat z  - 4.3\times 10^{-5} \frac{\mu_0^2 \sigma b^2 s}{r^4} v \hat v
 $$
-where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $v$ is the speed of the magnet, and $b$ characterizes the strength of the magnet.
-1. Using the above equation, find an expression for the terminal velocity $v_t$ in terms of $m$, $g$, $b$ and $\sigma$. [fn] Hint: What is the total force, $F_{tot}$ on a falling body that has reached terminal velocity? [/fn]
-2. Using your **data** from [Qu](#Qu_magnet-dat), calculate the terminal velocity of your magnet. You may assume that the terminal velocity is reached instantaneously.
-3. The electrical conductivity of aluminum is $3.8 \times 10^7$ S m$^{-1}$ (siemens per meter). Using your equation for terminal velocity and the rest of your data, calculate $b$.
+where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $s$ is the thickness of your tube,$r$ is the inner radius, $v$ is the speed of the magnet, and $b$ is the magnetic moment.
+1. We can simplify the above equation by writing it as
+  $$
+  \vec F_{tot} = - m g \hat z  - C b^2 v \hat v
+  $$
+  Find the value of C, including units, by plugging in your data. The electrical conductivity of aluminum is $3.8 \times 10^7$ S m$^{-1}$ (siemens per meter). Show your work by giving the values used for each parameter.
+2. Using the above equation, find an expression for the terminal velocity $v_t$ in terms of $m$, $g$, $b$ and $C$. [fn] Hint: What is the total force, $F_{tot}$ on a falling body that has reached terminal velocity? [/fn]
+3. Using your **data** from [Qu](#Qu_magnet-dat), calculate the terminal velocity of your magnet. You may assume that the terminal velocity is reached instantaneously.
+4. Finally, plug all values into your expression for terminal velocity, and solve for the magnetic moment $b$.
+5. A [standard neodymium magnet](https://www.kjmagnetics.com/blog.asp?p=dipole) has a magnetic dipole moment of approximately $0.5$A m$^2$. Compare your result to this value and discuss: Do you think your measurement is accurate? What could affect your results?
 :::
 
 
