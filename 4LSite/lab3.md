@@ -129,12 +129,12 @@ For the following questions, you can assume that the magnet reaches terminal vel
 
 **NEEDS REVISION UNITS OF b ARE FUNKY**
 
-Faraday's Law causes a drag force that is very similar to that caused by air resistance[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn]. For our magnet in a cylinder at low speeds, this can be written:
+Faraday's Law causes a drag force that is very similar to that caused by air resistance[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn]. For our magnet in a cylinder at low speeds, this can be approximated as:
 
 $$
 \vec F_{tot} = - m g \hat z  - 4.3\times 10^{-5} \frac{\mu_0^2 \sigma b^2 s}{r^4} v \hat v
 $$
-where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $s$ is the thickness of your tube,$r$ is the inner radius, $v$ is the speed of the magnet, and $b$ is the magnetic moment.
+where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $s$ is the thickness of your tube, $r$ is the inner radius, $v$ is the speed of the magnet, and $b$ is the magnetic moment.
 1. We can simplify the above equation by writing it as
   $$
   \vec F_{tot} = - m g \hat z  - C b^2 v \hat v
