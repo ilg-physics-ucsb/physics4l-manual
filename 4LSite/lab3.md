@@ -175,15 +175,20 @@ When the current from the emitter runs through a coil, the result is that a puls
 ::::::Exercise
 
 **Construction of the Transmitter Coil:**
+:::Figure transmitter xl
+![After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops. Make sure you wrap in the SAME direction, otherwise your magnetic fields will not point in the correct direction, meaning no oscillation and no power!](imgs/Lab3/transmitter.gif)
+After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops. Make sure you wrap in the SAME direction, otherwise your magnetic fields will not point in the correct direction, meaning no oscillation and no power!
+:::
 
 :::RFigure tcoil m
 ![Example of a transmitter coil with the final loop tucked to keep it tidy](imgs/Lab3/Tcoil.jpg)
+Example of a transmitter coil with the center wires snipped to create open ends.
 :::
 
 1. Leaving a 5-10 cm of tail, wrap the wire 15 times around something round.
-2. Skip a 10- to 15-cm section of wire, and resume winding the wire in the same direction for another 15 turns. For the final loop, you can wrap the wire around itself to keep the loop stable.
+2. Skip a 10- to 15-cm section of wire, and resume winding the wire in the same direction for another 15 turns, as in [Fi](#Fi-transmitter). For the final loop, you can wrap the wire around itself to keep the loop stable.
 3. Cut the wire to leave another 5-10 cm of tail.
-4. The skipped wire from step 2 should create another &ldquo;tail&rdquo; in the center of your coil. Twist this section to secure it, and use scissors to cut it, leaving four wire ends in total as in [Fi](#Fi-tcoil).
+4. The skipped wire from step 2 should create another "tail" in the center of your coil. Twist this section to secure it, and use scissors to cut it, leaving four wire ends in total as in [Fi](#Fi-tcoil).
 
 ####
 
@@ -191,16 +196,14 @@ When the current from the emitter runs through a coil, the result is that a puls
 
 :::RFigure coil2 xs
 ![Example of a wrapped coil with the final loop tucked to keep it tidy](imgs/Lab3/coil.jpg)
+Example of a wrapped receiver coil with the final loop tucked to keep it tidy
 :::
 
 1. Coil the wire around something round 15 times, leaving 5-10 cm of tail on each side. 
 2. To keep the coil in place, you can wrap the final loop of wire around itself
 3. Twist the enamel-free ends of the coil with the leads of an LED.
 
-:::Figure transmitter xl
-![After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.](imgs/Lab3/transmitter.gif)
-After wrapping your first 15 loops, create the central lead in the coil by pulling some extra wire down and twisting before wrapping the last 15 loops.
-:::
+
 
 
 With the two DIY components built, we are now ready to assemble the circuit.
@@ -219,8 +222,8 @@ With the two DIY components built, we are now ready to assemble the circuit.
 4. The remaining **outer** wire end should be connected to the final lead of the transistor.
 5. The two center wire ends created by cutting the tail should be plugged into the 3.3-V positive rail. 
 
-:::Figure oscpic l
-![The full circuit](imgs/Lab3/coil1.jpg)
+:::Figure oscpic xl
+![The full circuit](imgs/Lab3/coiltext.png)
 The full transmitter circuit
 :::
 
@@ -258,8 +261,7 @@ If it takes 1.5 V to turn on your LED, estimate the **minimum** value of the max
 ###  **@fa-hand-o-right@  Instructions :**
  #### **1. Answer all questions clearly, showing your work where appropriate.**
  #### **2. Starting on a seperate page:** 
-  - Write a short summary (~0.5 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
-  - Write a short summary (~0.5 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
+  - Write a short summary (~1 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
   - In these summaries, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
 
  #### **3. Additional Information:**
