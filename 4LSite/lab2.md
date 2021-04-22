@@ -137,7 +137,7 @@ Recommended Button Setup
 ::::::
 
 :::::::::
-2. Tape a wire, with the enamel scraped from the ends, along the first line you drew. Plug your wire into your breadboard&rsquo;s 5-V power line, either with or without the button component, as in [Fi](#Fi-lined). Be sure your power block is plugged into a suitable power source, such as a phone charger.
+2. Tape a wire, with the enamel scraped from the ends, along the first line you drew. Plug your wire into your breadboard's 5-V power line, either with or without the button component, as in [Fi](#Fi-lined). Be sure your power block is plugged into a suitable power source, such as a phone charger.
 3. Align the side of the phone with the magnetometer to the next line.  
 4. Open Phyphox - magnetometer.
 5. Begin recording, and you should see three straight lines for three components.
@@ -166,7 +166,7 @@ From your answer to question 1, comment on whether the height of the phone affec
 
 
 
- 10. Using the &ldquo;Pick Data&rdquo; option on Phyphox, get the value of each of the 10 peaks, and also the background field if necessary. Since your phone is also measuring Earth&rsquo;s field, remember that all measurements will be *relative* to the value of the field in your current location, so you will want to subtract this from your results! 
+ 10. Using the &ldquo;Pick Data&rdquo; option on Phyphox, get the value of each of the 10 peaks, and also the background field if necessary. Since your phone is also measuring Earth's field, remember that all measurements will be *relative* to the value of the field in your current location, so you will want to subtract this from your results! 
 
 
 ::::::Question
@@ -191,7 +191,7 @@ Review your data, and make a table like the one below with appropriate units. Al
 ::::::::::::
 
 ::::::Hider Mini FAQ for Exercise 1
-- **Q:** My plot doesn&rsquo;t have well-defined peaks.
+- **Q:** My plot doesn't have well-defined peaks.
   - This happens when your power source is weak or if you do not use the button component. Please use the value of the largest spike. Click below for an example:
   :::Figure weak m
   ![Value from initial spike](imgs/Lab2/selectdata.png)
@@ -246,7 +246,7 @@ Review your data, and make a table like the one below with appropriate units. Al
 :::::: Exercise
 We will now measure the magnetic field produced by a loop of current.
 ::: Figure looped m
-![Be sure that the phone&rsquo;s magnetometer is aligned to the center](imgs/Lab2/looped.jpg)
+![Be sure that the phone's magnetometer is aligned to the center](imgs/Lab2/looped.jpg)
 :::
 
 1. Tape your long wire to a table so that it forms a closed loop. Try to make the loop as circular as possible. Record the radius of the loop.
@@ -275,7 +275,7 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
 ::::::
 
 ::: Question
-1. Calculate the current for both heights by using the formula for the magnetic field due to a loop of wire. Hint: don&rsquo;t forget to account for the external field from nearby sources.
+1. Calculate the current for both heights by using the formula for the magnetic field due to a loop of wire. Hint: don't forget to account for background fields as neccesary.
 
 2. Do these values of current agree? If yes, explain why you think this. If no, try to identify the cause of the *discrepancy*. 
 
@@ -311,7 +311,7 @@ Make a table with the loop radius $R$ , magnetometer height $z$ , $r=\frac{R^2}{
 
 # Feedback
 
-Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you&rsquo;d like just to leave some comments, scroll to the bottom of the form.
+Any feedback you choose to give will be used to improve labs this quarter! Feedback is not required on all questions. If you'd like just to leave some comments, scroll to the bottom of the form.
 ::: Hider Open Feedback Form
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHA_l1QSqrZHGDE7VcWvBamT7AW51BF7uOTOegrd_ZGi9iJg/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 :::

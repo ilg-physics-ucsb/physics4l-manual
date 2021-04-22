@@ -42,7 +42,7 @@ where $V_R$ is the voltage across the resistor in Volts (V), $R$ is the resistan
 ## Capacitors
 
 ::: RFigure platecap m
-![Skematic of a simple parallel plate capacitor](imgs/Lab3/1.png)
+![Skematic of a simple parallel plate capacitor](imgs/Lab4/1.png)
 :::
 
 A capacitor is a device that stores energy by separating opposite charges across a very thin layer of insulating material, causing a large potential difference between the charged areas. You have likely learned about parallel plate capacitors, like that in [Fi](#Fi-platecap). While this is a very simplistic model of how most capacitors work, the basic functionality is the same: by connecting a capacitor to a battery source, a capacitor collects opposite charges and stores the energy as an electrostatic field in the region between them.
@@ -95,7 +95,7 @@ In a circuit with a highly conductive wire, these processes happen very quickly 
 
 
 ::: Figure rc
-![capacitor charge/discharge plot](imgs/Lab3/2.png)
+![capacitor charge/discharge plot](imgs/Lab4/2.png)
 :::
 
 Consider the circuit given in [Fi](#Fi-rc). Before the circuit is powered on, both the capacitor and resistor initially have 0 V across them. We know that the instant the the circuit is powered on, the resistor has a voltage of $V_0$, so by Ohm&rsquo;s law, the current is $I = V_0/R$. The capacitor, on the other hand, is only beginning to charge according to $\frac{dV}{dt} = \frac{I(t)}{C}$. 
@@ -268,7 +268,7 @@ There are two ways you can use the colors to assign values -- either by using th
 
 :::Figure
 
-![](imgs/Lab3/resistor-color-chart.png)
+![](imgs/Lab4/resistor-color-chart.png)
 
 :::
 
@@ -293,7 +293,7 @@ Electrolytic capacitors are very different from their ceramic counterparts[fn]Fo
  When using electrolytic capacitors **please make sure that you respect the orientation** by checking for the + and - symbols on the shell. Inserting them with the wrong orientation can *destroy* the electrolyte, ruining the capacitor. Please make sure the "-" end is connected to the negative rail of your power.
  <br>
 
- <img src= "imgs/Lab3/negcap.jpg" width="300px">
+ <img src= "imgs/Lab4/negcap.jpg" width="300px">
 :::
 
 The capacitors suppled by the RexQualis kit are manufactured by Hyncdz. You may assume that these capacitors have a 20% tolerance. If you are using a capacitor from a different manufacturer, especially if it is a different kind of capacitor, please look up the data sheet for the component.
@@ -325,7 +325,7 @@ Now let’s set up four RC circuits. For each setup, you will measure the time c
 
 
 It is recommended that you modify your multimeter leads to free up your hands. You can do this by cutting your solderless jumper wires, removing the insulation, wrapping the strands around the tip of a lead, and taping to secure. This lets you plug your multimeter directly into the breadboard.
-<img src="imgs/Lab3/leads.jpg" height="200px">
+<img src="imgs/Lab4/leads.jpg" height="200px">
 
 
 :::::::::
@@ -345,7 +345,7 @@ It is recommended that you modify your multimeter leads to free up your hands. Y
 For the first exercise, we are going to place a 10-μF capacitor in series with a 1-MΩ resistor. In addition, we need to place a voltmeter across the capacitor in order to visualize both charge-up and discharge situations. In this lab, the multimeter is our voltmeter.
 
 ::: Figure
-![setup](imgs/Lab3/circuit1.png)
+![setup](imgs/Lab4/circuit1.png)
 :::
 
 Before starting the experiment, we will make some basic theoretical calculations for this circuit to calibrate our expectations. In addition to predicting the time constant we will observe, we will use the tolerances of our components to find our error interval. 
@@ -386,7 +386,7 @@ This diagram shows how to connect elements in series and/or parallel. Note that 
 
 :::Figure
 
-![](imgs/Lab3/board.jpg)
+![](imgs/Lab4/board.jpg)
 
 :::
 
@@ -437,7 +437,7 @@ $$
 :::
 
 :::Figure 
-![setup](imgs/Lab3/circuit2.png)
+![setup](imgs/Lab4/circuit2.png)
 :::
 
 
@@ -475,7 +475,7 @@ $$
 
 
 :::Figure
-![setup](imgs/Lab3/circuit3.png)
+![setup](imgs/Lab4/circuit3.png)
 :::
 
 
@@ -512,7 +512,7 @@ $$
 
 
 ::: Figure
-![setup](imgs/Lab3/circuit4.png)
+![setup](imgs/Lab4/circuit4.png)
 :::
 :::::: Exercise
 Repeat the **discharging cycle** in [Ex](#Ex-ex1) by connecting two capacitors in parallel, and two resistors in parallel, and the two components in series in the circuit. Make sure the voltmeter  is measuring the voltage across **both** capacitors.
