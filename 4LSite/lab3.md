@@ -72,7 +72,7 @@ This part of the lab will involve the study of Faraday’s Law and Lenz’s Law 
 - [c] Phone with Phyphox
 :::
 
-::::::Exercise
+:::::::::Exercise
 In this exercise, we will observe a fairly dramatic demonstration of Lenz's law using just magnets and a tube of aluminum foil. 
 
 **First Observations**:
@@ -85,13 +85,22 @@ In this exercise, we will observe a fairly dramatic demonstration of Lenz's law 
 3. Does this agree with Lenz's Law? Explain your reasoning.
 :::
 
-** Work and **
+**Work and Power:**
 
 In the following steps, we will be trying to measure the time it takes for the magnet to pass through the tube. You are welcome to use any method you wish to do this (i.e. taking a video), but we found this to be the simplest way.
-:::RFigure lenzdemo m
-![](imgs/Lab3/lenz.gif)
-
+::::::RFigure lenzdemo s
+:::col l6
+![Me, doing the experiment](imgs/Lab3/lenz.gif)
+Me, doing the experiment
 :::
+
+:::col l6
+![What my data looks like](imgs/Lab3/peak.png)
+What my data looks like
+:::
+
+::::::
+
 
 1. Measure the length of your foil roll.
 2. Mark the half-way point.
@@ -100,12 +109,10 @@ In the following steps, we will be trying to measure the time it takes for the m
 5. Hold the magnetometer against the foil roll at the half way mark and start recording.
 6. Drop the magnet through the tube. Phyphox will record a spike-like signal from the magnet passing by.
 7. Stop recording once the magnet reaches the end.
-8. Estimate the time that it took the magnet to fall by finding the width of the peak at the lowest point, as in [Fi](#Fi-peak)
+8. Estimate the time that it took the magnet to fall by finding the width of the peak at the lowest point, as in [Fi](#Fi-lenzdemo)
 9. Repeat this five times and record the average of these times.
 
-:::Figure peak m
-![](imgs/Lab3/peak.png)
-:::
+
 
 
 :::Question magnet-dat
@@ -116,11 +123,11 @@ For the following questions, you can assume that the magnet reaches terminal vel
 4. What is the *total work done* on the magnet by Faraday's Law?
 5. What is the power supplied by your magnet falling through your aluminum tube?
 :::
-::::::
+:::::::::
 
 :::Question
 
-**NEEDS REVISION UNITS ARE FUNKY**
+**NEEDS REVISION UNITS OF b ARE FUNKY**
 At low speeds, Faraday's Law causes a drag force that is very similar to that caused by air resistance at low speeds. For our magnet in a cylinder[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn], this can be written:
 
 $$
@@ -128,7 +135,7 @@ $$
 $$
 where $m$ is the magnet's mass, $g = 9.81$ m s$^{-2}$, $\sigma$ is the electrical conductivity of aluminum, $v$ is the speed of the magnet, and $b$ characterizes the strength of the magnet.
 1. Using the above equation, find an expression for the terminal velocity $v_t$ in terms of $m$, $g$, $b$ and $\sigma$.[fn] Hint: What is the total force, $\vec F_{tot}$ on a falling body that has reached terminal velocity?[/fn]
-2. Using your **data** from [Qu][#Qu_magnet-dat], calculate the terminal velocity of your magnet. You may assume that the terminal velocity is reached instantaneously.
+2. Using your **data** from [Qu](#Qu_magnet-dat), calculate the terminal velocity of your magnet. You may assume that the terminal velocity is reached instantaneously.
 3. The electrical conductivity of aluminum is $3.8 \times 10^7$ S m$^{-1}$ (siemens per meter). Using your equation for terminal velocity and the rest of your data, calculate $b$.
 :::
 
