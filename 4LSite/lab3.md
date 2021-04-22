@@ -128,7 +128,8 @@ For the following questions, you can assume that the magnet reaches terminal vel
 :::Question
 
 **NEEDS REVISION UNITS OF b ARE FUNKY**
-At low speeds, Faraday's Law causes a drag force that is very similar to that caused by air resistance at low speeds. For our magnet in a cylinder[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn], this can be written:
+
+Faraday's Law causes a drag force that is very similar to that caused by air resistance[fn] This is actually a hard problem, with fairly recent work. Source: [https://arxiv.org/pdf/physics/0406085.pdf](https://arxiv.org/pdf/physics/0406085.pdf)[/fn]. For our magnet in a cylinder at low speeds, this can be written:
 
 $$
 \vec F_{tot} = - m g \hat z  - \sigma b v \hat v
