@@ -361,10 +361,10 @@ $$
 \tau = RC
 $$
 
-The error bound, $\delta\tau$, of $\tau$ may be calculated as:
+where the uncertainties of $R$ and $C$ are uncorrelated, the error bound, $\delta\tau$, of $\tau$ may be calculated as:
 :::Equation producterror
 $$
-\frac{\delta\tau}{\tau} \sqrt{ \Big(\frac{\delta R}{R}\Big)^2 + \Big(\frac{\delta C}{C}\Big)^2}
+\frac{\delta\tau}{\tau} = \sqrt{\Big|\frac{\delta R}{R}\Big|^2 + \Big|\frac{\delta C}{C}\Big|^2}
 $$
 :::
 
@@ -423,6 +423,10 @@ $$
 
 3. Is the discrepancy smaller than your error bounds? If not, propose some reasons for this: describe possible sources of systematic error, *e.g.*, external factors like humidity or poor contact, that might lead to shorter or longer discharge times, dying batteries, inaccurate timing.
 
+:::
+
+:::Note
+If your values don't seem correct, that doesn't necessarily mean that you've done something wrong! *Some* multimeters have a relatively low **internal resistance** (also called impedance), on the order of  $1-5$ M$\Omega$. In this case, your circuit will effectively have an additional resistor *in parallel* with the capacitor. If you believe that this may be affecting your results, in part c of the questions, argue that after considering this possibility, your results make sense. If you have your device's data sheet, please include the actual impedance value. 
 :::
 ::::::
 
