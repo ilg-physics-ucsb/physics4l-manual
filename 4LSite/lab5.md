@@ -1,7 +1,6 @@
 # Lab 5: Speed of Light
 
 
-### Speed of Light Section
 ::: Materials
 - [c] Microwave
 - [c] Pasta, Chocolate, or Melting Cheese 
@@ -12,7 +11,7 @@
 
 
 # Light 
-In this section, we will use the wave nature of light to measure the speed of light indirectly. Microwave ovens use microwaves, which -- you guessed it -- are simply ordinary light with a relatively large wavelength (compared to &ldquo;visible&rdquo; light, that is). Most microwaves operate in the 2.45 GHz frequency band, as this band is the most efficient at exciting rotations of water molecules in food.
+In this lab, we will use the wave nature of light to measure the speed of light indirectly. Microwave ovens use microwaves, which -- you guessed it -- are simply ordinary light with a relatively large wavelength (compared to "visible" light, that is). Most microwaves operate in the 2.45 GHz frequency band, as this band is the most efficient at exciting rotations of water molecules in food.
 
 Since we know the frequency, $\nu = 2.45$ GHz, if we are able to determine the *wavelength*, $\lambda$, of the signal, we can find the speed of light by using the fundamental relationship:
 
@@ -31,15 +30,15 @@ The question we have to ask now is: How can we infer the wavelength of the micro
 :::::::::Figure micro
 ### How Microwaves Work
 ::::::col l4
-![](imgs/Lab4/m1.png)
+![](imgs/Lab5/m1.png)
 A microwave oven works by producing microwaves in a device called a magnetron, that leave from a hole adjacent to it (typically on the the right). The microwaves will reflect back and forth from the two sides of the metal oven.
 ::::::
 ::::::col l4
-![](imgs/Lab4/m2.png)
+![](imgs/Lab5/m2.png)
  The wavelength of the microwaves is tuned to produce a standing wave. This is where you get two waves, one going in each direction, which interact to make some areas where there is a huge vibration and others where there is none.
 ::::::
 ::::::col l4
-![](imgs/Lab4/m3.png)
+![](imgs/Lab5/m3.png)
 This means that there are places where the microwaves are very intense, where the molecules will be vibrated very powerfully, and so heated strongly, and others where the microwaves are weak.  These areas are separated by half a wavelength.
 ::::::
 :::row
@@ -74,7 +73,7 @@ Why is the distance between the food medium and the magnetron not important to t
 
 
 :::Figure tested xl
-![](imgs/Lab4/choc.jpg)
+![](imgs/Lab5/choc.jpg)
 
  We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
 :::
@@ -85,7 +84,7 @@ Why is the distance between the food medium and the magnetron not important to t
 
 
 :::Figure pasta xl
-![](imgs/Lab4/pasta.jpg)
+![](imgs/Lab5/pasta.jpg)
 
 Do your best to measure from the center of the cooked region. Be sure to estimate your measurement error, so that you will be able to determine the precision of your result!
 :::
@@ -120,8 +119,7 @@ $$
 ###  **@fa-hand-o-right@  Instructions :**
  #### **1. Answer all questions clearly, showing your work where appropriate.**
  #### **2. Starting on a seperate page:** 
-  - Write a short summary (~0.5 page, single spaced) describing Faradays Law, how you tested it, and any important observations.
-  - Write a short summary (~0.5 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
+  - Write a short summary (~1 page, single spaced) describing how you can infer the speed of light using the wavelength, how you tested it, and any important observations. 
   - In these summaries, be sure to **summarize your results** and **reasons why you believe your data are precise and accurate**. If you do not think your data are accurate, explain why, and how this could be fixed in a future lab.
 
  #### **3. Additional Information:**
