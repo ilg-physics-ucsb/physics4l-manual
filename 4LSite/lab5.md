@@ -73,14 +73,20 @@ Why is the distance between the food medium and the magnetron not important to t
 
 
 :::Figure tested xl
-![](imgs/Lab5/choc.jpg)
+![ We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
+](imgs/Lab5/choc.jpg)
 
  We tested a number of possible food items to use, and found that using dry pasta that was briefly put under running water to moisten it worked best.
 :::
+:::RFigure setup s
+![Example setup for measuring the speed of light with pasta](imgs/Lab5/pastasetup.jpeg)
+Example setup for measuring the speed of light with pasta
+:::
 1. Remove the rotating table from your microwave. You may need to place a microwave-safe cup or bowl upside down over the turning gear.
-2. Place your medium on the microwave-safe plate.
+2. Place your medium on the microwave-safe plate or the rotating table ontop of the bowl or cup, as in [Fi](#Fi-setup).
+
 3. Set the plate in the microwave and turn it on for 10- to 30-second intervals, until you see at least two spots that are melting/cooked
-4. Measure the distance between the centers of these two spots.
+4. Measure the distance between the centers of these two spots. Be sure to make a note of your uncertainty in the measurement, which can be quite high if the cooked regions are large.
 
 
 :::Figure pasta xl
